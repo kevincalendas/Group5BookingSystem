@@ -14,6 +14,10 @@ public class MainWindow extends javax.swing.JFrame {
      * Creates new form MainWindow
      */
     public MainWindow() {
+        jTextArea1.setOpaque(false);
+        
+        
+        
         initComponents();
     }
 
@@ -27,7 +31,9 @@ public class MainWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         Decoration1 = new javax.swing.JPanel();
+        jTextArea1 = new javax.swing.JTextArea();
         Title1 = new javax.swing.JLabel();
         Title2 = new javax.swing.JLabel();
         Title3 = new javax.swing.JLabel();
@@ -37,8 +43,22 @@ public class MainWindow extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 500));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, -1, -1));
 
         Decoration1.setPreferredSize(new java.awt.Dimension(750, 3));
 
@@ -54,6 +74,17 @@ public class MainWindow extends javax.swing.JFrame {
         );
 
         jPanel1.add(Decoration1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 90, -1, -1));
+
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setAutoscrolls(false);
+        jTextArea1.setBorder(null);
+        jTextArea1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jTextArea1.setDoubleBuffered(true);
+        jTextArea1.setOpaque(false);
+        jTextArea1.setPreferredSize(new java.awt.Dimension(250, 250));
+        jPanel1.add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
 
         Title1.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
         Title1.setForeground(new java.awt.Color(248, 245, 222));
@@ -135,5 +166,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel Title3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
