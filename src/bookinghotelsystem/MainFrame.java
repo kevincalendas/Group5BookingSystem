@@ -35,6 +35,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         Panel1 = new javax.swing.JPanel();
         Design2 = new javax.swing.JPanel();
+        Design3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -45,22 +46,50 @@ public class MainFrame extends javax.swing.JFrame {
         Panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Design2.setBackground(new java.awt.Color(0, 0, 0));
+        Design2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         Design2.setForeground(new java.awt.Color(255, 255, 255));
         Design2.setOpaque(false);
         Design2.setPreferredSize(new java.awt.Dimension(750, 325));
+
+        Design3.setBackground(new java.awt.Color(0, 0, 0));
+        Design3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        Design3.setForeground(new java.awt.Color(255, 255, 255));
+        Design3.setOpaque(false);
+        Design3.setPreferredSize(new java.awt.Dimension(750, 325));
+
+        javax.swing.GroupLayout Design3Layout = new javax.swing.GroupLayout(Design3);
+        Design3.setLayout(Design3Layout);
+        Design3Layout.setHorizontalGroup(
+            Design3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 744, Short.MAX_VALUE)
+        );
+        Design3Layout.setVerticalGroup(
+            Design3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 319, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout Design2Layout = new javax.swing.GroupLayout(Design2);
         Design2.setLayout(Design2Layout);
         Design2Layout.setHorizontalGroup(
             Design2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 744, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
+            .addGroup(Design2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Design2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Design3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         Design2Layout.setVerticalGroup(
             Design2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 319, Short.MAX_VALUE)
+            .addGap(0, 325, Short.MAX_VALUE)
+            .addGroup(Design2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Design2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Design3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        Panel1.add(Design2, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 85, -1, -1));
+        Panel1.add(Design2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,9 +111,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -104,6 +131,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Design2;
+    private javax.swing.JPanel Design3;
     private javax.swing.JPanel Panel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
