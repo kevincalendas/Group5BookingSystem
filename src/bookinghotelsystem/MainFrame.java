@@ -1,4 +1,4 @@
-/*
+    /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -45,7 +45,6 @@ public class MainFrame extends javax.swing.JFrame {
         Panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Design2.setBackground(new java.awt.Color(0, 0, 0));
-        Design2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         Design2.setForeground(new java.awt.Color(255, 255, 255));
         Design2.setOpaque(false);
         Design2.setPreferredSize(new java.awt.Dimension(750, 325));
@@ -63,7 +62,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         Panel1.add(Design2, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 85, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Aurum Suites");
         jLabel2.setPreferredSize(new java.awt.Dimension(500, 50));
@@ -71,7 +70,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/Rooftop Hotel Pools With Amazing Views blur.jpg"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1000, 450));
-        Panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
