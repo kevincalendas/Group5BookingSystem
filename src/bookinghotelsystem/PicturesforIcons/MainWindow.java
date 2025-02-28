@@ -69,14 +69,14 @@ public class MainWindow extends javax.swing.JFrame {
         Decoration1.setLayout(Decoration1Layout);
         Decoration1Layout.setHorizontalGroup(
             Decoration1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGap(0, 760, Short.MAX_VALUE)
         );
         Decoration1Layout.setVerticalGroup(
             Decoration1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 3, Short.MAX_VALUE)
         );
 
-        MainPanel1.add(Decoration1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 90, -1, -1));
+        MainPanel1.add(Decoration1, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 90, 760, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
@@ -96,7 +96,7 @@ public class MainWindow extends javax.swing.JFrame {
         jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("Reliable room service, \ngyms, pools, dining \nareas pact with buffet\ndishes from \nprofessionals chefs,\nsuitable for a guest's \ndaily needs.\n");
+        jTextArea3.setText("Reliable room service, \ngyms, pools, dining \nareas pact with buffet\ndishes from \nprofessional chefs,\nsuitable for a guest's \ndaily needs.\n");
         jTextArea3.setAutoscrolls(false);
         jTextArea3.setBorder(null);
         jTextArea3.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
@@ -131,7 +131,7 @@ public class MainWindow extends javax.swing.JFrame {
         Title1.setPreferredSize(new java.awt.Dimension(300, 50));
         MainPanel1.add(Title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 90, -1, -1));
 
-        Title2.setFont(new java.awt.Font("Lucida Calligraphy", 0, 24)); // NOI18N
+        Title2.setFont(new java.awt.Font("Lucida Calligraphy", 1, 24)); // NOI18N
         Title2.setForeground(new java.awt.Color(248, 245, 222));
         Title2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Title2.setText("Features");
