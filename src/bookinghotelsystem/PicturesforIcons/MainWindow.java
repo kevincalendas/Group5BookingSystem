@@ -14,7 +14,6 @@ public class MainWindow extends javax.swing.JFrame {
      * Creates new form MainWindow
      */
     public MainWindow() {
-        jTextArea1.setOpaque(false);
         
         
         
@@ -30,6 +29,9 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        Background = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         MainPanel1 = new javax.swing.JPanel();
         Decoration1 = new javax.swing.JPanel();
         jTextArea1 = new javax.swing.JTextArea();
@@ -37,11 +39,21 @@ public class MainWindow extends javax.swing.JFrame {
         Title2 = new javax.swing.JLabel();
         Title3 = new javax.swing.JLabel();
         Title = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        Background1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View Main Intro Blurred100.jpg"))); // NOI18N
+        Background.setPreferredSize(new java.awt.Dimension(1000, 500));
+        jPanel1.add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
+
+        MainPanel1.setEnabled(false);
         MainPanel1.setOpaque(false);
         MainPanel1.setPreferredSize(new java.awt.Dimension(1000, 500));
         MainPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -100,13 +112,14 @@ public class MainWindow extends javax.swing.JFrame {
         Title.setPreferredSize(new java.awt.Dimension(750, 50));
         MainPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 30, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
-        jLabel1.setPreferredSize(new java.awt.Dimension(1000, 500));
-        MainPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
+        Background1.setPreferredSize(new java.awt.Dimension(1000, 500));
+        MainPanel1.add(Background1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(MainPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        pack();
+        setSize(new java.awt.Dimension(1016, 508));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -140,18 +153,22 @@ public class MainWindow extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainWindow().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JLabel Background1;
     private javax.swing.JPanel Decoration1;
     private javax.swing.JPanel MainPanel1;
     private javax.swing.JLabel Title;
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
