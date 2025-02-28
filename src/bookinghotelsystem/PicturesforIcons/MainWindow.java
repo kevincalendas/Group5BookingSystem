@@ -31,14 +31,17 @@ public class MainWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         Decoration1 = new javax.swing.JPanel();
         jTextArea1 = new javax.swing.JTextArea();
+        jTextArea3 = new javax.swing.JTextArea();
+        jTextArea2 = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
         Title1 = new javax.swing.JLabel();
         Title2 = new javax.swing.JLabel();
         Title3 = new javax.swing.JLabel();
         Title = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -46,19 +49,6 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 500));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 170, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, 170, 100));
 
         Decoration1.setPreferredSize(new java.awt.Dimension(750, 3));
 
@@ -75,37 +65,72 @@ public class MainWindow extends javax.swing.JFrame {
 
         jPanel1.add(Decoration1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 90, -1, -1));
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
+        jTextArea1.setText("Convenient location,\nfast Wi-Fi, and \nmeeting spaces for\nprofessionals on the\ngo.");
         jTextArea1.setAutoscrolls(false);
         jTextArea1.setBorder(null);
         jTextArea1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jTextArea1.setDoubleBuffered(true);
         jTextArea1.setOpaque(false);
-        jTextArea1.setPreferredSize(new java.awt.Dimension(250, 250));
-        jPanel1.add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        jPanel1.add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 240, -1));
 
-        Title1.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
+        jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea3.setLineWrap(true);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("Reliable room service, \ngyms, pools, dining \nareas pact with buffet\ndishes from \nprofessionals chefs,\nsuitable for a guest's \ndaily needs.\n");
+        jTextArea3.setAutoscrolls(false);
+        jTextArea3.setBorder(null);
+        jTextArea3.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jTextArea3.setDoubleBuffered(true);
+        jTextArea3.setOpaque(false);
+        jPanel1.add(jTextArea3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, 240, -1));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Ebrima", 1, 20)); // NOI18N
+        jTextArea2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Modern rooms, top \nnotch amenities,\nand breathtaking \nviews for a perfect \nview.\n");
+        jTextArea2.setAutoscrolls(false);
+        jTextArea2.setBorder(null);
+        jTextArea2.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jTextArea2.setDoubleBuffered(true);
+        jTextArea2.setOpaque(false);
+        jPanel1.add(jTextArea2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 240, -1));
+
+        jButton1.setFont(new java.awt.Font("Maiandra GD", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Find room");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        jButton1.setContentAreaFilled(false);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 180, 50));
+
+        Title1.setFont(new java.awt.Font("Lucida Calligraphy", 1, 24)); // NOI18N
         Title1.setForeground(new java.awt.Color(248, 245, 222));
         Title1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Title1.setText("Luxury Escape");
         Title1.setPreferredSize(new java.awt.Dimension(300, 50));
         jPanel1.add(Title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 90, -1, -1));
 
-        Title2.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        Title2.setFont(new java.awt.Font("Lucida Calligraphy", 0, 24)); // NOI18N
         Title2.setForeground(new java.awt.Color(248, 245, 222));
-        Title2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        Title2.setText("Luxury Escape");
+        Title2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Title2.setText("Features");
         Title2.setPreferredSize(new java.awt.Dimension(300, 50));
         jPanel1.add(Title2, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 90, -1, -1));
 
-        Title3.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        Title3.setFont(new java.awt.Font("Lucida Calligraphy", 1, 24)); // NOI18N
         Title3.setForeground(new java.awt.Color(248, 245, 222));
         Title3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Title3.setText("Business Hub");
         Title3.setPreferredSize(new java.awt.Dimension(300, 50));
-        jPanel1.add(Title3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
+        jPanel1.add(Title3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, -1, -1));
 
         Title.setFont(new java.awt.Font("Cambria", 1, 36)); // NOI18N
         Title.setForeground(new java.awt.Color(248, 245, 222));
@@ -117,6 +142,10 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1000, 500));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(1000, 500));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -164,9 +193,12 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     // End of variables declaration//GEN-END:variables
 }
