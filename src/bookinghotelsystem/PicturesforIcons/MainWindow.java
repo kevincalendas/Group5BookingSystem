@@ -58,7 +58,7 @@ public class MainWindow extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 170, 100));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, 170, 100));
 
         Decoration1.setPreferredSize(new java.awt.Dimension(750, 3));
 
