@@ -18,11 +18,9 @@ public class MainWindow1 extends javax.swing.JFrame {
      * Creates new form MainWindow1
      */
     public MainWindow1() {
-        
-        
-        
-        
         initComponents();
+        
+        MenuButtonsPanels.setVisible(false);
     }
     
     
@@ -35,6 +33,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        MenuButtonsPanels = new javax.swing.JPanel();
+        UserNameGreetings = new javax.swing.JLabel();
+        ViewHotelFeatureButton = new javax.swing.JButton();
+        ExitMenuButton = new javax.swing.JButton();
+        RoomSectionButtion = new javax.swing.JButton();
+        ViewHotelFeatureButton1 = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
         MainPanel1 = new javax.swing.JPanel();
         Decoration1 = new javax.swing.JPanel();
         jTextArea1 = new javax.swing.JTextArea();
@@ -45,6 +50,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         Title2 = new javax.swing.JLabel();
         Title3 = new javax.swing.JLabel();
         Title = new javax.swing.JLabel();
+        Logo = new javax.swing.JLabel();
         Background1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         RoomSectionPanel = new javax.swing.JPanel();
@@ -111,13 +117,105 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
+        MenuOpenButton = new javax.swing.JButton();
+        CompanyNameLabel = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
+        MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
+        MenuButtonsPanels.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        UserNameGreetings.setBackground(new java.awt.Color(255, 255, 255));
+        UserNameGreetings.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
+        UserNameGreetings.setForeground(new java.awt.Color(255, 255, 255));
+        UserNameGreetings.setText("Username!");
+        MenuButtonsPanels.add(UserNameGreetings, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 200, 20));
+
+        ViewHotelFeatureButton.setBackground(new java.awt.Color(209, 199, 155));
+        ViewHotelFeatureButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ViewHotelFeatureButton.setForeground(new java.awt.Color(255, 255, 255));
+        ViewHotelFeatureButton.setText("Account/User");
+        ViewHotelFeatureButton.setBorder(null);
+        ViewHotelFeatureButton.setBorderPainted(false);
+        ViewHotelFeatureButton.setContentAreaFilled(false);
+        ViewHotelFeatureButton.setFocusPainted(false);
+        ViewHotelFeatureButton.setFocusable(false);
+        ViewHotelFeatureButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ViewHotelFeatureButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        ViewHotelFeatureButton.setOpaque(true);
+        ViewHotelFeatureButton.setRolloverEnabled(false);
+        ViewHotelFeatureButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewHotelFeatureButtonActionPerformed(evt);
+            }
+        });
+        MenuButtonsPanels.add(ViewHotelFeatureButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 250, 40));
+
+        ExitMenuButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/Logo1-removebg-preview - 40x40.png"))); // NOI18N
+        ExitMenuButton.setBorder(null);
+        ExitMenuButton.setBorderPainted(false);
+        ExitMenuButton.setContentAreaFilled(false);
+        ExitMenuButton.setFocusPainted(false);
+        ExitMenuButton.setFocusable(false);
+        ExitMenuButton.setRolloverEnabled(false);
+        ExitMenuButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitMenuButtonActionPerformed(evt);
+            }
+        });
+        MenuButtonsPanels.add(ExitMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        RoomSectionButtion.setBackground(new java.awt.Color(209, 199, 155));
+        RoomSectionButtion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        RoomSectionButtion.setForeground(new java.awt.Color(255, 255, 255));
+        RoomSectionButtion.setText("Available Rooms");
+        RoomSectionButtion.setBorder(null);
+        RoomSectionButtion.setBorderPainted(false);
+        RoomSectionButtion.setContentAreaFilled(false);
+        RoomSectionButtion.setFocusPainted(false);
+        RoomSectionButtion.setFocusable(false);
+        RoomSectionButtion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        RoomSectionButtion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        RoomSectionButtion.setOpaque(true);
+        RoomSectionButtion.setRolloverEnabled(false);
+        RoomSectionButtion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RoomSectionButtionActionPerformed(evt);
+            }
+        });
+        MenuButtonsPanels.add(RoomSectionButtion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 250, 40));
+
+        ViewHotelFeatureButton1.setBackground(new java.awt.Color(209, 199, 155));
+        ViewHotelFeatureButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ViewHotelFeatureButton1.setForeground(new java.awt.Color(255, 255, 255));
+        ViewHotelFeatureButton1.setText("Hotel Essentials");
+        ViewHotelFeatureButton1.setBorder(null);
+        ViewHotelFeatureButton1.setBorderPainted(false);
+        ViewHotelFeatureButton1.setContentAreaFilled(false);
+        ViewHotelFeatureButton1.setFocusPainted(false);
+        ViewHotelFeatureButton1.setFocusable(false);
+        ViewHotelFeatureButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ViewHotelFeatureButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        ViewHotelFeatureButton1.setOpaque(true);
+        ViewHotelFeatureButton1.setRolloverEnabled(false);
+        ViewHotelFeatureButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewHotelFeatureButton1ActionPerformed(evt);
+            }
+        });
+        MenuButtonsPanels.add(ViewHotelFeatureButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 250, 40));
+
+        jLabel43.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel43.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel43.setText("Welcome to Auqeza");
+        MenuButtonsPanels.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 200, 20));
+
+        getContentPane().add(MenuButtonsPanels, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MainPanel1.setEnabled(false);
         MainPanel1.setOpaque(false);
@@ -223,9 +321,16 @@ public class MainWindow1 extends javax.swing.JFrame {
         Title.setFont(new java.awt.Font("Cambria", 1, 36)); // NOI18N
         Title.setForeground(new java.awt.Color(248, 245, 222));
         Title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Title.setText("Welcome to Aurum Suites");
+        Title.setText("Welcome to Auqeza Suites");
         Title.setPreferredSize(new java.awt.Dimension(750, 50));
-        MainPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 30, -1, -1));
+        MainPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 450, -1));
+
+        Logo.setFont(new java.awt.Font("Cambria", 1, 36)); // NOI18N
+        Logo.setForeground(new java.awt.Color(248, 245, 222));
+        Logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/Logo1-removebg-preview - 40x40.png"))); // NOI18N
+        Logo.setPreferredSize(new java.awt.Dimension(50, 50));
+        MainPanel1.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 60, 50));
 
         Background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
         Background1.setPreferredSize(new java.awt.Dimension(1000, 500));
@@ -623,19 +728,27 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSectionPanel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
 
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setFocusPainted(false);
-        jButton2.setFocusable(false);
-        jButton2.setPreferredSize(new java.awt.Dimension(40, 40));
-        jButton2.setRolloverEnabled(false);
-        RoomSectionPanel.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        MenuOpenButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/Logo1-removebg-preview - 40x40.png"))); // NOI18N
+        MenuOpenButton.setBorder(null);
+        MenuOpenButton.setBorderPainted(false);
+        MenuOpenButton.setContentAreaFilled(false);
+        MenuOpenButton.setFocusPainted(false);
+        MenuOpenButton.setFocusable(false);
+        MenuOpenButton.setOpaque(false);
+        MenuOpenButton.setPreferredSize(new java.awt.Dimension(40, 40));
+        MenuOpenButton.setRolloverEnabled(false);
+        MenuOpenButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuOpenButtonActionPerformed(evt);
+            }
+        });
+        RoomSectionPanel.add(MenuOpenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Aurum Suites");
-        RoomSectionPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 820, 40));
+        CompanyNameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        CompanyNameLabel.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        CompanyNameLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CompanyNameLabel.setText("Auqeza Suites");
+        RoomSectionPanel.add(CompanyNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 820, 40));
 
         Background.setBackground(new java.awt.Color(0, 0, 0));
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View Main Intro Blurred100.jpg"))); // NOI18N
@@ -665,6 +778,30 @@ public class MainWindow1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void ViewHotelFeatureButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewHotelFeatureButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ViewHotelFeatureButtonActionPerformed
+
+    private void RoomSectionButtionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSectionButtionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RoomSectionButtionActionPerformed
+
+    private void ViewHotelFeatureButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewHotelFeatureButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ViewHotelFeatureButton1ActionPerformed
+
+    private void ExitMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitMenuButtonActionPerformed
+        MenuButtonsPanels.setVisible(false);
+        CompanyNameLabel.setVisible(true);
+    }//GEN-LAST:event_ExitMenuButtonActionPerformed
+
+    private void MenuOpenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuOpenButtonActionPerformed
+        MenuButtonsPanels.setVisible(true);
+        CompanyNameLabel.setVisible(false);
+    }//GEN-LAST:event_MenuOpenButtonActionPerformed
+
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -686,8 +823,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
+    private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JPanel Decoration1;
+    private javax.swing.JButton ExitMenuButton;
+    private javax.swing.JLabel Logo;
     private javax.swing.JPanel MainPanel1;
+    private javax.swing.JPanel MenuButtonsPanels;
+    private javax.swing.JButton MenuOpenButton;
     private javax.swing.JButton RoomA1Button;
     private javax.swing.JButton RoomA1Button1;
     private javax.swing.JButton RoomA1Button2;
@@ -709,17 +851,19 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomB3S1;
     private javax.swing.JPanel RoomBSelectionPanel1;
     private javax.swing.JPanel RoomBSelectionPanel2;
+    private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
     private javax.swing.JLabel Title;
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title3;
+    private javax.swing.JLabel UserNameGreetings;
+    private javax.swing.JButton ViewHotelFeatureButton;
+    private javax.swing.JButton ViewHotelFeatureButton1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -752,6 +896,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
