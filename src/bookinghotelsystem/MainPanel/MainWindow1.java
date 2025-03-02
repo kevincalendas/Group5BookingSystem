@@ -12,9 +12,11 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Connection;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 /**
  *
  * @author Kevin
@@ -43,6 +45,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     //Connection to database method ;>
      Connection con;
      Statement Stmt;
+     PreparedStatement pst;
     
     //method for connection :>
     // "Db" means Database
@@ -90,13 +93,15 @@ public class MainWindow1 extends javax.swing.JFrame {
         GOSigninWindowButton = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         LoginFormWindow = new javax.swing.JPanel();
-        PasswordSigninImput1 = new javax.swing.JTextField();
+        PasswordSigninInput1 = new javax.swing.JTextField();
         UsernameSigninInput1 = new javax.swing.JTextField();
         ExitLoginButton1 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
         SignInButton1 = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
+        SignInButton2 = new javax.swing.JButton();
+        jLabel50 = new javax.swing.JLabel();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -291,17 +296,17 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
         LoginFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        PasswordSigninImput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PasswordSigninImput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
-        PasswordSigninImput1.setFocusTraversalPolicyProvider(true);
-        PasswordSigninImput1.setPreferredSize(new java.awt.Dimension(250, 35));
-        PasswordSigninImput1.setVerifyInputWhenFocusTarget(false);
-        PasswordSigninImput1.addActionListener(new java.awt.event.ActionListener() {
+        PasswordSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PasswordSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        PasswordSigninInput1.setFocusTraversalPolicyProvider(true);
+        PasswordSigninInput1.setPreferredSize(new java.awt.Dimension(250, 35));
+        PasswordSigninInput1.setVerifyInputWhenFocusTarget(false);
+        PasswordSigninInput1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordSigninImput1ActionPerformed(evt);
+                PasswordSigninInput1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(PasswordSigninImput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
+        LoginFormWindow.add(PasswordSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
 
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -327,12 +332,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         LoginFormWindow.add(ExitLoginButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
 
-        jLabel45.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel45.setText("Password:");
-        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 140, 30));
+        jLabel45.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jLabel45.setText("Doesnt have account yet?");
+        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 140, 30));
 
         SignInButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SignInButton1.setText("Sign in");
+        SignInButton1.setText("Create Account");
         SignInButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
         SignInButton1.setPreferredSize(new java.awt.Dimension(100, 35));
         SignInButton1.setRequestFocusEnabled(false);
@@ -341,7 +346,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignInButton1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 190, -1, -1));
+        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 150, -1));
 
         jLabel46.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
         jLabel46.setText("Sign in to Auqeza Suites");
@@ -351,9 +356,25 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel47.setText("Phone number:");
         LoginFormWindow.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 140, 30));
 
+        SignInButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SignInButton2.setText("Sign in");
+        SignInButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        SignInButton2.setPreferredSize(new java.awt.Dimension(100, 35));
+        SignInButton2.setRequestFocusEnabled(false);
+        SignInButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignInButton2ActionPerformed(evt);
+            }
+        });
+        LoginFormWindow.add(SignInButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, -1));
+
+        jLabel50.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel50.setText("Password:");
+        LoginFormWindow.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 140, 30));
+
         LoginSystemPanel.add(LoginFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
 
-        getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, -1, -1));
+        getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
@@ -1040,9 +1061,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_NumberSignUpInputActionPerformed
 
-    private void PasswordSigninImput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSigninImput1ActionPerformed
+    private void PasswordSigninInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSigninInput1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordSigninImput1ActionPerformed
+    }//GEN-LAST:event_PasswordSigninInput1ActionPerformed
 
     private void UsernameSigninInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameSigninInput1ActionPerformed
         // TODO add your handling code here:
@@ -1075,6 +1096,10 @@ public class MainWindow1 extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
             }
+            JOptionPane.showMessageDialog(new JFrame(), "Created Account! you can now sign in by using your Created account.");
+            NumberSignUpInput.setText(" ");
+            UsernameSignUpInput.setText(" ");
+            PasswordSignUpInput.setText(" ");
         }
     }//GEN-LAST:event_SignUpButtonActionPerformed
 
@@ -1083,12 +1108,50 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordSignUpInputActionPerformed
 
     private void SignInButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton1ActionPerformed
-        // TODO add your handling code here:
+        RegisterFormWindow.setVisible(true);
+        NumberSignUpInput.setVisible(true);
+        UsernameSignUpInput.setVisible(true);
+        PasswordSignUpInput.setVisible(true);
+        LoginFormWindow.setVisible(false);
+        PasswordSigninInput1.setVisible(false);
+        UsernameSigninInput1.setVisible(false);
     }//GEN-LAST:event_SignInButton1ActionPerformed
 
     private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
-        // TODO add your handling code here:
+        RegisterFormWindow.setVisible(false);
+        NumberSignUpInput.setVisible(false);
+        UsernameSignUpInput.setVisible(false);
+        PasswordSignUpInput.setVisible(false);
+        LoginFormWindow.setVisible(true);
+        PasswordSigninInput1.setVisible(true);
+        UsernameSigninInput1.setVisible(true);
     }//GEN-LAST:event_GOSigninWindowButtonActionPerformed
+
+    private void SignInButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton2ActionPerformed
+         //Signing In your Account code :>
+         String Phonenumber, password;
+         Phonenumber = UsernameSigninInput1.getText();
+         password = PasswordSigninInput1.getText();
+         String queryLogin = "SELECT * from hotelusersdatabase where PhoneNumber = "+Phonenumber+
+                 " AND Password = "+password+"";
+        try {
+            pst = con.prepareStatement(queryLogin);
+            ResultSet rs = pst.executeQuery();
+            if(!rs.next()) {
+                JOptionPane.showMessageDialog(null, "Invalid Credentials");
+            } else {
+                JOptionPane.showMessageDialog(null, "Successfull Login!");
+                UsernameSigninInput1.setText("");
+                PasswordSigninInput1.setText("");
+                
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+         
+        
+    }//GEN-LAST:event_SignInButton2ActionPerformed
 
     
     
@@ -1127,7 +1190,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton MenuOpenButton;
     private javax.swing.JTextField NumberSignUpInput;
     private javax.swing.JTextField PasswordSignUpInput;
-    private javax.swing.JTextField PasswordSigninImput1;
+    private javax.swing.JTextField PasswordSigninInput1;
     private javax.swing.JPanel RegisterFormWindow;
     private javax.swing.JButton RoomA1Button;
     private javax.swing.JButton RoomA1Button1;
@@ -1153,6 +1216,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
     private javax.swing.JButton SignInButton1;
+    private javax.swing.JButton SignInButton2;
     private javax.swing.JButton SignUpButton;
     private javax.swing.JLabel Title;
     private javax.swing.JLabel Title1;
@@ -1209,6 +1273,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
