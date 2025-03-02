@@ -206,7 +206,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 NumberSignUpInputActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
+        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
 
         UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -226,7 +226,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 PasswordSignUpInputActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, -1));
+        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
 
         ExitLoginButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ExitLoginButton.setText("Exit");
@@ -254,7 +254,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignUpButtonActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(SignUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 170, -1));
+        RegisterFormWindow.add(SignUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 170, -1));
 
         jLabel42.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
         jLabel42.setText("Register to Auqeza Suites");
@@ -262,11 +262,11 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         jLabel44.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
         jLabel44.setText("Already have an account?");
-        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 140, 30));
+        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 140, 30));
 
         jLabel48.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel48.setText("Password:");
-        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 140, 30));
+        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 140, 30));
 
         GOSigninWindowButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         GOSigninWindowButton.setText("Sign In");
@@ -278,11 +278,11 @@ public class MainWindow1 extends javax.swing.JFrame {
                 GOSigninWindowButtonActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, -1, -1));
+        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
 
         jLabel49.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel49.setText("Phone number:");
-        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 140, 30));
+        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 140, 30));
 
         LoginSystemPanel.add(RegisterFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
 
@@ -293,7 +293,9 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         PasswordSigninImput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSigninImput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        PasswordSigninImput1.setFocusTraversalPolicyProvider(true);
         PasswordSigninImput1.setPreferredSize(new java.awt.Dimension(250, 35));
+        PasswordSigninImput1.setVerifyInputWhenFocusTarget(false);
         PasswordSigninImput1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasswordSigninImput1ActionPerformed(evt);
@@ -303,7 +305,9 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        UsernameSigninInput1.setFocusTraversalPolicyProvider(true);
         UsernameSigninInput1.setPreferredSize(new java.awt.Dimension(250, 35));
+        UsernameSigninInput1.setVerifyInputWhenFocusTarget(false);
         UsernameSigninInput1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameSigninInput1ActionPerformed(evt);
