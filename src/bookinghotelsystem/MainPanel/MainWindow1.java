@@ -53,6 +53,13 @@ public class MainWindow1 extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         Background1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        LoginSystemPanel = new javax.swing.JPanel();
+        LoginSystemPanel1 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        ExitLoginButton = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        SignInButton = new javax.swing.JButton();
         RoomSectionPanel = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -340,6 +347,59 @@ public class MainWindow1 extends javax.swing.JFrame {
         MainPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(MainPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        LoginSystemPanel.setBackground(new java.awt.Color(235, 231, 203));
+        LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
+        LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LoginSystemPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        LoginSystemPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
+        LoginSystemPanel1.setPreferredSize(new java.awt.Dimension(500, 300));
+        LoginSystemPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jTextField1.setText("Password: ");
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        jTextField1.setPreferredSize(new java.awt.Dimension(250, 35));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        LoginSystemPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
+
+        jTextField2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jTextField2.setText("Username:");
+        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        jTextField2.setPreferredSize(new java.awt.Dimension(250, 35));
+        LoginSystemPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
+
+        ExitLoginButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ExitLoginButton.setText("Go back");
+        ExitLoginButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        ExitLoginButton.setPreferredSize(new java.awt.Dimension(100, 35));
+        ExitLoginButton.setRequestFocusEnabled(false);
+        ExitLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitLoginButtonActionPerformed(evt);
+            }
+        });
+        LoginSystemPanel1.add(ExitLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel12.setText("Sign in to Auqeza Suites");
+        LoginSystemPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 270, 30));
+
+        SignInButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SignInButton.setText("Sign in");
+        SignInButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        SignInButton.setPreferredSize(new java.awt.Dimension(100, 35));
+        SignInButton.setRequestFocusEnabled(false);
+        LoginSystemPanel1.add(SignInButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 190, -1, -1));
+
+        LoginSystemPanel.add(LoginSystemPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+
+        getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, -1, -1));
 
         RoomSectionPanel.setOpaque(false);
         RoomSectionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -734,8 +794,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         MenuOpenButton.setContentAreaFilled(false);
         MenuOpenButton.setFocusPainted(false);
         MenuOpenButton.setFocusable(false);
-        MenuOpenButton.setOpaque(false);
-        MenuOpenButton.setPreferredSize(new java.awt.Dimension(40, 40));
         MenuOpenButton.setRolloverEnabled(false);
         MenuOpenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -800,6 +858,14 @@ public class MainWindow1 extends javax.swing.JFrame {
         CompanyNameLabel.setVisible(false);
     }//GEN-LAST:event_MenuOpenButtonActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void ExitLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ExitLoginButtonActionPerformed
+
     
     
     /**
@@ -825,7 +891,10 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel Background1;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JPanel Decoration1;
+    private javax.swing.JButton ExitLoginButton;
     private javax.swing.JButton ExitMenuButton;
+    private javax.swing.JPanel LoginSystemPanel;
+    private javax.swing.JPanel LoginSystemPanel1;
     private javax.swing.JLabel Logo;
     private javax.swing.JPanel MainPanel1;
     private javax.swing.JPanel MenuButtonsPanels;
@@ -853,6 +922,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomBSelectionPanel2;
     private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
+    private javax.swing.JButton SignInButton;
     private javax.swing.JLabel Title;
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
@@ -864,6 +934,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -908,5 +979,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
