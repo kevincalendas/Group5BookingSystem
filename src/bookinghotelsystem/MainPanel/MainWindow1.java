@@ -79,6 +79,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        RoomInfoPanel = new javax.swing.JPanel();
+        InfoSingleClassAWindow = new javax.swing.JPanel();
+        jLabel51 = new javax.swing.JLabel();
+        InfoSingleClassAWindow1 = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        jTextArea7 = new javax.swing.JTextArea();
+        jTextArea8 = new javax.swing.JTextArea();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -193,6 +200,63 @@ public class MainWindow1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
+
+        InfoSingleClassAWindow.setBackground(new java.awt.Color(137, 82, 48));
+        InfoSingleClassAWindow.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoSingleClassAWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/MainRoomA1.jpg"))); // NOI18N
+        jLabel51.setPreferredSize(new java.awt.Dimension(300, 300));
+        InfoSingleClassAWindow.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
+
+        InfoSingleClassAWindow1.setBackground(new java.awt.Color(137, 82, 48));
+        InfoSingleClassAWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoSingleClassAWindow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/MainRoomA1.jpg"))); // NOI18N
+        InfoSingleClassAWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
+
+        jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
+        jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea7.setRows(5);
+        jTextArea7.setText("Size: 25 sqm\nPax/Capacity: 2 guests\nBed Type: 1 queen bed\nAmanities: free wifi, air conditioning, smart tv, \nPrivate, bathroom with hot & cold shower, complimentry toiletrs\nPrice per day: 1, 500\nPrice per day: 2, 500\n\n");
+        jTextArea7.setOpaque(false);
+        InfoSingleClassAWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 560, 200));
+
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Segoe Print", 0, 36)); // NOI18N
+        jTextArea8.setRows(5);
+        jTextArea8.setText("\"CLASS A ROOM\"");
+        jTextArea8.setOpaque(false);
+        InfoSingleClassAWindow1.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 340, 70));
+
+        InfoSingleClassAWindow.add(InfoSingleClassAWindow1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
+        RoomInfoPanel.setLayout(RoomInfoPanelLayout);
+        RoomInfoPanelLayout.setHorizontalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoSingleClassAWindow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        RoomInfoPanelLayout.setVerticalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 500, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoSingleClassAWindow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
@@ -392,7 +456,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         Title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Title.setText("Welcome to Auqeza Suites");
         Title.setPreferredSize(new java.awt.Dimension(750, 50));
-        MainPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 450, -1));
+        MainPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 450, -1));
 
         Logo.setFont(new java.awt.Font("Cambria", 1, 36)); // NOI18N
         Logo.setForeground(new java.awt.Color(248, 245, 222));
@@ -1182,6 +1246,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton ExitLoginButton1;
     private javax.swing.JButton ExitMenuButton;
     private javax.swing.JButton GOSigninWindowButton;
+    private javax.swing.JPanel InfoSingleClassAWindow;
+    private javax.swing.JPanel InfoSingleClassAWindow1;
     private javax.swing.JPanel LoginFormWindow;
     private javax.swing.JPanel LoginSystemPanel;
     private javax.swing.JLabel Logo;
@@ -1213,6 +1279,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomB3S1;
     private javax.swing.JPanel RoomBSelectionPanel1;
     private javax.swing.JPanel RoomBSelectionPanel2;
+    private javax.swing.JPanel RoomInfoPanel;
     private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
     private javax.swing.JButton SignInButton1;
@@ -1274,6 +1341,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1284,6 +1353,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
     // End of variables declaration//GEN-END:variables
 
 }
