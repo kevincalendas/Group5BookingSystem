@@ -38,6 +38,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         PasswordSigninInput1.setVisible(false);
         UsernameSigninInput1.setVisible(false);
         
+        
         try {
             connection();
         } catch (SQLException ex) {
@@ -50,6 +51,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     //Connection to database method ;>
+    int LoginEnabled = 1;
      Connection con;
      Statement Stmt;
      PreparedStatement pst;
@@ -86,6 +88,25 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        RoomInfoPanel = new javax.swing.JPanel();
+        InfoWindow1 = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        jTextArea7 = new javax.swing.JTextArea();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel51 = new javax.swing.JLabel();
+        BookButton1 = new javax.swing.JButton();
+        InfoWIndow3 = new javax.swing.JPanel();
+        jLabel55 = new javax.swing.JLabel();
+        jTextArea9 = new javax.swing.JTextArea();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel56 = new javax.swing.JLabel();
+        BookButton3 = new javax.swing.JButton();
+        InfoWIndow2 = new javax.swing.JPanel();
+        jLabel53 = new javax.swing.JLabel();
+        jTextArea8 = new javax.swing.JTextArea();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel54 = new javax.swing.JLabel();
+        BookButton2 = new javax.swing.JButton();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -173,12 +194,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         MenuOpenButton = new javax.swing.JButton();
         CompanyNameLabel = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
-        RoomInfoPanel = new javax.swing.JPanel();
-        Info1 = new javax.swing.JPanel();
-        InfoSingleClassAWindow1 = new javax.swing.JPanel();
-        jLabel52 = new javax.swing.JLabel();
-        jTextArea7 = new javax.swing.JTextArea();
-        jTextArea8 = new javax.swing.JTextArea();
         LoginSystemPanel = new javax.swing.JPanel();
         RegisterFormWindow = new javax.swing.JPanel();
         NumberSignUpInput = new javax.swing.JTextField();
@@ -202,11 +217,204 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel47 = new javax.swing.JLabel();
         SignInButton2 = new javax.swing.JButton();
         jLabel50 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        AccountInfoWindow = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
+
+        InfoWindow1.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWindow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic1.jpg"))); // NOI18N
+        jLabel52.setPreferredSize(new java.awt.Dimension(400, 400));
+        InfoWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea7.setEditable(false);
+        jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea7.setLineWrap(true);
+        jTextArea7.setRows(5);
+        jTextArea7.setText("- Size: 25 sqm\n- Pax/Capacity: 2 guests\n- Bed Type: 1 queen bed\n- Amanities: free wifi, air conditioning, smart tv, \n- Private, bathroom with hot & cold shower,\n  complimentry toilets\n- Price per night: PHP 10,500 \n- Price per day: PHP 20,500 \n\n");
+        jTextArea7.setFocusable(false);
+        jTextArea7.setOpaque(false);
+        InfoWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 470, 200));
+
+        jPanel4.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWindow1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel51.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setText("DELUXE ROOM");
+        jLabel51.setToolTipText("");
+        InfoWindow1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton1.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton1.setText("Book this room");
+        BookButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton1.setContentAreaFilled(false);
+        BookButton1.setFocusable(false);
+        BookButton1.setPreferredSize(new java.awt.Dimension(250, 50));
+        BookButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BookButton1ActionPerformed(evt);
+            }
+        });
+        InfoWindow1.add(BookButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        InfoWIndow3.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWIndow3.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWIndow3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic12nd.jpg"))); // NOI18N
+        InfoWIndow3.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea9.setEditable(false);
+        jTextArea9.setColumns(20);
+        jTextArea9.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea9.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea9.setLineWrap(true);
+        jTextArea9.setRows(5);
+        jTextArea9.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 45,500\n- Price per Day: PHP 50,500");
+        jTextArea9.setFocusable(false);
+        jTextArea9.setOpaque(false);
+        InfoWIndow3.add(jTextArea9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
+
+        jPanel7.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWIndow3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel56.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel56.setText("PRESIDENTIAL SUITE");
+        jLabel56.setToolTipText("");
+        InfoWIndow3.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton3.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton3.setText("Book this room");
+        BookButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton3.setContentAreaFilled(false);
+        BookButton3.setFocusable(false);
+        BookButton3.setPreferredSize(new java.awt.Dimension(250, 50));
+        InfoWIndow3.add(BookButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        InfoWIndow2.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWIndow2.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWIndow2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic2.jpg"))); // NOI18N
+        InfoWIndow2.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea8.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea8.setLineWrap(true);
+        jTextArea8.setRows(5);
+        jTextArea8.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 3,500\n- Price per Day: PHP 5,500");
+        jTextArea8.setFocusable(false);
+        jTextArea8.setOpaque(false);
+        InfoWIndow2.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
+
+        jPanel6.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWIndow2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel54.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setText("FAMILY ROOM");
+        jLabel54.setToolTipText("");
+        InfoWIndow2.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton2.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton2.setText("Book this room");
+        BookButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton2.setContentAreaFilled(false);
+        BookButton2.setFocusable(false);
+        BookButton2.setPreferredSize(new java.awt.Dimension(250, 50));
+        InfoWIndow2.add(BookButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
+        RoomInfoPanel.setLayout(RoomInfoPanelLayout);
+        RoomInfoPanelLayout.setHorizontalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        RoomInfoPanelLayout.setVerticalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 500, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
@@ -817,8 +1025,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         MenuOpenButton.setBorderPainted(false);
         MenuOpenButton.setContentAreaFilled(false);
         MenuOpenButton.setFocusPainted(false);
-        MenuOpenButton.setFocusable(false);
         MenuOpenButton.setRolloverEnabled(false);
+        MenuOpenButton.setVerifyInputWhenFocusTarget(false);
         MenuOpenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuOpenButtonActionPerformed(evt);
@@ -839,63 +1047,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         getContentPane().add(RoomSectionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
-        RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
-
-        Info1.setBackground(new java.awt.Color(137, 82, 48));
-        Info1.setPreferredSize(new java.awt.Dimension(1000, 500));
-        Info1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        InfoSingleClassAWindow1.setBackground(new java.awt.Color(137, 82, 48));
-        InfoSingleClassAWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
-        InfoSingleClassAWindow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/MainRoomA1.jpg"))); // NOI18N
-        InfoSingleClassAWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
-
-        jTextArea7.setEditable(false);
-        jTextArea7.setColumns(20);
-        jTextArea7.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea7.setRows(5);
-        jTextArea7.setText("Size: 25 sqm\nPax/Capacity: 2 guests\nBed Type: 1 queen bed\nAmanities: free wifi, air conditioning, smart tv, \nPrivate, bathroom with hot & cold shower, complimentry toiletrs\nPrice per day: 1, 500\nPrice per day: 2, 500\n\n");
-        jTextArea7.setFocusable(false);
-        jTextArea7.setOpaque(false);
-        InfoSingleClassAWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 560, 200));
-
-        jTextArea8.setEditable(false);
-        jTextArea8.setColumns(20);
-        jTextArea8.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
-        jTextArea8.setRows(5);
-        jTextArea8.setText("\"CLASS A ROOM\"");
-        jTextArea8.setFocusable(false);
-        jTextArea8.setOpaque(false);
-        InfoSingleClassAWindow1.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 430, 70));
-
-        Info1.add(InfoSingleClassAWindow1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
-
-        javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
-        RoomInfoPanel.setLayout(RoomInfoPanelLayout);
-        RoomInfoPanelLayout.setHorizontalGroup(
-            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Info1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        RoomInfoPanelLayout.setVerticalGroup(
-            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Info1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         LoginSystemPanel.setBackground(new java.awt.Color(235, 231, 203));
         LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -908,10 +1059,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         NumberSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         NumberSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
         NumberSignUpInput.setFocusCycleRoot(true);
-        NumberSignUpInput.setFocusTraversalPolicyProvider(true);
-        NumberSignUpInput.setFocusable(false);
+        NumberSignUpInput.setInheritsPopupMenu(true);
         NumberSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        NumberSignUpInput.setVerifyInputWhenFocusTarget(false);
         NumberSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NumberSignUpInputActionPerformed(evt);
@@ -922,10 +1071,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
         UsernameSignUpInput.setFocusCycleRoot(true);
-        UsernameSignUpInput.setFocusTraversalPolicyProvider(true);
-        UsernameSignUpInput.setFocusable(false);
+        UsernameSignUpInput.setInheritsPopupMenu(true);
         UsernameSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        UsernameSignUpInput.setVerifyInputWhenFocusTarget(false);
         UsernameSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameSignUpInputActionPerformed(evt);
@@ -936,10 +1083,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         PasswordSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
         PasswordSignUpInput.setFocusCycleRoot(true);
-        PasswordSignUpInput.setFocusTraversalPolicyProvider(true);
-        PasswordSignUpInput.setFocusable(false);
+        PasswordSignUpInput.setInheritsPopupMenu(true);
         PasswordSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        PasswordSignUpInput.setVerifyInputWhenFocusTarget(false);
         PasswordSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasswordSignUpInputActionPerformed(evt);
@@ -969,9 +1114,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         SignUpButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignUpButton.setText("Create Account");
         SignUpButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        SignUpButton.setFocusable(false);
+        SignUpButton.setFocusPainted(false);
         SignUpButton.setPreferredSize(new java.awt.Dimension(100, 35));
         SignUpButton.setRequestFocusEnabled(false);
+        SignUpButton.setRolloverEnabled(false);
+        SignUpButton.setVerifyInputWhenFocusTarget(false);
         SignUpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignUpButtonActionPerformed(evt);
@@ -1018,8 +1165,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         PasswordSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
         PasswordSigninInput1.setFocusTraversalPolicyProvider(true);
+        PasswordSigninInput1.setInheritsPopupMenu(true);
         PasswordSigninInput1.setPreferredSize(new java.awt.Dimension(250, 35));
-        PasswordSigninInput1.setVerifyInputWhenFocusTarget(false);
         PasswordSigninInput1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasswordSigninInput1ActionPerformed(evt);
@@ -1030,8 +1177,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
         UsernameSigninInput1.setFocusTraversalPolicyProvider(true);
+        UsernameSigninInput1.setInheritsPopupMenu(true);
         UsernameSigninInput1.setPreferredSize(new java.awt.Dimension(250, 35));
-        UsernameSigninInput1.setVerifyInputWhenFocusTarget(false);
         UsernameSigninInput1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameSigninInput1ActionPerformed(evt);
@@ -1062,9 +1209,10 @@ public class MainWindow1 extends javax.swing.JFrame {
         SignInButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton1.setText("Create Account");
         SignInButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        SignInButton1.setFocusable(false);
+        SignInButton1.setFocusPainted(false);
         SignInButton1.setPreferredSize(new java.awt.Dimension(100, 35));
         SignInButton1.setRequestFocusEnabled(false);
+        SignInButton1.setRolloverEnabled(false);
         SignInButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignInButton1ActionPerformed(evt);
@@ -1101,18 +1249,28 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        AccountInfoWindow.setPreferredSize(new java.awt.Dimension(1000, 500));
+
+        jLabel57.setText("Accoujnt");
+
+        javax.swing.GroupLayout AccountInfoWindowLayout = new javax.swing.GroupLayout(AccountInfoWindow);
+        AccountInfoWindow.setLayout(AccountInfoWindowLayout);
+        AccountInfoWindowLayout.setHorizontalGroup(
+            AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AccountInfoWindowLayout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(443, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        AccountInfoWindowLayout.setVerticalGroup(
+            AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AccountInfoWindowLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(393, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(AccountInfoWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -1136,11 +1294,33 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ViewHotelFeatureButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewHotelFeatureButtonActionPerformed
-        // TODO add your handling code here:
+
+        if (LoginEnabled < 2) {
+            //turning off Panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            RoomInfoPanel.setVisible(false);
+            //Opening main Login Window
+            LoginSystemPanel.setVisible(true);
+            RegisterFormWindow.setVisible(false);
+            LoginFormWindow.setVisible(true);
+            
+        } else {
+            //turning off Panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            RoomInfoPanel.setVisible(false);
+            //Opening Main Window Account
+            LoginSystemPanel.setVisible(true);
+        }
     }//GEN-LAST:event_ViewHotelFeatureButtonActionPerformed
 
     private void RoomSectionButtionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSectionButtionActionPerformed
-        // TODO add your handling code here:
+
+       
+        
     }//GEN-LAST:event_RoomSectionButtionActionPerformed
 
     private void ViewHotelFeatureButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewHotelFeatureButton1ActionPerformed
@@ -1216,6 +1396,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordSignUpInputActionPerformed
 
     private void SignInButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton1ActionPerformed
+        //going to signupWindow
         RegisterFormWindow.setVisible(true);
         NumberSignUpInput.setVisible(true);
         UsernameSignUpInput.setVisible(true);
@@ -1226,6 +1407,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_SignInButton1ActionPerformed
 
     private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
+        //going to sign in window
         RegisterFormWindow.setVisible(false);
         NumberSignUpInput.setVisible(false);
         UsernameSignUpInput.setVisible(false);
@@ -1240,17 +1422,33 @@ public class MainWindow1 extends javax.swing.JFrame {
          String Phonenumber, password;
          Phonenumber = UsernameSigninInput1.getText();
          password = PasswordSigninInput1.getText();
-         String queryLogin = "SELECT * from hotelusersdatabase where PhoneNumber = "+Phonenumber+
-                 " AND Password = "+password+"";
-        try {
+         String queryLogin = "SELECT * FROM hotelusersdatabase WHERE PhoneNumber = '" + Phonenumber + "' AND Password = '" + password + "'";
+         String query1 = "SELECT Username FROM hotelusersdatabase WHERE PhoneNumber = ? AND Password = ?";
+         try {
             pst = con.prepareStatement(queryLogin);
             ResultSet rs = pst.executeQuery();
             if(!rs.next()) {
                 JOptionPane.showMessageDialog(null, "Invalid Credentials");
+                
             } else {
                 JOptionPane.showMessageDialog(null, "Successfull Login!");
+                LoginEnabled = 3;
                 UsernameSigninInput1.setText("");
                 PasswordSigninInput1.setText("");
+                String username1 = rs.getString("Username");
+                UserNameGreetings.setText(username1 + "!");
+                //loginscreen false4
+                LoginFormWindow.setVisible(false);
+                PasswordSigninInput1.setVisible(false);
+                UsernameSigninInput1.setVisible(false);
+                RegisterFormWindow.setVisible(false);
+                NumberSignUpInput.setVisible(false);
+                UsernameSignUpInput.setVisible(false);
+                PasswordSignUpInput.setVisible(false);
+                RoomSectionPanel.setVisible(true);
+
+                
+                
                 
             }
         } catch (SQLException ex) {
@@ -1260,6 +1458,30 @@ public class MainWindow1 extends javax.swing.JFrame {
          
         
     }//GEN-LAST:event_SignInButton2ActionPerformed
+
+    private void BookButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookButton1ActionPerformed
+        // TODO add your handling code here:
+        if (LoginEnabled < 2) {
+            //turning off Panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            RoomInfoPanel.setVisible(false);
+            //Opening main Login Window
+            LoginSystemPanel.setVisible(true);
+            RegisterFormWindow.setVisible(false);
+            LoginFormWindow.setVisible(true);
+            
+        } else {
+            //turning off Panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            RoomInfoPanel.setVisible(false);
+            //Opening Main Window Account
+            LoginSystemPanel.setVisible(true);
+        }
+    }//GEN-LAST:event_BookButton1ActionPerformed
 
     
     
@@ -1282,16 +1504,21 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel AccountInfoWindow;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
+    private javax.swing.JButton BookButton1;
+    private javax.swing.JButton BookButton2;
+    private javax.swing.JButton BookButton3;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JPanel Decoration1;
     private javax.swing.JButton ExitLoginButton;
     private javax.swing.JButton ExitLoginButton1;
     private javax.swing.JButton ExitMenuButton;
     private javax.swing.JButton GOSigninWindowButton;
-    private javax.swing.JPanel Info1;
-    private javax.swing.JPanel InfoSingleClassAWindow1;
+    private javax.swing.JPanel InfoWIndow2;
+    private javax.swing.JPanel InfoWIndow3;
+    private javax.swing.JPanel InfoWindow1;
     private javax.swing.JPanel LoginFormWindow;
     private javax.swing.JPanel LoginSystemPanel;
     private javax.swing.JLabel Logo;
@@ -1385,20 +1612,29 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     // End of variables declaration//GEN-END:variables
 
 }
