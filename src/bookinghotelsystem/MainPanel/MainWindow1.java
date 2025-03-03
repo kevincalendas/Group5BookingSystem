@@ -80,8 +80,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private void initComponents() {
 
         RoomInfoPanel = new javax.swing.JPanel();
-        InfoSingleClassAWindow = new javax.swing.JPanel();
-        jLabel51 = new javax.swing.JLabel();
+        Info1 = new javax.swing.JPanel();
+        RoomInfo1 = new javax.swing.JLabel();
         InfoSingleClassAWindow1 = new javax.swing.JPanel();
         jLabel52 = new javax.swing.JLabel();
         jTextArea7 = new javax.swing.JTextArea();
@@ -203,13 +203,12 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
 
-        InfoSingleClassAWindow.setBackground(new java.awt.Color(137, 82, 48));
-        InfoSingleClassAWindow.setPreferredSize(new java.awt.Dimension(1000, 500));
-        InfoSingleClassAWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Info1.setBackground(new java.awt.Color(137, 82, 48));
+        Info1.setPreferredSize(new java.awt.Dimension(1000, 500));
+        Info1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/MainRoomA1.jpg"))); // NOI18N
-        jLabel51.setPreferredSize(new java.awt.Dimension(300, 300));
-        InfoSingleClassAWindow.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
+        RoomInfo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/MainRoomA1.jpg"))); // NOI18N
+        Info1.add(RoomInfo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
 
         InfoSingleClassAWindow1.setBackground(new java.awt.Color(137, 82, 48));
         InfoSingleClassAWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
@@ -219,7 +218,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         InfoSingleClassAWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 300));
 
         jTextArea7.setColumns(20);
-        jTextArea7.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
+        jTextArea7.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
         jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea7.setRows(5);
         jTextArea7.setText("Size: 25 sqm\nPax/Capacity: 2 guests\nBed Type: 1 queen bed\nAmanities: free wifi, air conditioning, smart tv, \nPrivate, bathroom with hot & cold shower, complimentry toiletrs\nPrice per day: 1, 500\nPrice per day: 2, 500\n\n");
@@ -227,13 +226,13 @@ public class MainWindow1 extends javax.swing.JFrame {
         InfoSingleClassAWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 560, 200));
 
         jTextArea8.setColumns(20);
-        jTextArea8.setFont(new java.awt.Font("Segoe Print", 0, 36)); // NOI18N
+        jTextArea8.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
         jTextArea8.setRows(5);
         jTextArea8.setText("\"CLASS A ROOM\"");
         jTextArea8.setOpaque(false);
-        InfoSingleClassAWindow1.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 340, 70));
+        InfoSingleClassAWindow1.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 430, 70));
 
-        InfoSingleClassAWindow.add(InfoSingleClassAWindow1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Info1.add(InfoSingleClassAWindow1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
 
         javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
         RoomInfoPanel.setLayout(RoomInfoPanelLayout);
@@ -243,7 +242,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(RoomInfoPanelLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(InfoSingleClassAWindow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Info1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         RoomInfoPanelLayout.setVerticalGroup(
@@ -252,7 +251,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(RoomInfoPanelLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(InfoSingleClassAWindow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Info1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
@@ -899,7 +898,11 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         NumberSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         NumberSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        NumberSignUpInput.setFocusCycleRoot(true);
+        NumberSignUpInput.setFocusTraversalPolicyProvider(true);
+        NumberSignUpInput.setFocusable(false);
         NumberSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        NumberSignUpInput.setVerifyInputWhenFocusTarget(false);
         NumberSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NumberSignUpInputActionPerformed(evt);
@@ -909,7 +912,11 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        UsernameSignUpInput.setFocusCycleRoot(true);
+        UsernameSignUpInput.setFocusTraversalPolicyProvider(true);
+        UsernameSignUpInput.setFocusable(false);
         UsernameSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        UsernameSignUpInput.setVerifyInputWhenFocusTarget(false);
         UsernameSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameSignUpInputActionPerformed(evt);
@@ -919,7 +926,11 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         PasswordSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        PasswordSignUpInput.setFocusCycleRoot(true);
+        PasswordSignUpInput.setFocusTraversalPolicyProvider(true);
+        PasswordSignUpInput.setFocusable(false);
         PasswordSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        PasswordSignUpInput.setVerifyInputWhenFocusTarget(false);
         PasswordSignUpInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasswordSignUpInputActionPerformed(evt);
@@ -1246,7 +1257,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton ExitLoginButton1;
     private javax.swing.JButton ExitMenuButton;
     private javax.swing.JButton GOSigninWindowButton;
-    private javax.swing.JPanel InfoSingleClassAWindow;
+    private javax.swing.JPanel Info1;
     private javax.swing.JPanel InfoSingleClassAWindow1;
     private javax.swing.JPanel LoginFormWindow;
     private javax.swing.JPanel LoginSystemPanel;
@@ -1279,6 +1290,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomB3S1;
     private javax.swing.JPanel RoomBSelectionPanel1;
     private javax.swing.JPanel RoomBSelectionPanel2;
+    private javax.swing.JLabel RoomInfo1;
     private javax.swing.JPanel RoomInfoPanel;
     private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
@@ -1341,7 +1353,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
