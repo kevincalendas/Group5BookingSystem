@@ -23,6 +23,8 @@ import java.sql.ResultSet;
  */
 public class MainWindow1 extends javax.swing.JFrame {
 
+    private Object checkStmt;
+
     /**
      * Creates new form MainWindow1
      */
@@ -32,6 +34,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     public MainWindow1() {
         initComponents();
         //LoginSystem FIx BUG
+        MenuOpenButton.setVisible(false);
         NumberSignUpInput.setVisible(false);
         UsernameSignUpInput.setVisible(false);
         PasswordSignUpInput.setVisible(false);
@@ -88,6 +91,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        MenuOpenButton = new javax.swing.JButton();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -173,15 +177,14 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        MenuOpenButton = new javax.swing.JButton();
         CompanyNameLabel = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
         LoginSystemPanel = new javax.swing.JPanel();
+        ExitLoginButton2 = new javax.swing.JButton();
         LoginFormWindow = new javax.swing.JPanel();
         jLabel60 = new javax.swing.JLabel();
         PasswordSigninInput1 = new javax.swing.JTextField();
         UsernameSigninInput1 = new javax.swing.JTextField();
-        ExitLoginButton1 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
         SignInButton1 = new javax.swing.JButton();
         jLabel47 = new javax.swing.JLabel();
@@ -194,7 +197,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         NumberSignUpInput = new javax.swing.JTextField();
         UsernameSignUpInput = new javax.swing.JTextField();
         PasswordSignUpInput = new javax.swing.JTextField();
-        ExitLoginButton2 = new javax.swing.JButton();
         SignUpButton1 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
@@ -209,6 +211,20 @@ public class MainWindow1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        MenuOpenButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/Logo1-removebg-preview - 40x40.png"))); // NOI18N
+        MenuOpenButton.setBorder(null);
+        MenuOpenButton.setBorderPainted(false);
+        MenuOpenButton.setContentAreaFilled(false);
+        MenuOpenButton.setFocusPainted(false);
+        MenuOpenButton.setRolloverEnabled(false);
+        MenuOpenButton.setVerifyInputWhenFocusTarget(false);
+        MenuOpenButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuOpenButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(MenuOpenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
@@ -227,12 +243,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         ViewHotelFeatureButton.setBorder(null);
         ViewHotelFeatureButton.setBorderPainted(false);
         ViewHotelFeatureButton.setContentAreaFilled(false);
-        ViewHotelFeatureButton.setFocusPainted(false);
-        ViewHotelFeatureButton.setFocusable(false);
+        ViewHotelFeatureButton.setDefaultCapable(false);
+        ViewHotelFeatureButton.setFocusTraversalPolicyProvider(true);
         ViewHotelFeatureButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ViewHotelFeatureButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ViewHotelFeatureButton.setOpaque(true);
-        ViewHotelFeatureButton.setRolloverEnabled(false);
         ViewHotelFeatureButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ViewHotelFeatureButtonActionPerformed(evt);
@@ -244,9 +259,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         ExitMenuButton.setBorder(null);
         ExitMenuButton.setBorderPainted(false);
         ExitMenuButton.setContentAreaFilled(false);
-        ExitMenuButton.setFocusPainted(false);
-        ExitMenuButton.setFocusable(false);
-        ExitMenuButton.setRolloverEnabled(false);
+        ExitMenuButton.setDefaultCapable(false);
+        ExitMenuButton.setFocusTraversalPolicyProvider(true);
         ExitMenuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitMenuButtonActionPerformed(evt);
@@ -261,12 +275,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomSectionButtion.setBorder(null);
         RoomSectionButtion.setBorderPainted(false);
         RoomSectionButtion.setContentAreaFilled(false);
-        RoomSectionButtion.setFocusPainted(false);
-        RoomSectionButtion.setFocusable(false);
+        RoomSectionButtion.setDefaultCapable(false);
+        RoomSectionButtion.setFocusTraversalPolicyProvider(true);
         RoomSectionButtion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         RoomSectionButtion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         RoomSectionButtion.setOpaque(true);
-        RoomSectionButtion.setRolloverEnabled(false);
         RoomSectionButtion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RoomSectionButtionActionPerformed(evt);
@@ -281,12 +294,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         ViewHotelFeatureButton1.setBorder(null);
         ViewHotelFeatureButton1.setBorderPainted(false);
         ViewHotelFeatureButton1.setContentAreaFilled(false);
-        ViewHotelFeatureButton1.setFocusPainted(false);
-        ViewHotelFeatureButton1.setFocusable(false);
+        ViewHotelFeatureButton1.setDefaultCapable(false);
+        ViewHotelFeatureButton1.setFocusTraversalPolicyProvider(true);
         ViewHotelFeatureButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ViewHotelFeatureButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ViewHotelFeatureButton1.setOpaque(true);
-        ViewHotelFeatureButton1.setRolloverEnabled(false);
         ViewHotelFeatureButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ViewHotelFeatureButton1ActionPerformed(evt);
@@ -473,8 +485,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         BookButton1.setText("Book this room");
         BookButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         BookButton1.setContentAreaFilled(false);
+        BookButton1.setFocusPainted(false);
+        BookButton1.setFocusTraversalPolicyProvider(true);
         BookButton1.setFocusable(false);
         BookButton1.setPreferredSize(new java.awt.Dimension(250, 50));
+        BookButton1.setRolloverEnabled(false);
+        BookButton1.setVerifyInputWhenFocusTarget(false);
         BookButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BookButton1ActionPerformed(evt);
@@ -527,8 +543,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         BookButton3.setText("Book this room");
         BookButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         BookButton3.setContentAreaFilled(false);
+        BookButton3.setFocusPainted(false);
+        BookButton3.setFocusTraversalPolicyProvider(true);
         BookButton3.setFocusable(false);
         BookButton3.setPreferredSize(new java.awt.Dimension(250, 50));
+        BookButton3.setRolloverEnabled(false);
+        BookButton3.setVerifyInputWhenFocusTarget(false);
         InfoWIndow3.add(BookButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
 
         InfoWIndow2.setBackground(new java.awt.Color(102, 102, 102));
@@ -576,8 +596,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         BookButton2.setText("Book this room");
         BookButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         BookButton2.setContentAreaFilled(false);
+        BookButton2.setFocusPainted(false);
+        BookButton2.setFocusTraversalPolicyProvider(true);
         BookButton2.setFocusable(false);
         BookButton2.setPreferredSize(new java.awt.Dimension(250, 50));
+        BookButton2.setRolloverEnabled(false);
+        BookButton2.setVerifyInputWhenFocusTarget(false);
         InfoWIndow2.add(BookButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
 
         javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
@@ -628,7 +652,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setDoubleBuffered(false);
-        jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(998, 1130));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -900,20 +923,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSectionPanel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
 
-        MenuOpenButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/Logo1-removebg-preview - 40x40.png"))); // NOI18N
-        MenuOpenButton.setBorder(null);
-        MenuOpenButton.setBorderPainted(false);
-        MenuOpenButton.setContentAreaFilled(false);
-        MenuOpenButton.setFocusPainted(false);
-        MenuOpenButton.setRolloverEnabled(false);
-        MenuOpenButton.setVerifyInputWhenFocusTarget(false);
-        MenuOpenButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuOpenButtonActionPerformed(evt);
-            }
-        });
-        RoomSectionPanel.add(MenuOpenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         CompanyNameLabel.setBackground(new java.awt.Color(255, 255, 255));
         CompanyNameLabel.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         CompanyNameLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -930,6 +939,21 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginSystemPanel.setBackground(new java.awt.Color(235, 231, 203));
         LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ExitLoginButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ExitLoginButton2.setText("Exit");
+        ExitLoginButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        ExitLoginButton2.setFocusPainted(false);
+        ExitLoginButton2.setFocusTraversalPolicyProvider(true);
+        ExitLoginButton2.setFocusable(false);
+        ExitLoginButton2.setPreferredSize(new java.awt.Dimension(100, 35));
+        ExitLoginButton2.setRolloverEnabled(false);
+        ExitLoginButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitLoginButton2ActionPerformed(evt);
+            }
+        });
+        LoginSystemPanel.add(ExitLoginButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
 
         LoginFormWindow.setBackground(new java.awt.Color(255, 255, 255));
         LoginFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
@@ -965,22 +989,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         LoginFormWindow.add(UsernameSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 170, -1, -1));
 
-        ExitLoginButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        ExitLoginButton1.setText("Exit");
-        ExitLoginButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        ExitLoginButton1.setFocusPainted(false);
-        ExitLoginButton1.setFocusTraversalPolicyProvider(true);
-        ExitLoginButton1.setFocusable(false);
-        ExitLoginButton1.setPreferredSize(new java.awt.Dimension(100, 35));
-        ExitLoginButton1.setRequestFocusEnabled(false);
-        ExitLoginButton1.setVerifyInputWhenFocusTarget(false);
-        ExitLoginButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExitLoginButton1ActionPerformed(evt);
-            }
-        });
-        LoginFormWindow.add(ExitLoginButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
-
         jLabel45.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
         jLabel45.setText("Doesnt have an account yet?");
         LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, 160, 30));
@@ -988,10 +996,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         SignInButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton1.setText("Create Account");
         SignInButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        SignInButton1.setFocusPainted(false);
+        SignInButton1.setFocusable(false);
         SignInButton1.setPreferredSize(new java.awt.Dimension(100, 35));
         SignInButton1.setRequestFocusEnabled(false);
-        SignInButton1.setRolloverEnabled(false);
         SignInButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignInButton1ActionPerformed(evt);
@@ -1076,25 +1083,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, -1, -1));
 
-        ExitLoginButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        ExitLoginButton2.setText("Exit");
-        ExitLoginButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        ExitLoginButton2.setFocusPainted(false);
-        ExitLoginButton2.setFocusable(false);
-        ExitLoginButton2.setPreferredSize(new java.awt.Dimension(100, 35));
-        ExitLoginButton2.setRequestFocusEnabled(false);
-        ExitLoginButton2.setVerifyInputWhenFocusTarget(false);
-        ExitLoginButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExitLoginButton2ActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(ExitLoginButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
-
         SignUpButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignUpButton1.setText("Create Account");
         SignUpButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
         SignUpButton1.setFocusPainted(false);
+        SignUpButton1.setFocusable(false);
         SignUpButton1.setPreferredSize(new java.awt.Dimension(100, 35));
         SignUpButton1.setRequestFocusEnabled(false);
         SignUpButton1.setRolloverEnabled(false);
@@ -1193,6 +1186,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomSectionPanel.setVisible(true);
         MainPanel1.setVisible(false);
         jButton1.setVisible(false);
+        MenuOpenButton.setVisible(false);
         
         Timer timer1 = new Timer(500, e -> {
             jScrollPane2.setVisible(true);
@@ -1242,11 +1236,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     private void ExitMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitMenuButtonActionPerformed
         MenuButtonsPanels.setVisible(false);
         CompanyNameLabel.setVisible(true);
+        MenuOpenButton.setVisible(true);
     }//GEN-LAST:event_ExitMenuButtonActionPerformed
 
     private void MenuOpenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuOpenButtonActionPerformed
         MenuButtonsPanels.setVisible(true);
         CompanyNameLabel.setVisible(false);
+        MenuOpenButton.setVisible(false);
     }//GEN-LAST:event_MenuOpenButtonActionPerformed
 
     private void PasswordSigninInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSigninInput1ActionPerformed
@@ -1256,10 +1252,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private void UsernameSigninInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameSigninInput1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_UsernameSigninInput1ActionPerformed
-
-    private void ExitLoginButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ExitLoginButton1ActionPerformed
 
     private void SignInButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton1ActionPerformed
         //going to signupWindow
@@ -1278,13 +1270,15 @@ public class MainWindow1 extends javax.swing.JFrame {
          Phonenumber = UsernameSigninInput1.getText();
          password = PasswordSigninInput1.getText();
          String queryLogin = "SELECT * FROM hotelusersdatabase WHERE PhoneNumber = '" + Phonenumber + "' AND Password = '" + password + "'";
-         String query1 = "SELECT Username FROM hotelusersdatabase WHERE PhoneNumber = ? AND Password = ?";
+         
+         
          try {
             pst = con.prepareStatement(queryLogin);
             ResultSet rs = pst.executeQuery();
+            
             if(!rs.next()) {
-                JOptionPane.showMessageDialog(null, "Invalid Credentials");
-                
+                JOptionPane.showMessageDialog(null, "Invalid Credentials or already existed.");
+            
             } else {
                 JOptionPane.showMessageDialog(null, "Successfull Login!");
                 LoginEnabled = 3;
@@ -1351,11 +1345,41 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordSignUpInputActionPerformed
 
     private void ExitLoginButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButton2ActionPerformed
-        // TODO add your handling code here:
+        // exit Sign in/Sign up
+        if (LoginEnabled < 2) {
+            JOptionPane.showMessageDialog(new JFrame(), "You havent logged in your account, Some features will be limited continue?");
+            LoginFormWindow.setVisible(false);
+            RoomSectionPanel.setVisible(true);
+            MenuOpenButton.setVisible(true);
+        }
     }//GEN-LAST:event_ExitLoginButton2ActionPerformed
 
     private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
-        // TODO add your handling code here:
+        //Sign up button 
+        String PhoneNumber, Username, Password;
+        
+        
+        if ("".equals(NumberSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
+        }
+        if ("".equals(UsernameSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Username");
+        }
+        if ("".equals(PasswordSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Password");
+        } else {
+            PhoneNumber = NumberSignUpInput.getText();
+            Username = UsernameSignUpInput.getText();
+            Password = PasswordSignUpInput.getText();
+            String queryRegister = "INSERT into hotelusersdatabase(PhoneNumber, Username, Password)"
+                    + "VALUES ('" + PhoneNumber + "','"+ Username + "','"+ Password +"')";
+            try {   
+                Stmt.execute(queryRegister);
+            } catch (SQLException ex) {
+                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+                JOptionPane.showMessageDialog(new JFrame(), "Created Account! You can now sign in with an existed account.");
+            }
+        }
     }//GEN-LAST:event_SignUpButton1ActionPerformed
 
     private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
@@ -1400,7 +1424,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton BookButton3;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JPanel Decoration1;
-    private javax.swing.JButton ExitLoginButton1;
     private javax.swing.JButton ExitLoginButton2;
     private javax.swing.JButton ExitMenuButton;
     private javax.swing.JButton GOSigninWindowButton;
