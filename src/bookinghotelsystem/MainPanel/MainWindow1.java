@@ -131,12 +131,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         RoomBSelectionPanel2 = new javax.swing.JPanel();
-        RoomB3S1 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        RoomB3Button1 = new javax.swing.JButton();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
         RoomB2S1 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         RoomB2Button1 = new javax.swing.JButton();
@@ -151,12 +145,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         RoomBSelectionPanel1 = new javax.swing.JPanel();
-        RoomB3S = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        RoomB3Button = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
         RoomB2S = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         RoomB2Button = new javax.swing.JButton();
@@ -171,12 +159,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         RoomASelectionPanel = new javax.swing.JPanel();
-        RoomA3S = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        RoomA1Button2 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         RoomA2S = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         RoomA1Button1 = new javax.swing.JButton();
@@ -195,28 +177,32 @@ public class MainWindow1 extends javax.swing.JFrame {
         CompanyNameLabel = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
         LoginSystemPanel = new javax.swing.JPanel();
-        RegisterFormWindow = new javax.swing.JPanel();
-        NumberSignUpInput = new javax.swing.JTextField();
-        UsernameSignUpInput = new javax.swing.JTextField();
-        PasswordSignUpInput = new javax.swing.JTextField();
-        ExitLoginButton = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        SignUpButton = new javax.swing.JButton();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
-        GOSigninWindowButton = new javax.swing.JButton();
-        jLabel49 = new javax.swing.JLabel();
         LoginFormWindow = new javax.swing.JPanel();
+        jLabel60 = new javax.swing.JLabel();
         PasswordSigninInput1 = new javax.swing.JTextField();
         UsernameSigninInput1 = new javax.swing.JTextField();
         ExitLoginButton1 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
         SignInButton1 = new javax.swing.JButton();
-        jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         SignInButton2 = new javax.swing.JButton();
         jLabel50 = new javax.swing.JLabel();
+        Background3 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        RegisterFormWindow = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        NumberSignUpInput = new javax.swing.JTextField();
+        UsernameSignUpInput = new javax.swing.JTextField();
+        PasswordSignUpInput = new javax.swing.JTextField();
+        ExitLoginButton2 = new javax.swing.JButton();
+        SignUpButton1 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        GOSigninWindowButton = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
+        Background2 = new javax.swing.JLabel();
         AccountInfoWindow = new javax.swing.JPanel();
         jLabel57 = new javax.swing.JLabel();
 
@@ -650,41 +636,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel2.setOpaque(false);
         RoomBSelectionPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        RoomB3S1.setBackground(new java.awt.Color(238, 236, 200, 90));
-        RoomB3S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA3s.jpg"))); // NOI18N
-        jLabel29.setText("jLabel1");
-        jLabel29.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomB3S1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
-
-        RoomB3Button1.setBackground(new java.awt.Color(228, 223, 192));
-        RoomB3Button1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB3Button1.setForeground(new java.awt.Color(103, 102, 54));
-        RoomB3Button1.setText("See room info");
-        RoomB3Button1.setBorderPainted(false);
-        RoomB3Button1.setFocusable(false);
-        RoomB3Button1.setPreferredSize(new java.awt.Dimension(150, 25));
-        RoomB3Button1.setRolloverEnabled(false);
-        RoomB3S1.add(RoomB3Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
-
-        jLabel30.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel30.setText("3 rooms Available");
-        RoomB3S1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
-
-        jLabel31.setBackground(new java.awt.Color(238, 236, 200));
-        jLabel31.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel31.setText("Cozy Business B");
-        RoomB3S1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
-
-        jLabel32.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(0, 255, 0));
-        jLabel32.setText("₱ 2,499 per night");
-        RoomB3S1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
-
-        RoomBSelectionPanel2.add(RoomB3S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
-
         RoomB2S1.setBackground(new java.awt.Color(238, 236, 200, 90));
         RoomB2S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -759,7 +710,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel41.setBackground(new java.awt.Color(238, 236, 200));
         jLabel41.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel41.setText("Luxury Exclusive Rooms");
+        jLabel41.setText("Presidential Suites");
         RoomBSelectionPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
 
         jPanel1.add(RoomBSelectionPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 740, 950, -1));
@@ -767,41 +718,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel1.setBackground(new java.awt.Color(0, 0, 0));
         RoomBSelectionPanel1.setOpaque(false);
         RoomBSelectionPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        RoomB3S.setBackground(new java.awt.Color(238, 236, 200, 90));
-        RoomB3S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA3s.jpg"))); // NOI18N
-        jLabel13.setText("jLabel1");
-        jLabel13.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomB3S.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
-
-        RoomB3Button.setBackground(new java.awt.Color(228, 223, 192));
-        RoomB3Button.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB3Button.setForeground(new java.awt.Color(103, 102, 54));
-        RoomB3Button.setText("See room info");
-        RoomB3Button.setBorderPainted(false);
-        RoomB3Button.setFocusable(false);
-        RoomB3Button.setPreferredSize(new java.awt.Dimension(150, 25));
-        RoomB3Button.setRolloverEnabled(false);
-        RoomB3S.add(RoomB3Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
-
-        jLabel14.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel14.setText("3 rooms Available");
-        RoomB3S.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
-
-        jLabel15.setBackground(new java.awt.Color(238, 236, 200));
-        jLabel15.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel15.setText("Cozy Business B");
-        RoomB3S.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
-
-        jLabel26.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(0, 255, 0));
-        jLabel26.setText("₱ 2,499 per night");
-        RoomB3S.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
-
-        RoomBSelectionPanel1.add(RoomB3S, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
 
         RoomB2S.setBackground(new java.awt.Color(238, 236, 200, 90));
         RoomB2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -877,7 +793,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel22.setBackground(new java.awt.Color(238, 236, 200));
         jLabel22.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel22.setText("Business Class Rooms");
+        jLabel22.setText("Family Class Rooms");
         RoomBSelectionPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
 
         jPanel1.add(RoomBSelectionPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 950, -1));
@@ -885,41 +801,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomASelectionPanel.setBackground(new java.awt.Color(0, 0, 0));
         RoomASelectionPanel.setOpaque(false);
         RoomASelectionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        RoomA3S.setBackground(new java.awt.Color(238, 236, 200, 90));
-        RoomA3S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA3s.jpg"))); // NOI18N
-        jLabel8.setText("jLabel1");
-        jLabel8.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomA3S.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
-
-        RoomA1Button2.setBackground(new java.awt.Color(228, 223, 192));
-        RoomA1Button2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomA1Button2.setForeground(new java.awt.Color(103, 102, 54));
-        RoomA1Button2.setText("See room info");
-        RoomA1Button2.setBorderPainted(false);
-        RoomA1Button2.setFocusable(false);
-        RoomA1Button2.setPreferredSize(new java.awt.Dimension(150, 25));
-        RoomA1Button2.setRolloverEnabled(false);
-        RoomA3S.add(RoomA1Button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
-
-        jLabel9.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel9.setText("3 rooms Available");
-        RoomA3S.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
-
-        jLabel10.setBackground(new java.awt.Color(238, 236, 200));
-        jLabel10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel10.setText("Cozy Class A");
-        RoomA3S.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
-
-        jLabel25.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 255, 0));
-        jLabel25.setText("₱ 2,499 per night");
-        RoomA3S.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
-
-        RoomASelectionPanel.add(RoomA3S, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
 
         RoomA2S.setBackground(new java.awt.Color(238, 236, 200, 90));
         RoomA2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -995,7 +876,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel11.setBackground(new java.awt.Color(238, 236, 200));
         jLabel11.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(238, 236, 200));
-        jLabel11.setText("Class A Rooms");
+        jLabel11.setText("Deluxe Class Rooms");
         RoomASelectionPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
 
         jPanel1.add(RoomASelectionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, -1));
@@ -1050,116 +931,15 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        RegisterFormWindow.setBackground(new java.awt.Color(255, 255, 255));
-        RegisterFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
-        RegisterFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
-        RegisterFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        NumberSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        NumberSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
-        NumberSignUpInput.setFocusCycleRoot(true);
-        NumberSignUpInput.setInheritsPopupMenu(true);
-        NumberSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        NumberSignUpInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumberSignUpInputActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
-
-        UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
-        UsernameSignUpInput.setFocusCycleRoot(true);
-        UsernameSignUpInput.setInheritsPopupMenu(true);
-        UsernameSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        UsernameSignUpInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UsernameSignUpInputActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(UsernameSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
-
-        PasswordSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PasswordSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
-        PasswordSignUpInput.setFocusCycleRoot(true);
-        PasswordSignUpInput.setInheritsPopupMenu(true);
-        PasswordSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
-        PasswordSignUpInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordSignUpInputActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
-
-        ExitLoginButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        ExitLoginButton.setText("Exit");
-        ExitLoginButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        ExitLoginButton.setFocusPainted(false);
-        ExitLoginButton.setFocusable(false);
-        ExitLoginButton.setPreferredSize(new java.awt.Dimension(100, 35));
-        ExitLoginButton.setRequestFocusEnabled(false);
-        ExitLoginButton.setVerifyInputWhenFocusTarget(false);
-        ExitLoginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExitLoginButtonActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(ExitLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
-
-        jLabel12.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel12.setText("Username:");
-        RegisterFormWindow.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 140, 30));
-
-        SignUpButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SignUpButton.setText("Create Account");
-        SignUpButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        SignUpButton.setFocusPainted(false);
-        SignUpButton.setPreferredSize(new java.awt.Dimension(100, 35));
-        SignUpButton.setRequestFocusEnabled(false);
-        SignUpButton.setRolloverEnabled(false);
-        SignUpButton.setVerifyInputWhenFocusTarget(false);
-        SignUpButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignUpButtonActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(SignUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 170, -1));
-
-        jLabel42.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
-        jLabel42.setText("Register to Auqeza Suites");
-        RegisterFormWindow.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 290, 30));
-
-        jLabel44.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        jLabel44.setText("Already have an account?");
-        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 140, 30));
-
-        jLabel48.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel48.setText("Password:");
-        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 140, 30));
-
-        GOSigninWindowButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        GOSigninWindowButton.setText("Sign In");
-        GOSigninWindowButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
-        GOSigninWindowButton.setFocusable(false);
-        GOSigninWindowButton.setPreferredSize(new java.awt.Dimension(100, 35));
-        GOSigninWindowButton.setRequestFocusEnabled(false);
-        GOSigninWindowButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GOSigninWindowButtonActionPerformed(evt);
-            }
-        });
-        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
-
-        jLabel49.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel49.setText("Phone number:");
-        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 140, 30));
-
-        LoginSystemPanel.add(RegisterFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
-
         LoginFormWindow.setBackground(new java.awt.Color(255, 255, 255));
         LoginFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
         LoginFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
         LoginFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel60.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel60.setText("Sign in to Auqeza Suites");
+        LoginFormWindow.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 270, 30));
 
         PasswordSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1171,7 +951,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 PasswordSigninInput1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(PasswordSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
+        LoginFormWindow.add(PasswordSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 220, -1, -1));
 
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1183,7 +963,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 UsernameSigninInput1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(UsernameSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
+        LoginFormWindow.add(UsernameSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 170, -1, -1));
 
         ExitLoginButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ExitLoginButton1.setText("Exit");
@@ -1199,11 +979,11 @@ public class MainWindow1 extends javax.swing.JFrame {
                 ExitLoginButton1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(ExitLoginButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
+        LoginFormWindow.add(ExitLoginButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
-        jLabel45.setText("Doesnt have account yet?");
-        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 140, 30));
+        jLabel45.setText("Doesnt have an account yet?");
+        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, 160, 30));
 
         SignInButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton1.setText("Create Account");
@@ -1217,15 +997,11 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignInButton1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 150, -1));
-
-        jLabel46.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
-        jLabel46.setText("Sign in to Auqeza Suites");
-        LoginFormWindow.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 30));
+        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 430, 150, -1));
 
         jLabel47.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel47.setText("Phone number:");
-        LoginFormWindow.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 140, 30));
+        LoginFormWindow.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, 140, 30));
 
         SignInButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton2.setText("Sign in");
@@ -1238,13 +1014,136 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignInButton2ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(SignInButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, -1));
+        LoginFormWindow.add(SignInButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, -1, -1));
 
         jLabel50.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel50.setText("Password:");
-        LoginFormWindow.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 140, 30));
+        LoginFormWindow.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 140, 30));
 
-        LoginSystemPanel.add(LoginFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+        Background3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
+        Background3.setPreferredSize(new java.awt.Dimension(1000, 500));
+        LoginFormWindow.add(Background3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
+
+        jLabel59.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel59.setText("Sign in to Auqeza Suites");
+        LoginFormWindow.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 30));
+
+        LoginSystemPanel.add(LoginFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
+
+        RegisterFormWindow.setBackground(new java.awt.Color(255, 255, 255));
+        RegisterFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
+        RegisterFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
+        RegisterFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText("Auqeza Suites");
+        RegisterFormWindow.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 290, 30));
+
+        NumberSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        NumberSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        NumberSignUpInput.setFocusCycleRoot(true);
+        NumberSignUpInput.setInheritsPopupMenu(true);
+        NumberSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        NumberSignUpInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NumberSignUpInputActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, -1, -1));
+
+        UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        UsernameSignUpInput.setFocusCycleRoot(true);
+        UsernameSignUpInput.setInheritsPopupMenu(true);
+        UsernameSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        UsernameSignUpInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UsernameSignUpInputActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(UsernameSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, -1, -1));
+
+        PasswordSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PasswordSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
+        PasswordSignUpInput.setFocusCycleRoot(true);
+        PasswordSignUpInput.setInheritsPopupMenu(true);
+        PasswordSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
+        PasswordSignUpInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswordSignUpInputActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, -1, -1));
+
+        ExitLoginButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ExitLoginButton2.setText("Exit");
+        ExitLoginButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        ExitLoginButton2.setFocusPainted(false);
+        ExitLoginButton2.setFocusable(false);
+        ExitLoginButton2.setPreferredSize(new java.awt.Dimension(100, 35));
+        ExitLoginButton2.setRequestFocusEnabled(false);
+        ExitLoginButton2.setVerifyInputWhenFocusTarget(false);
+        ExitLoginButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitLoginButton2ActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(ExitLoginButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
+
+        SignUpButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SignUpButton1.setText("Create Account");
+        SignUpButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        SignUpButton1.setFocusPainted(false);
+        SignUpButton1.setPreferredSize(new java.awt.Dimension(100, 35));
+        SignUpButton1.setRequestFocusEnabled(false);
+        SignUpButton1.setRolloverEnabled(false);
+        SignUpButton1.setVerifyInputWhenFocusTarget(false);
+        SignUpButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignUpButton1ActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(SignUpButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 390, 170, -1));
+
+        jLabel13.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel13.setText("Username:");
+        RegisterFormWindow.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 140, 30));
+
+        jLabel58.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel58.setText("Register");
+        RegisterFormWindow.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 290, 30));
+
+        jLabel44.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jLabel44.setText("Already have an account?");
+        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 140, 30));
+
+        jLabel48.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel48.setText("Password:");
+        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 140, 30));
+
+        GOSigninWindowButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        GOSigninWindowButton.setText("Sign In");
+        GOSigninWindowButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 174, 140), 2));
+        GOSigninWindowButton.setFocusable(false);
+        GOSigninWindowButton.setPreferredSize(new java.awt.Dimension(100, 35));
+        GOSigninWindowButton.setRequestFocusEnabled(false);
+        GOSigninWindowButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GOSigninWindowButtonActionPerformed(evt);
+            }
+        });
+        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, -1, -1));
+
+        jLabel49.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel49.setText("Phone number:");
+        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 140, 30));
+
+        Background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
+        Background2.setPreferredSize(new java.awt.Dimension(1000, 500));
+        RegisterFormWindow.add(Background2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
+
+        LoginSystemPanel.add(RegisterFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
         getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -1277,6 +1176,19 @@ public class MainWindow1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //Book button on Start
+        if (LoginEnabled < 2) {
+        MainPanel1.setVisible(false);
+        MenuButtonsPanels.setVisible(false);
+        RoomSectionPanel.setVisible(false);
+        RoomInfoPanel.setVisible(false);
+        //Opening main Login Window
+        LoginSystemPanel.setVisible(true);
+        RegisterFormWindow.setVisible(false);
+        LoginFormWindow.setVisible(true);
+        PasswordSigninInput1.setVisible(true);
+        UsernameSigninInput1.setVisible(true);
+
+    } else {
         jScrollPane2.setVisible(false);
         RoomSectionPanel.setVisible(true);
         MainPanel1.setVisible(false);
@@ -1289,11 +1201,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         timer1.setRepeats(false);
         timer1.start();
+        }
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ViewHotelFeatureButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewHotelFeatureButtonActionPerformed
-
+        // Side Panel Open Account details
         if (LoginEnabled < 2) {
             //turning off Panels
             MainPanel1.setVisible(false);
@@ -1336,18 +1249,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         CompanyNameLabel.setVisible(false);
     }//GEN-LAST:event_MenuOpenButtonActionPerformed
 
-    private void UsernameSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameSignUpInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_UsernameSignUpInputActionPerformed
-
-    private void ExitLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ExitLoginButtonActionPerformed
-
-    private void NumberSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumberSignUpInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumberSignUpInputActionPerformed
-
     private void PasswordSigninInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSigninInput1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PasswordSigninInput1ActionPerformed
@@ -1360,40 +1261,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ExitLoginButton1ActionPerformed
 
-    private void SignUpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButtonActionPerformed
-        //Create account Button
-        String Phonenumber, Username, Password;
-        if ("".equals(NumberSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Phone number");
-        }
-        if ("".equals(PasswordSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Password");
-        }
-        if ("".equals(UsernameSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Username");
-        }
-        else {
-          Phonenumber = NumberSignUpInput.getText();
-          Username = UsernameSignUpInput.getText();
-          Password = PasswordSignUpInput.getText();
-          String queryRegister = "INSERT INTO hotelusersdatabase(PhoneNumber, Username, Password)"
-                  + "VALUES ('" + Phonenumber + "', '" + Username + "', '" + Password + "')";
-            try {
-                Stmt.execute(queryRegister);
-            } catch (SQLException ex) {
-                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            JOptionPane.showMessageDialog(new JFrame(), "Created Account! you can now sign in by using your Created account.");
-            NumberSignUpInput.setText(" ");
-            UsernameSignUpInput.setText(" ");
-            PasswordSignUpInput.setText(" ");
-        }
-    }//GEN-LAST:event_SignUpButtonActionPerformed
-
-    private void PasswordSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSignUpInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordSignUpInputActionPerformed
-
     private void SignInButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton1ActionPerformed
         //going to signupWindow
         RegisterFormWindow.setVisible(true);
@@ -1404,17 +1271,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         PasswordSigninInput1.setVisible(false);
         UsernameSigninInput1.setVisible(false);
     }//GEN-LAST:event_SignInButton1ActionPerformed
-
-    private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
-        //going to sign in window
-        RegisterFormWindow.setVisible(false);
-        NumberSignUpInput.setVisible(false);
-        UsernameSignUpInput.setVisible(false);
-        PasswordSignUpInput.setVisible(false);
-        LoginFormWindow.setVisible(true);
-        PasswordSigninInput1.setVisible(true);
-        UsernameSigninInput1.setVisible(true);
-    }//GEN-LAST:event_GOSigninWindowButtonActionPerformed
 
     private void SignInButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton2ActionPerformed
          //Signing In your Account code :>
@@ -1482,6 +1338,37 @@ public class MainWindow1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BookButton1ActionPerformed
 
+    private void NumberSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumberSignUpInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NumberSignUpInputActionPerformed
+
+    private void UsernameSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameSignUpInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UsernameSignUpInputActionPerformed
+
+    private void PasswordSignUpInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordSignUpInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswordSignUpInputActionPerformed
+
+    private void ExitLoginButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ExitLoginButton2ActionPerformed
+
+    private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SignUpButton1ActionPerformed
+
+    private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
+        //going to sign in window
+        RegisterFormWindow.setVisible(false);
+        NumberSignUpInput.setVisible(false);
+        UsernameSignUpInput.setVisible(false);
+        PasswordSignUpInput.setVisible(false);
+        LoginFormWindow.setVisible(true);
+        PasswordSigninInput1.setVisible(true);
+        UsernameSigninInput1.setVisible(true);
+    }//GEN-LAST:event_GOSigninWindowButtonActionPerformed
+
     
     
     /**
@@ -1506,13 +1393,15 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel AccountInfoWindow;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
+    private javax.swing.JLabel Background2;
+    private javax.swing.JLabel Background3;
     private javax.swing.JButton BookButton1;
     private javax.swing.JButton BookButton2;
     private javax.swing.JButton BookButton3;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JPanel Decoration1;
-    private javax.swing.JButton ExitLoginButton;
     private javax.swing.JButton ExitLoginButton1;
+    private javax.swing.JButton ExitLoginButton2;
     private javax.swing.JButton ExitMenuButton;
     private javax.swing.JButton GOSigninWindowButton;
     private javax.swing.JPanel InfoWIndow2;
@@ -1530,10 +1419,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RegisterFormWindow;
     private javax.swing.JButton RoomA1Button;
     private javax.swing.JButton RoomA1Button1;
-    private javax.swing.JButton RoomA1Button2;
     private javax.swing.JPanel RoomA1S;
     private javax.swing.JPanel RoomA2S;
-    private javax.swing.JPanel RoomA3S;
     private javax.swing.JPanel RoomASelectionPanel;
     private javax.swing.JButton RoomB1Button;
     private javax.swing.JButton RoomB1Button1;
@@ -1543,10 +1430,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton RoomB2Button1;
     private javax.swing.JPanel RoomB2S;
     private javax.swing.JPanel RoomB2S1;
-    private javax.swing.JButton RoomB3Button;
-    private javax.swing.JButton RoomB3Button1;
-    private javax.swing.JPanel RoomB3S;
-    private javax.swing.JPanel RoomB3S1;
     private javax.swing.JPanel RoomBSelectionPanel1;
     private javax.swing.JPanel RoomBSelectionPanel2;
     private javax.swing.JPanel RoomInfoPanel;
@@ -1554,7 +1437,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomSectionPanel;
     private javax.swing.JButton SignInButton1;
     private javax.swing.JButton SignInButton2;
-    private javax.swing.JButton SignUpButton;
+    private javax.swing.JButton SignUpButton1;
     private javax.swing.JLabel Title;
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
@@ -1566,12 +1449,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton ViewHotelFeatureButton1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -1582,15 +1461,9 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
@@ -1605,7 +1478,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
@@ -1618,10 +1490,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
