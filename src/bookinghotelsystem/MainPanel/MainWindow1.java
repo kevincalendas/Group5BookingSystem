@@ -217,8 +217,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel47 = new javax.swing.JLabel();
         SignInButton2 = new javax.swing.JButton();
         jLabel50 = new javax.swing.JLabel();
-        Background3 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
         RegisterFormWindow = new javax.swing.JPanel();
         NumberSignUpInput = new javax.swing.JTextField();
         UsernameSignUpInput = new javax.swing.JTextField();
@@ -486,82 +484,84 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         RoomB2S1.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB2S1.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB2S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA2.jpg"))); // NOI18N
-        jLabel33.setText("jLabel1");
-        jLabel33.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomB2S1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 200));
+        jLabel33.setPreferredSize(new java.awt.Dimension(400, 200));
+        RoomB2S1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomB2Button1.setBackground(new java.awt.Color(228, 223, 192));
         RoomB2Button1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB2Button1.setForeground(new java.awt.Color(103, 102, 54));
+        RoomB2Button1.setForeground(new java.awt.Color(246, 246, 216));
         RoomB2Button1.setText("See room info");
-        RoomB2Button1.setBorderPainted(false);
+        RoomB2Button1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomB2Button1.setContentAreaFilled(false);
         RoomB2Button1.setFocusable(false);
         RoomB2Button1.setPreferredSize(new java.awt.Dimension(150, 25));
         RoomB2Button1.setRolloverEnabled(false);
-        RoomB2S1.add(RoomB2Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomB2S1.add(RoomB2Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel34.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel34.setText("3 rooms Available");
-        RoomB2S1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomB2S1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel35.setBackground(new java.awt.Color(238, 236, 200));
         jLabel35.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(238, 236, 200));
         jLabel35.setText("Double Business B");
-        RoomB2S1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomB2S1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel36.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(0, 255, 0));
         jLabel36.setText("₱ 2,499 per night");
-        RoomB2S1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomB2S1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomBSelectionPanel2.add(RoomB2S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, -1));
+        RoomBSelectionPanel2.add(RoomB2S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
         RoomB1S1.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB1S1.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB1S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA1.jpg"))); // NOI18N
-        jLabel37.setText("jLabel1");
-        jLabel37.setPreferredSize(new java.awt.Dimension(200, 200));
+        jLabel37.setPreferredSize(new java.awt.Dimension(400, 200));
         RoomB1S1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
 
         RoomB1Button1.setBackground(new java.awt.Color(228, 223, 192));
         RoomB1Button1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB1Button1.setForeground(new java.awt.Color(103, 102, 54));
+        RoomB1Button1.setForeground(new java.awt.Color(246, 246, 216));
         RoomB1Button1.setText("See room info");
-        RoomB1Button1.setBorderPainted(false);
+        RoomB1Button1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomB1Button1.setContentAreaFilled(false);
         RoomB1Button1.setFocusable(false);
         RoomB1Button1.setPreferredSize(new java.awt.Dimension(150, 25));
         RoomB1Button1.setRequestFocusEnabled(false);
         RoomB1Button1.setRolloverEnabled(false);
-        RoomB1S1.add(RoomB1Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomB1S1.add(RoomB1Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel38.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel38.setText("3 rooms Available");
-        RoomB1S1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomB1S1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel39.setBackground(new java.awt.Color(238, 236, 200));
         jLabel39.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(238, 236, 200));
         jLabel39.setText("Single Business B");
-        RoomB1S1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomB1S1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel40.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(0, 255, 0));
         jLabel40.setText("₱ 1,500 per night");
-        RoomB1S1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomB1S1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomBSelectionPanel2.add(RoomB1S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
+        RoomBSelectionPanel2.add(RoomB1S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
         jLabel41.setBackground(new java.awt.Color(238, 236, 200));
         jLabel41.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(238, 236, 200));
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel41.setText("Presidential Suites");
-        RoomBSelectionPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
+        RoomBSelectionPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 40));
 
         jPanel9.setBackground(new java.awt.Color(197, 179, 124));
         jPanel9.setPreferredSize(new java.awt.Dimension(100, 2));
@@ -577,7 +577,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        RoomBSelectionPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 55, -1, -1));
+        RoomBSelectionPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
         jPanel1.add(RoomBSelectionPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 740, 950, -1));
 
@@ -586,82 +586,84 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         RoomB2S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB2S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA2.jpg"))); // NOI18N
-        jLabel16.setText("jLabel1");
-        jLabel16.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomB2S.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 200));
+        jLabel16.setPreferredSize(new java.awt.Dimension(400, 200));
+        RoomB2S.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomB2Button.setBackground(new java.awt.Color(228, 223, 192));
         RoomB2Button.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB2Button.setForeground(new java.awt.Color(103, 102, 54));
+        RoomB2Button.setForeground(new java.awt.Color(246, 246, 216));
         RoomB2Button.setText("See room info");
-        RoomB2Button.setBorderPainted(false);
+        RoomB2Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomB2Button.setContentAreaFilled(false);
         RoomB2Button.setFocusable(false);
         RoomB2Button.setPreferredSize(new java.awt.Dimension(150, 25));
         RoomB2Button.setRolloverEnabled(false);
-        RoomB2S.add(RoomB2Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomB2S.add(RoomB2Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel17.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel17.setText("3 rooms Available");
-        RoomB2S.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomB2S.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel18.setBackground(new java.awt.Color(238, 236, 200));
         jLabel18.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(238, 236, 200));
         jLabel18.setText("Double Business B");
-        RoomB2S.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomB2S.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel27.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(0, 255, 0));
         jLabel27.setText("₱ 2,499 per night");
-        RoomB2S.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomB2S.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomBSelectionPanel1.add(RoomB2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, -1));
+        RoomBSelectionPanel1.add(RoomB2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
         RoomB1S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB1S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB1S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA1.jpg"))); // NOI18N
-        jLabel19.setText("jLabel1");
-        jLabel19.setPreferredSize(new java.awt.Dimension(200, 200));
+        jLabel19.setPreferredSize(new java.awt.Dimension(400, 200));
         RoomB1S.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
 
         RoomB1Button.setBackground(new java.awt.Color(228, 223, 192));
         RoomB1Button.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomB1Button.setForeground(new java.awt.Color(103, 102, 54));
+        RoomB1Button.setForeground(new java.awt.Color(246, 246, 216));
         RoomB1Button.setText("See room info");
-        RoomB1Button.setBorderPainted(false);
+        RoomB1Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomB1Button.setContentAreaFilled(false);
         RoomB1Button.setFocusable(false);
         RoomB1Button.setPreferredSize(new java.awt.Dimension(150, 25));
         RoomB1Button.setRequestFocusEnabled(false);
         RoomB1Button.setRolloverEnabled(false);
-        RoomB1S.add(RoomB1Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomB1S.add(RoomB1Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel20.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel20.setText("3 rooms Available");
-        RoomB1S.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomB1S.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel21.setBackground(new java.awt.Color(238, 236, 200));
         jLabel21.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(238, 236, 200));
         jLabel21.setText("Single Business B");
-        RoomB1S.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomB1S.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel28.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(0, 255, 0));
         jLabel28.setText("₱ 1,500 per night");
-        RoomB1S.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomB1S.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomBSelectionPanel1.add(RoomB1S, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
+        RoomBSelectionPanel1.add(RoomB1S, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
         jLabel22.setBackground(new java.awt.Color(238, 236, 200));
         jLabel22.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(238, 236, 200));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText("Family Class Rooms");
-        RoomBSelectionPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
+        RoomBSelectionPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 40));
 
         jPanel8.setBackground(new java.awt.Color(197, 179, 124));
         jPanel8.setPreferredSize(new java.awt.Dimension(100, 2));
@@ -677,7 +679,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        RoomBSelectionPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 55, -1, -1));
+        RoomBSelectionPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
         jPanel1.add(RoomBSelectionPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 950, -1));
 
@@ -699,21 +701,22 @@ public class MainWindow1 extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        RoomASelectionPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 55, -1, -1));
+        RoomASelectionPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
         RoomA2S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomA2S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomA2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA2.jpg"))); // NOI18N
-        jLabel5.setText("jLabel1");
-        jLabel5.setPreferredSize(new java.awt.Dimension(200, 200));
-        RoomA2S.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 200));
+        jLabel5.setPreferredSize(new java.awt.Dimension(400, 200));
+        RoomA2S.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomA1Button1.setBackground(new java.awt.Color(228, 223, 192));
         RoomA1Button1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomA1Button1.setForeground(new java.awt.Color(103, 102, 54));
+        RoomA1Button1.setForeground(new java.awt.Color(246, 246, 216));
         RoomA1Button1.setText("See room info");
-        RoomA1Button1.setBorderPainted(false);
+        RoomA1Button1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomA1Button1.setContentAreaFilled(false);
         RoomA1Button1.setDefaultCapable(false);
         RoomA1Button1.setFocusPainted(false);
         RoomA1Button1.setFocusable(false);
@@ -724,38 +727,39 @@ public class MainWindow1 extends javax.swing.JFrame {
                 RoomA1Button1ActionPerformed(evt);
             }
         });
-        RoomA2S.add(RoomA1Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomA2S.add(RoomA1Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel6.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel6.setText("3 rooms Available");
-        RoomA2S.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomA2S.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel7.setBackground(new java.awt.Color(238, 236, 200));
         jLabel7.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(238, 236, 200));
         jLabel7.setText("Double Class A");
-        RoomA2S.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomA2S.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel24.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(0, 255, 0));
         jLabel24.setText("₱ 2,499 per night");
-        RoomA2S.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomA2S.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomASelectionPanel.add(RoomA2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, -1));
+        RoomASelectionPanel.add(RoomA2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
         RoomA1S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomA1S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomA1S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RoomPicturesABC/MainRoomA1.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jLabel1.setPreferredSize(new java.awt.Dimension(200, 200));
+        jLabel1.setPreferredSize(new java.awt.Dimension(400, 200));
         RoomA1S.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
 
         RoomA1Button.setBackground(new java.awt.Color(228, 223, 192));
         RoomA1Button.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        RoomA1Button.setForeground(new java.awt.Color(103, 102, 54));
+        RoomA1Button.setForeground(new java.awt.Color(246, 246, 216));
         RoomA1Button.setText("See room info");
-        RoomA1Button.setBorderPainted(false);
+        RoomA1Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(197, 181, 153), 2));
+        RoomA1Button.setContentAreaFilled(false);
         RoomA1Button.setDefaultCapable(false);
         RoomA1Button.setFocusPainted(false);
         RoomA1Button.setFocusable(false);
@@ -766,31 +770,31 @@ public class MainWindow1 extends javax.swing.JFrame {
                 RoomA1ButtonActionPerformed(evt);
             }
         });
-        RoomA1S.add(RoomA1Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 200, 30));
+        RoomA1S.add(RoomA1Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 270, 200, 30));
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel3.setText("3 rooms Available");
-        RoomA1S.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 20));
+        RoomA1S.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 250, 200, 20));
 
         jLabel4.setBackground(new java.awt.Color(238, 236, 200));
         jLabel4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(238, 236, 200));
         jLabel4.setText("Single Class A");
-        RoomA1S.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 30));
+        RoomA1S.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 200, 200, 30));
 
         jLabel23.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 255, 0));
         jLabel23.setText("₱ 1,500 per night");
-        RoomA1S.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 20));
+        RoomA1S.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 230, 200, 20));
 
-        RoomASelectionPanel.add(RoomA1S, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
+        RoomASelectionPanel.add(RoomA1S, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
         jLabel11.setBackground(new java.awt.Color(238, 236, 200));
         jLabel11.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(238, 236, 200));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Deluxe Class Rooms");
-        RoomASelectionPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 50));
+        RoomASelectionPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 820, 40));
 
         jPanel1.add(RoomASelectionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, -1));
 
@@ -1227,6 +1231,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         LoginSystemPanel.setBackground(new java.awt.Color(235, 231, 203));
+        LoginSystemPanel.setOpaque(false);
         LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1245,14 +1250,15 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         LoginSystemPanel.add(ExitLoginButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
 
-        LoginFormWindow.setBackground(new java.awt.Color(255, 255, 255));
-        LoginFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
+        LoginFormWindow.setBackground(new java.awt.Color(197, 177, 149, 100));
         LoginFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
         LoginFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel60.setBackground(new java.awt.Color(255, 255, 255));
         jLabel60.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
         jLabel60.setText("Sign in to Auqeza Suites");
-        LoginFormWindow.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 270, 30));
+        LoginFormWindow.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 30));
 
         PasswordSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1264,7 +1270,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 PasswordSigninInput1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(PasswordSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 220, -1, -1));
+        LoginFormWindow.add(PasswordSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
 
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSigninInput1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1276,11 +1282,13 @@ public class MainWindow1 extends javax.swing.JFrame {
                 UsernameSigninInput1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(UsernameSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 170, -1, -1));
+        LoginFormWindow.add(UsernameSigninInput1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
+        jLabel45.setBackground(new java.awt.Color(255, 255, 255));
         jLabel45.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("Doesnt have an account yet?");
-        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, 160, 30));
+        LoginFormWindow.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 160, 30));
 
         SignInButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton1.setText("Create Account");
@@ -1293,11 +1301,13 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignInButton1ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 430, 150, -1));
+        LoginFormWindow.add(SignInButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 150, -1));
 
+        jLabel47.setBackground(new java.awt.Color(255, 255, 255));
         jLabel47.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setText("Phone number:");
-        LoginFormWindow.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, 140, 30));
+        LoginFormWindow.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 140, 30));
 
         SignInButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignInButton2.setText("Sign in");
@@ -1310,24 +1320,17 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignInButton2ActionPerformed(evt);
             }
         });
-        LoginFormWindow.add(SignInButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, -1, -1));
+        LoginFormWindow.add(SignInButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, -1, -1));
 
+        jLabel50.setBackground(new java.awt.Color(255, 255, 255));
         jLabel50.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
         jLabel50.setText("Password:");
-        LoginFormWindow.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 140, 30));
+        LoginFormWindow.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 140, 30));
 
-        Background3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
-        Background3.setPreferredSize(new java.awt.Dimension(1000, 500));
-        LoginFormWindow.add(Background3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
+        LoginSystemPanel.add(LoginFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 500, 500));
 
-        jLabel59.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
-        jLabel59.setText("Sign in to Auqeza Suites");
-        LoginFormWindow.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 30));
-
-        LoginSystemPanel.add(LoginFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
-
-        RegisterFormWindow.setBackground(new java.awt.Color(255, 255, 255));
-        RegisterFormWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(182, 170, 147), 3));
+        RegisterFormWindow.setBackground(new java.awt.Color(197, 177, 149, 100));
         RegisterFormWindow.setPreferredSize(new java.awt.Dimension(500, 300));
         RegisterFormWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1341,7 +1344,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 NumberSignUpInputActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, -1, -1));
+        RegisterFormWindow.add(NumberSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, -1, -1));
 
         UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         UsernameSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1353,7 +1356,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 UsernameSignUpInputActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(UsernameSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, -1, -1));
+        RegisterFormWindow.add(UsernameSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
 
         PasswordSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PasswordSignUpInput.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(210, 196, 173), 2));
@@ -1365,7 +1368,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 PasswordSignUpInputActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, -1, -1));
+        RegisterFormWindow.add(PasswordSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, -1, -1));
 
         SignUpButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SignUpButton1.setText("Create Account");
@@ -1381,23 +1384,31 @@ public class MainWindow1 extends javax.swing.JFrame {
                 SignUpButton1ActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(SignUpButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 390, 170, -1));
+        RegisterFormWindow.add(SignUpButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 390, 170, -1));
 
+        jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Username:");
-        RegisterFormWindow.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 140, 30));
+        RegisterFormWindow.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 140, 30));
 
+        jLabel58.setBackground(new java.awt.Color(255, 255, 255));
         jLabel58.setFont(new java.awt.Font("Cambria", 1, 24)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(255, 255, 255));
         jLabel58.setText("Register to Auqeza Suites");
-        RegisterFormWindow.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 290, 30));
+        RegisterFormWindow.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 290, 30));
 
+        jLabel44.setBackground(new java.awt.Color(255, 255, 255));
         jLabel44.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("Already have an account?");
-        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, 140, 30));
+        RegisterFormWindow.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 140, 30));
 
+        jLabel48.setBackground(new java.awt.Color(255, 255, 255));
         jLabel48.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 255, 255));
         jLabel48.setText("Password:");
-        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 140, 30));
+        RegisterFormWindow.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 140, 30));
 
         GOSigninWindowButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         GOSigninWindowButton.setText("Sign In");
@@ -1410,17 +1421,19 @@ public class MainWindow1 extends javax.swing.JFrame {
                 GOSigninWindowButtonActionPerformed(evt);
             }
         });
-        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, -1, -1));
+        RegisterFormWindow.add(GOSigninWindowButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, -1, -1));
 
+        jLabel49.setBackground(new java.awt.Color(255, 255, 255));
         jLabel49.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setText("Phone number:");
-        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 140, 30));
+        RegisterFormWindow.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 140, 30));
+
+        LoginSystemPanel.add(RegisterFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, -1, 500));
 
         Background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
         Background2.setPreferredSize(new java.awt.Dimension(1000, 500));
-        RegisterFormWindow.add(Background2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
-
-        LoginSystemPanel.add(RegisterFormWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
+        LoginSystemPanel.add(Background2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
 
         getContentPane().add(LoginSystemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -1462,6 +1475,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         MenuButtonsPanels.setVisible(false);
         RoomSectionPanel.setVisible(false);
         RoomInfoPanel.setVisible(false);
+        RegisterFormWindow.setVisible(false);
         //Opening main Login Window
         Timer timer2 = new Timer(500, e -> {
             LoginSystemPanel.setVisible(true);
@@ -1553,6 +1567,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginFormWindow.setVisible(false);
         PasswordSigninInput1.setVisible(false);
         UsernameSigninInput1.setVisible(false);
+
     }//GEN-LAST:event_SignInButton1ActionPerformed
 
     private void SignInButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton2ActionPerformed
@@ -1767,7 +1782,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
     private javax.swing.JLabel Background2;
-    private javax.swing.JLabel Background3;
     private javax.swing.JLabel Background4;
     private javax.swing.JButton BookButtonA1;
     private javax.swing.JButton BookButtonA2;
@@ -1873,7 +1887,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
