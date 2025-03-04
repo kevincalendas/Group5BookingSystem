@@ -88,25 +88,6 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        RoomInfoPanel = new javax.swing.JPanel();
-        InfoWindow1 = new javax.swing.JPanel();
-        jLabel52 = new javax.swing.JLabel();
-        jTextArea7 = new javax.swing.JTextArea();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel51 = new javax.swing.JLabel();
-        BookButton1 = new javax.swing.JButton();
-        InfoWIndow3 = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
-        jTextArea9 = new javax.swing.JTextArea();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel56 = new javax.swing.JLabel();
-        BookButton3 = new javax.swing.JButton();
-        InfoWIndow2 = new javax.swing.JPanel();
-        jLabel53 = new javax.swing.JLabel();
-        jTextArea8 = new javax.swing.JTextArea();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel54 = new javax.swing.JLabel();
-        BookButton2 = new javax.swing.JButton();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -127,6 +108,25 @@ public class MainWindow1 extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         Background1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        RoomInfoPanel = new javax.swing.JPanel();
+        InfoWindow1 = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        jTextArea7 = new javax.swing.JTextArea();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel51 = new javax.swing.JLabel();
+        BookButton1 = new javax.swing.JButton();
+        InfoWIndow3 = new javax.swing.JPanel();
+        jLabel55 = new javax.swing.JLabel();
+        jTextArea9 = new javax.swing.JTextArea();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel56 = new javax.swing.JLabel();
+        BookButton3 = new javax.swing.JButton();
+        InfoWIndow2 = new javax.swing.JPanel();
+        jLabel53 = new javax.swing.JLabel();
+        jTextArea8 = new javax.swing.JTextArea();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel54 = new javax.swing.JLabel();
+        BookButton2 = new javax.swing.JButton();
         RoomSectionPanel = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -223,198 +223,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
-
-        InfoWindow1.setBackground(new java.awt.Color(102, 102, 102));
-        InfoWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
-        InfoWindow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic1.jpg"))); // NOI18N
-        jLabel52.setPreferredSize(new java.awt.Dimension(400, 400));
-        InfoWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
-
-        jTextArea7.setEditable(false);
-        jTextArea7.setColumns(20);
-        jTextArea7.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea7.setLineWrap(true);
-        jTextArea7.setRows(5);
-        jTextArea7.setText("- Size: 25 sqm\n- Pax/Capacity: 2 guests\n- Bed Type: 1 queen bed\n- Amanities: free wifi, air conditioning, smart tv, \n- Private, bathroom with hot & cold shower,\n  complimentry toilets\n- Price per night: PHP 10,500 \n- Price per day: PHP 20,500 \n\n");
-        jTextArea7.setFocusable(false);
-        jTextArea7.setOpaque(false);
-        InfoWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 470, 200));
-
-        jPanel4.setPreferredSize(new java.awt.Dimension(450, 3));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
-        );
-
-        InfoWindow1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
-
-        jLabel51.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel51.setText("DELUXE ROOM");
-        jLabel51.setToolTipText("");
-        InfoWindow1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
-
-        BookButton1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        BookButton1.setForeground(new java.awt.Color(255, 255, 255));
-        BookButton1.setText("Book this room");
-        BookButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        BookButton1.setContentAreaFilled(false);
-        BookButton1.setFocusable(false);
-        BookButton1.setPreferredSize(new java.awt.Dimension(250, 50));
-        BookButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BookButton1ActionPerformed(evt);
-            }
-        });
-        InfoWindow1.add(BookButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
-
-        InfoWIndow3.setBackground(new java.awt.Color(102, 102, 102));
-        InfoWIndow3.setPreferredSize(new java.awt.Dimension(1000, 500));
-        InfoWIndow3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic12nd.jpg"))); // NOI18N
-        InfoWIndow3.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
-
-        jTextArea9.setEditable(false);
-        jTextArea9.setColumns(20);
-        jTextArea9.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        jTextArea9.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea9.setLineWrap(true);
-        jTextArea9.setRows(5);
-        jTextArea9.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 45,500\n- Price per Day: PHP 50,500");
-        jTextArea9.setFocusable(false);
-        jTextArea9.setOpaque(false);
-        InfoWIndow3.add(jTextArea9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
-
-        jPanel7.setPreferredSize(new java.awt.Dimension(450, 3));
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
-        );
-
-        InfoWIndow3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
-
-        jLabel56.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel56.setText("PRESIDENTIAL SUITE");
-        jLabel56.setToolTipText("");
-        InfoWIndow3.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
-
-        BookButton3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        BookButton3.setForeground(new java.awt.Color(255, 255, 255));
-        BookButton3.setText("Book this room");
-        BookButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        BookButton3.setContentAreaFilled(false);
-        BookButton3.setFocusable(false);
-        BookButton3.setPreferredSize(new java.awt.Dimension(250, 50));
-        InfoWIndow3.add(BookButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
-
-        InfoWIndow2.setBackground(new java.awt.Color(102, 102, 102));
-        InfoWIndow2.setPreferredSize(new java.awt.Dimension(1000, 500));
-        InfoWIndow2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic2.jpg"))); // NOI18N
-        InfoWIndow2.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
-
-        jTextArea8.setEditable(false);
-        jTextArea8.setColumns(20);
-        jTextArea8.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        jTextArea8.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea8.setLineWrap(true);
-        jTextArea8.setRows(5);
-        jTextArea8.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 3,500\n- Price per Day: PHP 5,500");
-        jTextArea8.setFocusable(false);
-        jTextArea8.setOpaque(false);
-        InfoWIndow2.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
-
-        jPanel6.setPreferredSize(new java.awt.Dimension(450, 3));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
-        );
-
-        InfoWIndow2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
-
-        jLabel54.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel54.setText("FAMILY ROOM");
-        jLabel54.setToolTipText("");
-        InfoWIndow2.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
-
-        BookButton2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        BookButton2.setForeground(new java.awt.Color(255, 255, 255));
-        BookButton2.setText("Book this room");
-        BookButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        BookButton2.setContentAreaFilled(false);
-        BookButton2.setFocusable(false);
-        BookButton2.setPreferredSize(new java.awt.Dimension(250, 50));
-        InfoWIndow2.add(BookButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
-
-        javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
-        RoomInfoPanel.setLayout(RoomInfoPanelLayout);
-        RoomInfoPanelLayout.setHorizontalGroup(
-            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        RoomInfoPanelLayout.setVerticalGroup(
-            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(250, 500));
@@ -631,6 +439,197 @@ public class MainWindow1 extends javax.swing.JFrame {
         MainPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(MainPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        RoomInfoPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
+
+        InfoWindow1.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWindow1.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWindow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic1.jpg"))); // NOI18N
+        InfoWindow1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea7.setEditable(false);
+        jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea7.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea7.setLineWrap(true);
+        jTextArea7.setRows(5);
+        jTextArea7.setText("- Size: 25 sqm\n- Pax/Capacity: 2 guests\n- Bed Type: 1 queen bed\n- Amanities: free wifi, air conditioning, smart tv, \n- Private, bathroom with hot & cold shower,\n  complimentry toilets\n- Price per night: PHP 10,500 \n- Price per day: PHP 20,500 \n\n");
+        jTextArea7.setFocusable(false);
+        jTextArea7.setOpaque(false);
+        InfoWindow1.add(jTextArea7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 470, 200));
+
+        jPanel4.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWindow1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel51.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setText("DELUXE ROOM");
+        jLabel51.setToolTipText("");
+        InfoWindow1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton1.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton1.setText("Book this room");
+        BookButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton1.setContentAreaFilled(false);
+        BookButton1.setFocusable(false);
+        BookButton1.setPreferredSize(new java.awt.Dimension(250, 50));
+        BookButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BookButton1ActionPerformed(evt);
+            }
+        });
+        InfoWindow1.add(BookButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        InfoWIndow3.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWIndow3.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWIndow3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic12nd.jpg"))); // NOI18N
+        InfoWIndow3.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea9.setEditable(false);
+        jTextArea9.setColumns(20);
+        jTextArea9.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea9.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea9.setLineWrap(true);
+        jTextArea9.setRows(5);
+        jTextArea9.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 45,500\n- Price per Day: PHP 50,500");
+        jTextArea9.setFocusable(false);
+        jTextArea9.setOpaque(false);
+        InfoWIndow3.add(jTextArea9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
+
+        jPanel7.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWIndow3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel56.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel56.setText("PRESIDENTIAL SUITE");
+        jLabel56.setToolTipText("");
+        InfoWIndow3.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton3.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton3.setText("Book this room");
+        BookButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton3.setContentAreaFilled(false);
+        BookButton3.setFocusable(false);
+        BookButton3.setPreferredSize(new java.awt.Dimension(250, 50));
+        InfoWIndow3.add(BookButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        InfoWIndow2.setBackground(new java.awt.Color(102, 102, 102));
+        InfoWIndow2.setPreferredSize(new java.awt.Dimension(1000, 500));
+        InfoWIndow2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InfoRoomPics/InfoPic2.jpg"))); // NOI18N
+        InfoWIndow2.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        jTextArea8.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea8.setLineWrap(true);
+        jTextArea8.setRows(5);
+        jTextArea8.setText("- Size: 45 sqm\n- Capacity/Pax: 4 guests\n- Bed Type: 2 Queen Beds\n- Amenities: Free WiFi, Air Conditioning, 50” Smart TV,  Living Area, Dining Table, Mini Bar, Private Balcony \n with City View\n Complimentary Breakfast\n- Price per Night: PHP 3,500\n- Price per Day: PHP 5,500");
+        jTextArea8.setFocusable(false);
+        jTextArea8.setOpaque(false);
+        InfoWIndow2.add(jTextArea8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 470, 200));
+
+        jPanel6.setPreferredSize(new java.awt.Dimension(450, 3));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        InfoWIndow2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+
+        jLabel54.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setText("FAMILY ROOM");
+        jLabel54.setToolTipText("");
+        InfoWIndow2.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 420, 40));
+
+        BookButton2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BookButton2.setForeground(new java.awt.Color(255, 255, 255));
+        BookButton2.setText("Book this room");
+        BookButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BookButton2.setContentAreaFilled(false);
+        BookButton2.setFocusable(false);
+        BookButton2.setPreferredSize(new java.awt.Dimension(250, 50));
+        InfoWIndow2.add(BookButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
+
+        javax.swing.GroupLayout RoomInfoPanelLayout = new javax.swing.GroupLayout(RoomInfoPanel);
+        RoomInfoPanel.setLayout(RoomInfoPanelLayout);
+        RoomInfoPanelLayout.setHorizontalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        RoomInfoPanelLayout.setVerticalGroup(
+            RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 500, Short.MAX_VALUE)
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(InfoWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InfoWIndow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(RoomInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RoomInfoPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(InfoWIndow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(RoomInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomSectionPanel.setOpaque(false);
         RoomSectionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
