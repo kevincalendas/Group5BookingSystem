@@ -1409,6 +1409,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSchedDayCheckinA1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RoomSchedDayCheckinA1.setForeground(new java.awt.Color(227, 221, 203));
+        RoomSchedDayCheckinA1.setSelected(true);
         RoomSchedDayCheckinA1.setText("6:00AM - 6:00AM Day");
         RoomSchedDayCheckinA1.setActionCommand("");
         RoomSchedDayCheckinA1.addActionListener(new java.awt.event.ActionListener() {
@@ -2036,7 +2037,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_RoomSchedNightCheckinA1ActionPerformed
 
     private void RoomSchedDayCheckinA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA1ActionPerformed
-        // Room Schedule Day Check in
+        // Room Schedule Day Check in day selected
+        if ( RoomSchedDayCheckinA1.isSelected() ) {
+            RoomSchedNightCheckinA1.setSelected(false);
+            
+        }
         
     }//GEN-LAST:event_RoomSchedDayCheckinA1ActionPerformed
 

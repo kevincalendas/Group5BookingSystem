@@ -2849,6 +2849,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cb" green="dd" red="e3" type="rgb"/>
                     </Property>
+                    <Property name="selected" type="boolean" value="true"/>
                     <Property name="text" type="java.lang.String" value="6:00AM - 6:00AM Day"/>
                     <Property name="actionCommand" type="java.lang.String" value=""/>
                   </Properties>
