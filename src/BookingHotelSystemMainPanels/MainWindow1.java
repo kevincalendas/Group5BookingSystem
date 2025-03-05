@@ -2040,7 +2040,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         // Room Schedule Day Check in day selected
         if ( RoomSchedDayCheckinA1.isSelected() ) {
             RoomSchedNightCheckinA1.setSelected(false);
-            
         }
         
     }//GEN-LAST:event_RoomSchedDayCheckinA1ActionPerformed
