@@ -39,7 +39,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginSystemPanel.setVisible(false);
         AccountInfoWindow.setVisible(false);
         CheckInPayment.setVisible(false);
-        
+        ExitMessageWindow.setVisible(false);
         
         try {
             connection();
@@ -76,6 +76,28 @@ public class MainWindow1 extends javax.swing.JFrame {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    // Info A1 PaymentDetails Function
+    private void PaymentDetailsA1() {
+        //int values
+        int PriceDayA1 = 8499;
+        int PriceNightA1 = 7499;
+        
+        
+        
+        if (RoomSchedDayCheckinA1.isSelected()) {
+            RoomSchedNightCheckinA1.setSelected(false);
+            TotalAmountA1Checkin.setText("PHP " + PriceDayA1);
+
+            
+        }
+        if (RoomSchedNightCheckinA1.isSelected()) {
+            RoomSchedDayCheckinA1.setSelected(false);
+            TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
+            
+        }
+               
     }
     
     
@@ -227,6 +249,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         Background5 = new javax.swing.JLabel();
         LoginSystemPanel = new javax.swing.JPanel();
+        ExitMessageWindow = new javax.swing.JPanel();
+        ExitMessageMainWindow = new javax.swing.JPanel();
+        ExitButtonLogin = new javax.swing.JButton();
+        ContinueButtonLogin = new javax.swing.JButton();
+        jTextArea4 = new javax.swing.JTextArea();
         ExitLoginButton2 = new javax.swing.JButton();
         LoginFormWindow = new javax.swing.JPanel();
         jLabel60 = new javax.swing.JLabel();
@@ -1381,6 +1408,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSchedNightCheckinA1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RoomSchedNightCheckinA1.setForeground(new java.awt.Color(227, 221, 203));
+        RoomSchedNightCheckinA1.setSelected(true);
         RoomSchedNightCheckinA1.setText("6:00PM - 6:00AM Overnight");
         RoomSchedNightCheckinA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1409,7 +1437,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSchedDayCheckinA1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RoomSchedDayCheckinA1.setForeground(new java.awt.Color(227, 221, 203));
-        RoomSchedDayCheckinA1.setSelected(true);
         RoomSchedDayCheckinA1.setText("6:00AM - 6:00AM Day");
         RoomSchedDayCheckinA1.setActionCommand("");
         RoomSchedDayCheckinA1.addActionListener(new java.awt.event.ActionListener() {
@@ -1475,6 +1502,79 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginSystemPanel.setOpaque(false);
         LoginSystemPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         LoginSystemPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ExitMessageWindow.setBackground(new java.awt.Color(0, 0, 0, 200));
+        ExitMessageWindow.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ExitMessageMainWindow.setBackground(new java.awt.Color(181, 171, 117));
+        ExitMessageMainWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(193, 190, 157), 2));
+        ExitMessageMainWindow.setOpaque(false);
+        ExitMessageMainWindow.setPreferredSize(new java.awt.Dimension(400, 400));
+
+        ExitButtonLogin.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        ExitButtonLogin.setForeground(new java.awt.Color(255, 255, 255));
+        ExitButtonLogin.setText("No");
+        ExitButtonLogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(195, 190, 144), 2));
+        ExitButtonLogin.setContentAreaFilled(false);
+        ExitButtonLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitButtonLoginActionPerformed(evt);
+            }
+        });
+
+        ContinueButtonLogin.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        ContinueButtonLogin.setForeground(new java.awt.Color(255, 255, 255));
+        ContinueButtonLogin.setText("Yes");
+        ContinueButtonLogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(195, 190, 144), 2));
+        ContinueButtonLogin.setContentAreaFilled(false);
+        ContinueButtonLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContinueButtonLoginActionPerformed(evt);
+            }
+        });
+
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jTextArea4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea4.setLineWrap(true);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("You havent logged in your account, Some features will be limited continue?");
+        jTextArea4.setWrapStyleWord(true);
+        jTextArea4.setFocusable(false);
+        jTextArea4.setOpaque(false);
+        jTextArea4.setRequestFocusEnabled(false);
+        jTextArea4.setVerifyInputWhenFocusTarget(false);
+
+        javax.swing.GroupLayout ExitMessageMainWindowLayout = new javax.swing.GroupLayout(ExitMessageMainWindow);
+        ExitMessageMainWindow.setLayout(ExitMessageMainWindowLayout);
+        ExitMessageMainWindowLayout.setHorizontalGroup(
+            ExitMessageMainWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ExitMessageMainWindowLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(ExitButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(ContinueButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExitMessageMainWindowLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(jTextArea4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
+        );
+        ExitMessageMainWindowLayout.setVerticalGroup(
+            ExitMessageMainWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExitMessageMainWindowLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jTextArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(ExitMessageMainWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ExitButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ContinueButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
+        );
+
+        ExitMessageWindow.add(ExitMessageMainWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, 368, 190));
+
+        LoginSystemPanel.add(ExitMessageWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
         ExitLoginButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ExitLoginButton2.setText("Exit");
@@ -1762,6 +1862,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             MenuButtonsPanels.setVisible(false);
             RoomSectionPanel.setVisible(false);
             RoomInfoPanel.setVisible(false);
+            AccountInfoWindow.setVisible(false);
             //Opening main Login Window
             LoginSystemPanel.setVisible(true);
             RegisterFormWindow.setVisible(false);
@@ -1912,17 +2013,13 @@ public class MainWindow1 extends javax.swing.JFrame {
 
     private void ExitLoginButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitLoginButton2ActionPerformed
         // exit Sign in/Sign up
-        JOptionPane.showMessageDialog(new JFrame(), "You havent logged in your account, Some features will be limited continue?");
-        LoginFormWindow.setVisible(false);
-            RoomSectionPanel.setVisible(true);
-            MenuOpenButton.setVisible(true);
-        if (LoginEnabled < 2) {
-            Timer timer2 = new Timer(500, e -> {
-            jScrollPane2.setVisible(true);
+        ExitMessageWindow.setVisible(true);
+        
+        Timer timer2 = new Timer(500, e -> {
+            ExitMessageMainWindow.setVisible(true);
             });
-            timer2.setRepeats(false);
-            timer2.start();
-        }
+        timer2.setRepeats(false);
+        timer2.start();
     }//GEN-LAST:event_ExitLoginButton2ActionPerformed
 
     private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
@@ -2040,6 +2137,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         // Room Schedule Day Check in day selected
         if ( RoomSchedDayCheckinA1.isSelected() ) {
             RoomSchedNightCheckinA1.setSelected(false);
+            
         }
         
     }//GEN-LAST:event_RoomSchedDayCheckinA1ActionPerformed
@@ -2141,6 +2239,32 @@ public class MainWindow1 extends javax.swing.JFrame {
         // CheckOut Room A1
     }//GEN-LAST:event_ConfirmButtonA1CheckinActionPerformed
 
+    private void ExitButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonLoginActionPerformed
+        // Opening Login Window (On)
+        ExitMessageWindow.setVisible(true);
+        
+        Timer timer2 = new Timer(500, e -> {
+            ExitMessageMainWindow.setVisible(true);
+            });
+    }//GEN-LAST:event_ExitButtonLoginActionPerformed
+
+    private void ContinueButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinueButtonLoginActionPerformed
+        // Closing Login Window (Off)
+        LoginSystemPanel.setVisible(false);
+            RoomSectionPanel.setVisible(true);
+            MenuOpenButton.setVisible(true);
+            ExitMessageMainWindow.setVisible(false);
+            
+        if (LoginEnabled < 2) {
+            ExitMessageWindow.setVisible(false);
+            Timer timer2 = new Timer(500, e -> {
+            jScrollPane2.setVisible(true);
+            });
+            timer2.setRepeats(false);
+            timer2.start();
+        }
+    }//GEN-LAST:event_ContinueButtonLoginActionPerformed
+
     
     
     /**
@@ -2181,11 +2305,15 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel CheckinA1;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JButton ConfirmButtonA1Checkin;
+    private javax.swing.JButton ContinueButtonLogin;
     private javax.swing.JPanel Decoration1;
     private javax.swing.JLabel DesignCheckin1;
+    private javax.swing.JButton ExitButtonLogin;
     private javax.swing.JButton ExitInfoButton;
     private javax.swing.JButton ExitLoginButton2;
     private javax.swing.JButton ExitMenuButton;
+    private javax.swing.JPanel ExitMessageMainWindow;
+    private javax.swing.JPanel ExitMessageWindow;
     private javax.swing.JButton GOSigninWindowButton;
     private javax.swing.JPanel InfoWindowA1;
     private javax.swing.JPanel InfoWindowA2;
@@ -2317,6 +2445,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextArea jTextArea9;
