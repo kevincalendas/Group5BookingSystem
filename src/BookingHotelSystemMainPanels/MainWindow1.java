@@ -79,23 +79,25 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     // Info A1 PaymentDetails Function
-    private void PaymentDetailsA1() {
+    public void PaymentDetailsA1() {
         //int values
+        System.out.println("PaymentDetailsAl() triggered!");
         int PriceDayA1 = 8499;
         int PriceNightA1 = 7499;
         
+        RoomSchedDayCheckinA1.addActionListener(e -> PaymentDetailsA1());
+        RoomSchedNightCheckinA1.addActionListener(e -> PaymentDetailsA1());
         
-        
-        if (RoomSchedDayCheckinA1.isSelected()) {
-            RoomSchedNightCheckinA1.setSelected(false);
-            TotalAmountA1Checkin.setText("PHP " + PriceDayA1);
+        if (() {
 
             
-        }
-        if (RoomSchedNightCheckinA1.isSelected()) {
+        } else if (RoomSchedNightCheckinA1.isSelected()) {
             RoomSchedDayCheckinA1.setSelected(false);
             TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
             
+        } else {
+            RoomSchedNightCheckinA1.setSelected(false);
+            TotalAmountA1Checkin.setText("PHP " + PriceDayA1);
         }
                
     }
@@ -1334,7 +1336,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         TotalAmountA1Checkin.setBackground(new java.awt.Color(255, 255, 255));
         TotalAmountA1Checkin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         TotalAmountA1Checkin.setForeground(new java.awt.Color(0, 0, 0));
-        TotalAmountA1Checkin.setText("10000");
         TotalAmountA1Checkin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         TotalAmountA1Checkin.setOpaque(true);
         TotalAmountA1Checkin.setPreferredSize(new java.awt.Dimension(250, 35));
@@ -1408,7 +1409,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomSchedNightCheckinA1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RoomSchedNightCheckinA1.setForeground(new java.awt.Color(227, 221, 203));
-        RoomSchedNightCheckinA1.setSelected(true);
         RoomSchedNightCheckinA1.setText("6:00PM - 6:00AM Overnight");
         RoomSchedNightCheckinA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1863,10 +1863,12 @@ public class MainWindow1 extends javax.swing.JFrame {
             RoomSectionPanel.setVisible(false);
             RoomInfoPanel.setVisible(false);
             AccountInfoWindow.setVisible(false);
+            
             //Opening main Login Window
             LoginSystemPanel.setVisible(true);
             RegisterFormWindow.setVisible(false);
             LoginFormWindow.setVisible(true);
+            Background4.setVisible(true);
             
         } else {
             //turning off Panels
