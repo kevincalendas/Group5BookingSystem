@@ -20,6 +20,8 @@ import javax.swing.JOptionPane;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.ButtonGroup;
+
 /**
  *
  * @author Kevin
@@ -41,6 +43,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInPayment.setVisible(false);
         ExitMessageWindow.setVisible(false);
         
+        //Checkout A1 Room info Action listeners
+        
         try {
             connection();
         } catch (SQLException ex) {
@@ -61,9 +65,9 @@ public class MainWindow1 extends javax.swing.JFrame {
     //method for connection :>
     // "Db" means Database
     private static final String DbDriver = "com.mysql.cj.jdbc.Driver";
-    private static final String DbURL = "jdbc:mysql://localhost:3306/hotelusers";
-    private static final String DbPhoneNumber= "root";
-    private static final String DbPassword = "";
+    private static final String DbURL = "jdbc:mysql://192.168.1.12:3306/hotelusers";
+    private static final String DbPhoneNumber= "HotelBookingSystemGroup5";
+    private static final String DbPassword = "HotelBookingSystem102412";
     
     public void connection() throws SQLException {
         try {
@@ -79,25 +83,24 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     // Info A1 PaymentDetails Function
-    public void PaymentDetailsA1() {
+    private void PaymentDetailsA1() {
         //int values
         System.out.println("PaymentDetailsAl() triggered!");
         int PriceDayA1 = 8499;
         int PriceNightA1 = 7499;
+        String Price
+        ButtonGroup group = new ButtonGroup();
+        group.add(RoomSchedDayCheckinA1);
+        group.add(RoomSchedNightCheckinA1); 
         
         RoomSchedDayCheckinA1.addActionListener(e -> PaymentDetailsA1());
         RoomSchedNightCheckinA1.addActionListener(e -> PaymentDetailsA1());
         
-        if (() {
-
-            
-        } else if (RoomSchedNightCheckinA1.isSelected()) {
-            RoomSchedDayCheckinA1.setSelected(false);
-            TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
-            
-        } else {
-            RoomSchedNightCheckinA1.setSelected(false);
+        if (RoomSchedDayCheckinA1.isSelected()) {
             TotalAmountA1Checkin.setText("PHP " + PriceDayA1);
+        }
+        if (RoomSchedNightCheckinA1.isSelected()) {
+            TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
         }
                
     }
@@ -114,6 +117,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         MenuOpenButton = new javax.swing.JButton();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
@@ -2132,15 +2136,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_CheckInGuestNameA2ActionPerformed
 
     private void RoomSchedNightCheckinA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedNightCheckinA1ActionPerformed
-        // TODO add your handling code here:
+        //
+        PaymentDetailsA1();
     }//GEN-LAST:event_RoomSchedNightCheckinA1ActionPerformed
 
     private void RoomSchedDayCheckinA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA1ActionPerformed
         // Room Schedule Day Check in day selected
-        if ( RoomSchedDayCheckinA1.isSelected() ) {
-            RoomSchedNightCheckinA1.setSelected(false);
-            
-        }
+        PaymentDetailsA1();
         
     }//GEN-LAST:event_RoomSchedDayCheckinA1ActionPerformed
 
@@ -2373,6 +2375,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextField UsernameSigninInput1;
     private javax.swing.JButton ViewHotelFeatureButton;
     private javax.swing.JButton ViewHotelFeatureButton1;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
