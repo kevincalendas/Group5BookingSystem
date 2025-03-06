@@ -104,7 +104,37 @@ public class MainWindow1 extends javax.swing.JFrame {
                
     }
     
-    
+    private void CreateAccountButton () {
+         //Sign up button 
+        String PhoneNumber, Username, Password;
+        
+        
+        if ("".equals(NumberSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
+        }
+        if ("".equals(UsernameSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Username");
+        }
+        if ("".equals(PasswordSignUpInput.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Password");
+        } else {
+            PhoneNumber = NumberSignUpInput.getText();
+            Username = UsernameSignUpInput.getText();
+            Password = PasswordSignUpInput.getText();
+            String queryRegister = "INSERT into hotelusersdatabase(PhoneNumber, Username, Password)"
+                    + "VALUES ('" + PhoneNumber + "','"+ Username + "','"+ Password +"')";
+            try {   
+                Stmt.execute(queryRegister);
+            } catch (SQLException ex) {
+                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+               
+            }
+            JOptionPane.showMessageDialog(new JFrame(), "Created Account! You can now sign in with an existed account.");
+            NumberSignUpInput.setText("");
+            UsernameSignUpInput.setText("");
+            PasswordSignUpInput.setText("");
+        }
+    }
     
     
     /**
@@ -2028,31 +2058,9 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_ExitLoginButton2ActionPerformed
 
     private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
-        //Sign up button 
-        String PhoneNumber, Username, Password;
+        CreateAccountButton();
         
         
-        if ("".equals(NumberSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
-        }
-        if ("".equals(UsernameSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Username");
-        }
-        if ("".equals(PasswordSignUpInput.getText())) {
-            JOptionPane.showMessageDialog(new JFrame(), "Required Password");
-        } else {
-            PhoneNumber = NumberSignUpInput.getText();
-            Username = UsernameSignUpInput.getText();
-            Password = PasswordSignUpInput.getText();
-            String queryRegister = "INSERT into hotelusersdatabase(PhoneNumber, Username, Password)"
-                    + "VALUES ('" + PhoneNumber + "','"+ Username + "','"+ Password +"')";
-            try {   
-                Stmt.execute(queryRegister);
-            } catch (SQLException ex) {
-                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
-                JOptionPane.showMessageDialog(new JFrame(), "Created Account! You can now sign in with an existed account.");
-            }
-        }
     }//GEN-LAST:event_SignUpButton1ActionPerformed
 
     private void GOSigninWindowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GOSigninWindowButtonActionPerformed
