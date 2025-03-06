@@ -65,9 +65,9 @@ public class MainWindow1 extends javax.swing.JFrame {
     //method for connection :>
     // "Db" means Database
     private static final String DbDriver = "com.mysql.cj.jdbc.Driver";
-    private static final String DbURL = "jdbc:mysql://192.168.1.12:3306/hotelusers";
-    private static final String DbPhoneNumber= "HotelBookingSystemGroup5";
-    private static final String DbPassword = "HotelBookingSystem102412";
+    private static final String DbURL = "jdbc:mysql://localhost:3306/HotelUsers";
+    private static final String DbPhoneNumber= "root";
+    private static final String DbPassword = "";
     
     public void connection() throws SQLException {
         try {
