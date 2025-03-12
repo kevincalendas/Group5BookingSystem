@@ -564,7 +564,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel2.setOpaque(false);
         RoomBSelectionPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        RoomB2S1.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB2S1.setBackground(new java.awt.Color(0,0,0, 90));
         RoomB2S1.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB2S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -606,7 +606,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomBSelectionPanel2.add(RoomB2S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
-        RoomB1S1.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB1S1.setBackground(new java.awt.Color(0,0,0, 90));
         RoomB1S1.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB1S1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -678,7 +678,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomBSelectionPanel1.setOpaque(false);
         RoomBSelectionPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        RoomB2S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB2S.setBackground(new java.awt.Color(0,0,0, 90));
         RoomB2S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -720,7 +720,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomBSelectionPanel1.add(RoomB2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
-        RoomB1S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomB1S.setBackground(new java.awt.Color(0,0,0, 90));
         RoomB1S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomB1S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -808,7 +808,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomASelectionPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
-        RoomA2S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomA2S.setBackground(new java.awt.Color(0,0,0, 90));
         RoomA2S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomA2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -852,7 +852,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         RoomASelectionPanel.add(RoomA2S, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
-        RoomA1S.setBackground(new java.awt.Color(238, 236, 200, 90));
+        RoomA1S.setBackground(new java.awt.Color(0,0,0, 90));
         RoomA1S.setPreferredSize(new java.awt.Dimension(250, 300));
         RoomA1S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1261,7 +1261,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jTextArea12.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea12.setLineWrap(true);
         jTextArea12.setRows(5);
-        jTextArea12.setText("- Size: 45 sqm.\n- Capacity/Pax: 1-10 guests.\n- Bed Type: 2 Queen Beds, 2 King Beds.\n- Amenities: Free Wifi, Air Conditioned, 65\" Smart TV,    Living Room, Dining Area, Kitchenette, Private Jacuzzi, Exclusive Lounge Access, Buffet Service, Complimentary Breakfast.\n- 2 Guest Rooms.\n- Free Access: GYM, Pool.\n- Price per Night: PHP 55,499\n- Price per Day: PHP 60,499");
+        jTextArea12.setText("- Capacity/Pax: 1-10 guests.\n- Bed Type: 2 Queen Beds, 2 King Beds.\n- Amenities: Free Wifi, Air Conditioned, 65\" Smart TV,    Living Room, Dining Area, Kitchenette, Private Jacuzzi, Exclusive Lounge Access, Buffet Service, Complimentary Breakfast.\n- 2 Guest Rooms.\n- Free Access: GYM, Pool.\n- Price per Night: PHP 55,499\n- Price per Day: PHP 60,499");
         jTextArea12.setFocusable(false);
         jTextArea12.setOpaque(false);
         InfoWindowC2.add(jTextArea12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 470, 250));
@@ -1368,7 +1368,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         TotalAmountA1Checkin.setBackground(new java.awt.Color(255, 255, 255));
         TotalAmountA1Checkin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TotalAmountA1Checkin.setForeground(new java.awt.Color(0, 0, 0));
         TotalAmountA1Checkin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         TotalAmountA1Checkin.setOpaque(true);
         TotalAmountA1Checkin.setPreferredSize(new java.awt.Dimension(250, 35));
@@ -1381,9 +1380,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel8.setText("Payment & Confirmation");
         CheckinA1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 400, 46));
 
-        MaxDaysCheckinA1.setBackground(new java.awt.Color(255, 255, 255));
         MaxDaysCheckinA1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MaxDaysCheckinA1.setForeground(new java.awt.Color(0, 0, 0));
         MaxDaysCheckinA1.setText(" 1 - 12 MAX");
         MaxDaysCheckinA1.setToolTipText("");
         MaxDaysCheckinA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
@@ -1410,8 +1407,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         AddressLabel.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA1.add(AddressLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 110, -1));
 
-        CheckInGuestNameA2.setBackground(new java.awt.Color(255, 255, 255));
-        CheckInGuestNameA2.setForeground(new java.awt.Color(0, 0, 0));
         CheckInGuestNameA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         CheckInGuestNameA2.setOpaque(true);
         CheckInGuestNameA2.setPreferredSize(new java.awt.Dimension(250, 35));
@@ -1426,7 +1421,6 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         DesignCheckin1.setBackground(new java.awt.Color(255, 255, 255));
         DesignCheckin1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        DesignCheckin1.setForeground(new java.awt.Color(0, 0, 0));
         DesignCheckin1.setText(" Standard Room 1");
         DesignCheckin1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         DesignCheckin1.setOpaque(true);
@@ -1485,8 +1479,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInGuestAddressA6.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA1.add(CheckInGuestAddressA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 160, -1));
 
-        CheckInGuestAddressA1.setBackground(new java.awt.Color(255, 255, 255));
-        CheckInGuestAddressA1.setForeground(new java.awt.Color(0, 0, 0));
         CheckInGuestAddressA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         CheckInGuestAddressA1.setOpaque(true);
         CheckInGuestAddressA1.setPreferredSize(new java.awt.Dimension(250, 35));
@@ -2075,7 +2067,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_GOSigninWindowButtonActionPerformed
 
     private void RoomA1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomA1ButtonActionPerformed
-        // opening book info 1
+            // opening book info 1
         RoomInfoPanel.setVisible(true);
         InfoWindows.setVisible(true);
         InfoWindowA1.setVisible(true);
