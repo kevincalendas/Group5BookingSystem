@@ -1,5 +1,8 @@
-package BookingHotelSystemMainPanels;
 
+package BookingPanels;
+
+
+    
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -86,6 +89,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     
     //Connection to database method ;>
     int LoginEnabled = 1;
+    int RoomBooked = 1;
      Connection con;
      Statement Stmt;
      PreparedStatement pst;
@@ -111,11 +115,16 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     // Info A1 PaymentDetails Function
-    private void PaymentDetailsA1() {
+    public void PaymentDetailsA1() {
         //int values
         System.out.println("PaymentDetailsAl() triggered!");
+        String inputDays = MaxDaysCheckinA1.getText();
+        
+        
         int PriceDayA1 = 8499;
         int PriceNightA1 = 7499;
+        int Days = Integer.parseInt(inputDays);
+        int result = 0;
         ButtonGroup group = new ButtonGroup();
         group.add(RoomSchedDayCheckinA1);
         group.add(RoomSchedNightCheckinA1); 
@@ -125,11 +134,29 @@ public class MainWindow1 extends javax.swing.JFrame {
         
         if (RoomSchedDayCheckinA1.isSelected()) {
             TotalAmountA1Checkin.setText("PHP " + PriceDayA1);
-        }
-        if (RoomSchedNightCheckinA1.isSelected()) {
+        }else if (RoomSchedNightCheckinA1.isSelected()) {
             TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
         }
-               
+        
+        switch (Days) {
+            case 1:
+                if (RoomSchedDayCheckinA1.isSelected()) {
+                    result = PriceDayA1 * Days;
+                } else if (RoomSchedNightCheckinA1.isSelected()) {
+                    result = PriceNightA1 * Days;
+                }
+                break;
+            case 2:
+                if (RoomSchedDayCheckinA1.isSelected()) {
+                    result = PriceDayA1 * Days;
+                } else if (RoomSchedNightCheckinA1.isSelected()) {
+                    result = PriceNightA1 * Days;
+                }
+                break;
+                
+            }
+        }
+       
     }
     
 
@@ -326,6 +353,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         Background5 = new javax.swing.JLabel();
+        CheckInGuestAddressA9 = new javax.swing.JLabel();
         LoginSystemPanel = new javax.swing.JPanel();
         ExitMessageWindow = new javax.swing.JPanel();
         ExitMessageMainWindow = new javax.swing.JPanel();
@@ -1422,7 +1450,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckinA1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 400, 46));
 
         MaxDaysCheckinA1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MaxDaysCheckinA1.setText(" 1 - 12 MAX");
         MaxDaysCheckinA1.setToolTipText("");
         MaxDaysCheckinA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
         MaxDaysCheckinA1.setOpaque(true);
@@ -1487,9 +1514,9 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         CheckInGuestAddressA7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CheckInGuestAddressA7.setForeground(new java.awt.Color(227, 221, 203));
-        CheckInGuestAddressA7.setText("Room Schedule");
+        CheckInGuestAddressA7.setText("1 -12 MAX");
         CheckInGuestAddressA7.setPreferredSize(new java.awt.Dimension(50, 30));
-        CheckinA1.add(CheckInGuestAddressA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 110, -1));
+        CheckinA1.add(CheckInGuestAddressA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 383, 150, -1));
 
         LabelCheckinA1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         LabelCheckinA1.setForeground(new java.awt.Color(227, 221, 203));
@@ -1557,6 +1584,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         Background5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View Main Intro Blurred100.jpg"))); // NOI18N
         Background5.setPreferredSize(new java.awt.Dimension(1000, 500));
         CheckinA1.add(Background5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        CheckInGuestAddressA9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA9.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA9.setText("Room Schedule");
+        CheckInGuestAddressA9.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA1.add(CheckInGuestAddressA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 110, -1));
 
         CheckInPayment.add(CheckinA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -2340,6 +2373,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel CheckInGuestAddressA6;
     private javax.swing.JLabel CheckInGuestAddressA7;
     private javax.swing.JLabel CheckInGuestAddressA8;
+    private javax.swing.JLabel CheckInGuestAddressA9;
     private javax.swing.JTextField CheckInGuestNameA2;
     private javax.swing.JPanel CheckInPayment;
     private javax.swing.JPanel CheckinA1;
@@ -2495,4 +2529,4 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea9;
     // End of variables declaration//GEN-END:variables
     
-}
+
