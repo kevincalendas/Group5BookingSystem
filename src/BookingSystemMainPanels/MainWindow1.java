@@ -1,5 +1,6 @@
+package BookingSystemMainPanels;
 
-package BookingPanels;
+
 
 
     
@@ -138,24 +139,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             TotalAmountA1Checkin.setText("PHP " + PriceNightA1);
         }
         
-        switch (Days) {
-            case 1:
-                if (RoomSchedDayCheckinA1.isSelected()) {
-                    result = PriceDayA1 * Days;
-                } else if (RoomSchedNightCheckinA1.isSelected()) {
-                    result = PriceNightA1 * Days;
-                }
-                break;
-            case 2:
-                if (RoomSchedDayCheckinA1.isSelected()) {
-                    result = PriceDayA1 * Days;
-                } else if (RoomSchedNightCheckinA1.isSelected()) {
-                    result = PriceNightA1 * Days;
-                }
-                break;
-                
-            }
-        }
+        
        
     }
     
@@ -2529,4 +2513,4 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea9;
     // End of variables declaration//GEN-END:variables
     
-
+}
