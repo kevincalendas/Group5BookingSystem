@@ -170,6 +170,33 @@ public class MainWindow1 extends javax.swing.JFrame {
                     TotalAmountA1Checkin.setText("PHP " + result);
                 }
                 break;
+            case 5 :
+                if (RoomSchedDayCheckinA1.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                } else if (RoomSchedNightCheckinA1.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                }
+                break;
+            case 6 :
+                if (RoomSchedDayCheckinA1.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                } else if (RoomSchedNightCheckinA1.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                }
+                break;
+            case 7 :
+                if (RoomSchedDayCheckinA1.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                } else if (RoomSchedNightCheckinA1.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    TotalAmountA1Checkin.setText("PHP " + result);
+                }
+                break;
                 
         }
        
@@ -207,7 +234,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             String queryRegister = "INSERT into hotelusersdatabase(PhoneNumber, Username, Password)"
                     + "VALUES ('" + PhoneNumber + "','"+ Username + "','"+ Password +"')";
             try {   
-                Stmt.execute(queryRegister);
+                    Stmt.execute(queryRegister);
             } catch (SQLException ex) {
                 Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
                
