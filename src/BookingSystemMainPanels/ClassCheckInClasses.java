@@ -4,10 +4,19 @@
  */
 package BookingSystemMainPanels;
 
+
+//imports
+import javax.swing.*;
 /**
  *
  * @author Kev
  */
-public class NewClass {
+public class ClassCheckInClasses {
+    private MainWindow1 mainWindow1;
     
+    public ClassCheckInClasses(MainWindow1 mainWindow1) {
+        this.mainWindow1 = mainWindow1;
+    }
+    
+        
 }
