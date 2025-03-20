@@ -2046,7 +2046,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         AccountInfoWindow.setPreferredSize(new java.awt.Dimension(1000, 500));
 
-        jLabel57.setText("Accoujnt");
+        jLabel57.setText("Account");
 
         Background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
         Background2.setPreferredSize(new java.awt.Dimension(1000, 500));
@@ -2056,9 +2056,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         AccountInfoWindowLayout.setHorizontalGroup(
             AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AccountInfoWindowLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(443, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(911, Short.MAX_VALUE))
             .addGroup(AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AccountInfoWindowLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2068,9 +2068,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         AccountInfoWindowLayout.setVerticalGroup(
             AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AccountInfoWindowLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(393, Short.MAX_VALUE))
+                .addGap(54, 54, 54)
+                .addComponent(jLabel57)
+                .addContainerGap(430, Short.MAX_VALUE))
             .addGroup(AccountInfoWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AccountInfoWindowLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
