@@ -634,7 +634,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         Title1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Title1.setText("Luxury Escape");
         Title1.setPreferredSize(new java.awt.Dimension(300, 50));
-        MainPanel1.add(Title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        MainPanel1.add(Title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 350, -1));
 
         CompanyTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CompanyTitle.setForeground(new java.awt.Color(248, 245, 222));
@@ -948,7 +948,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomA2S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel14.setBackground(new java.awt.Color(51, 51, 51, 200));
-        jPanel14.setForeground(new java.awt.Color(0, 0, 0));
         jPanel14.setPreferredSize(new java.awt.Dimension(250, 25));
 
         jLabel30.setBackground(new java.awt.Color(238, 236, 200));
@@ -1020,7 +1019,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomA1S.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel15.setBackground(new java.awt.Color(51, 51, 51, 200));
-        jPanel15.setForeground(new java.awt.Color(0, 0, 0));
         jPanel15.setPreferredSize(new java.awt.Dimension(250, 25));
 
         jLabel31.setBackground(new java.awt.Color(238, 236, 200));
