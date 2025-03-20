@@ -119,7 +119,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     // Info A1 PaymentDetails Function
-    private void PaymentDetailsA1() {
+    public void PaymentDetailsA1() {
         //int values
         System.out.println("PaymentDetailsAl() triggered!");
         String inputDays = MaxDaysCheckinA1.getText();
@@ -203,10 +203,6 @@ public class MainWindow1 extends javax.swing.JFrame {
                 
         }
         
-        String guestname, address, roomtype, roomprice, bookingsched, totalamount, paymentmethod;
-        
-        String CheckinGetA1 = "INSERT into hotelusersdatabase(GuestName, Address, RoomType, RoomPrice, BookingSched, TotalAmount, PaymentMethod)"
-                    + "VALUES ('" + guestname + "','"+ address + "','"+ Password +"')";
        
     }
     
