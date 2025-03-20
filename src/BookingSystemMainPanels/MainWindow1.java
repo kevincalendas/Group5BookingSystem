@@ -119,7 +119,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     }
     
     // Info A1 PaymentDetails Function
-    public void PaymentDetailsA1() {
+    private void PaymentDetailsA1() {
         //int values
         System.out.println("PaymentDetailsAl() triggered!");
         String inputDays = MaxDaysCheckinA1.getText();
@@ -202,6 +202,11 @@ public class MainWindow1 extends javax.swing.JFrame {
                 break;
                 
         }
+        
+        String guestname, address, roomtype, roomprice, bookingsched, totalamount, paymentmethod;
+        
+        String CheckinGetA1 = "INSERT into hotelusersdatabase(GuestName, Address, RoomType, RoomPrice, BookingSched, TotalAmount, PaymentMethod)"
+                    + "VALUES ('" + guestname + "','"+ address + "','"+ Password +"')";
        
     }
     
@@ -220,16 +225,22 @@ public class MainWindow1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(new JFrame(), "Required Password");
         }  if (NumberSignUpInput.getText().length() > 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
+            NumberSignUpInput.setText("");
         }  if (NumberSignUpInput.getText().length() < 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
+            NumberSignUpInput.setText("");
         }  if (UsernameSignUpInput.getText().length() > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
+            UsernameSignUpInput.setText("");
         }  if (UsernameSignUpInput.getText().length() < 5) {
             JOptionPane.showMessageDialog(new JFrame(), "Username should be minimum of 5 letters.");
+            UsernameSignUpInput.setText("");
         }  if (PasswordSignUpInput.getText().length() > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
+            PasswordSignUpInput.setText("");
         }  if (PasswordSignUpInput.getText().length() < 8) {
             JOptionPane.showMessageDialog(new JFrame(), "minimum 8 characters allowed!");
+            PasswordSignUpInput.setText("");
         } else {
             PhoneNumber = NumberSignUpInput.getText();
             Username = UsernameSignUpInput.getText();
@@ -287,6 +298,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         Title2 = new javax.swing.JLabel();
         RoomSectionPanel = new javax.swing.JPanel();
+        CompanyNameLabel = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         RoomBSelectionPanel2 = new javax.swing.JPanel();
@@ -339,7 +351,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        CompanyNameLabel = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
         RoomInfoPanel = new javax.swing.JPanel();
         InfoWindows = new javax.swing.JPanel();
@@ -675,6 +686,13 @@ public class MainWindow1 extends javax.swing.JFrame {
         getContentPane().add(MainPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomSectionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        CompanyNameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        CompanyNameLabel.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        CompanyNameLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CompanyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CompanyNameLabel.setText("Auqeza Suites");
+        RoomSectionPanel.add(CompanyNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 0, 820, 40));
 
         jScrollPane2.setBackground(new java.awt.Color(0, 0, 0));
         jScrollPane2.setBorder(null);
@@ -1113,13 +1131,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jPanel1);
 
         RoomSectionPanel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 980, -1));
-
-        CompanyNameLabel.setBackground(new java.awt.Color(255, 255, 255));
-        CompanyNameLabel.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        CompanyNameLabel.setForeground(new java.awt.Color(255, 255, 255));
-        CompanyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CompanyNameLabel.setText("Auqeza Suites");
-        RoomSectionPanel.add(CompanyNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 0, 820, 40));
 
         Background.setBackground(new java.awt.Color(0, 0, 0));
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View Main Intro Blurred100.jpg"))); // NOI18N
@@ -1662,8 +1673,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         AddressLabel.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA1.add(AddressLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 110, -1));
 
-        CheckInGuestNameA2.setForeground(new java.awt.Color(255, 255, 255));
         CheckInGuestNameA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        CheckInGuestNameA2.setFocusTraversalPolicyProvider(true);
         CheckInGuestNameA2.setPreferredSize(new java.awt.Dimension(250, 35));
         CheckInGuestNameA2.setRequestFocusEnabled(false);
         CheckInGuestNameA2.setVerifyInputWhenFocusTarget(false);
@@ -1713,8 +1724,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInGuestAddressA6.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA1.add(CheckInGuestAddressA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 160, -1));
 
-        CheckInGuestAddressA1.setForeground(new java.awt.Color(255, 255, 255));
         CheckInGuestAddressA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        CheckInGuestAddressA1.setFocusTraversalPolicyProvider(true);
         CheckInGuestAddressA1.setPreferredSize(new java.awt.Dimension(250, 35));
         CheckInGuestAddressA1.setRequestFocusEnabled(false);
         CheckInGuestAddressA1.setVerifyInputWhenFocusTarget(false);
@@ -1865,6 +1876,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         LoginFormWindow.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 30));
 
         PasswordSigninInput1.setBackground(new java.awt.Color(76, 71, 51));
+        PasswordSigninInput1.setForeground(new java.awt.Color(255, 255, 255));
         PasswordSigninInput1.setBorder(null);
         PasswordSigninInput1.setPreferredSize(new java.awt.Dimension(250, 35));
         PasswordSigninInput1.addActionListener(new java.awt.event.ActionListener() {
@@ -1876,6 +1888,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         UsernameSigninInput1.setBackground(new java.awt.Color(76, 71, 51));
         UsernameSigninInput1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        UsernameSigninInput1.setForeground(new java.awt.Color(255, 255, 255));
         UsernameSigninInput1.setBorder(null);
         UsernameSigninInput1.setFocusTraversalPolicyProvider(true);
         UsernameSigninInput1.setInheritsPopupMenu(true);
@@ -1939,6 +1952,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         NumberSignUpInput.setBackground(new java.awt.Color(96, 85, 63));
         NumberSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        NumberSignUpInput.setForeground(new java.awt.Color(255, 255, 255));
         NumberSignUpInput.setBorder(null);
         NumberSignUpInput.setFocusCycleRoot(true);
         NumberSignUpInput.setInheritsPopupMenu(true);
@@ -1952,6 +1966,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         UsernameSignUpInput.setBackground(new java.awt.Color(96, 85, 63));
         UsernameSignUpInput.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        UsernameSignUpInput.setForeground(new java.awt.Color(255, 255, 255));
         UsernameSignUpInput.setBorder(null);
         UsernameSignUpInput.setFocusCycleRoot(true);
         UsernameSignUpInput.setInheritsPopupMenu(true);
@@ -1964,6 +1979,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RegisterFormWindow.add(UsernameSignUpInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
 
         PasswordSignUpInput.setBackground(new java.awt.Color(96, 85, 63));
+        PasswordSignUpInput.setForeground(new java.awt.Color(255, 255, 255));
         PasswordSignUpInput.setBorder(null);
         PasswordSignUpInput.setPreferredSize(new java.awt.Dimension(250, 35));
         PasswordSignUpInput.addActionListener(new java.awt.event.ActionListener() {
