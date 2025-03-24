@@ -543,7 +543,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
         MaxDaysCheckinA2 = new javax.swing.JTextField();
-        TotalAmountA1Checkin1 = new javax.swing.JTextField();
         CheckinA2 = new javax.swing.JPanel();
         OnlinePaymentChooseA2 = new javax.swing.JPanel();
         Designnn1 = new javax.swing.JPanel();
@@ -559,7 +558,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         PaymentMethodCheckin3A2 = new javax.swing.JRadioButton();
         CheckInGuestNameA2 = new javax.swing.JTextField();
         CheckInGuestAddressA2 = new javax.swing.JTextField();
-        TotalAmountA1Checkin2 = new javax.swing.JTextField();
+        TotalAmountA2Checkin = new javax.swing.JTextField();
         CheckInGuestAddressA10 = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
         MaxDaysCheckinA3 = new javax.swing.JTextField();
@@ -605,7 +604,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel101 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
         MaxDaysCheckinA4 = new javax.swing.JTextField();
-        TotalAmountA1Checkin3 = new javax.swing.JTextField();
         LoginSystemPanel = new javax.swing.JPanel();
         AccountInfoPanel = new javax.swing.JPanel();
         ExitMessageWindow = new javax.swing.JPanel();
@@ -2321,22 +2319,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         CheckinA1.add(MaxDaysCheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
 
-        TotalAmountA1Checkin1.setEditable(false);
-        TotalAmountA1Checkin1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TotalAmountA1Checkin1.setText("1");
-        TotalAmountA1Checkin1.setToolTipText("");
-        TotalAmountA1Checkin1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        TotalAmountA1Checkin1.setFocusTraversalPolicyProvider(true);
-        TotalAmountA1Checkin1.setPreferredSize(new java.awt.Dimension(250, 35));
-        TotalAmountA1Checkin1.setRequestFocusEnabled(false);
-        TotalAmountA1Checkin1.setVerifyInputWhenFocusTarget(false);
-        TotalAmountA1Checkin1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TotalAmountA1Checkin1ActionPerformed(evt);
-            }
-        });
-        CheckinA1.add(TotalAmountA1Checkin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
-
         CheckInPayment.add(CheckinA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         CheckinA2.setBackground(new java.awt.Color(255, 255, 255));
@@ -2499,21 +2481,21 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         CheckinA2.add(CheckInGuestAddressA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 250, -1));
 
-        TotalAmountA1Checkin2.setEditable(false);
-        TotalAmountA1Checkin2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TotalAmountA1Checkin2.setText("1");
-        TotalAmountA1Checkin2.setToolTipText("");
-        TotalAmountA1Checkin2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        TotalAmountA1Checkin2.setFocusTraversalPolicyProvider(true);
-        TotalAmountA1Checkin2.setPreferredSize(new java.awt.Dimension(250, 35));
-        TotalAmountA1Checkin2.setRequestFocusEnabled(false);
-        TotalAmountA1Checkin2.setVerifyInputWhenFocusTarget(false);
-        TotalAmountA1Checkin2.addActionListener(new java.awt.event.ActionListener() {
+        TotalAmountA2Checkin.setEditable(false);
+        TotalAmountA2Checkin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TotalAmountA2Checkin.setText("1");
+        TotalAmountA2Checkin.setToolTipText("");
+        TotalAmountA2Checkin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        TotalAmountA2Checkin.setFocusTraversalPolicyProvider(true);
+        TotalAmountA2Checkin.setPreferredSize(new java.awt.Dimension(250, 35));
+        TotalAmountA2Checkin.setRequestFocusEnabled(false);
+        TotalAmountA2Checkin.setVerifyInputWhenFocusTarget(false);
+        TotalAmountA2Checkin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TotalAmountA1Checkin2ActionPerformed(evt);
+                TotalAmountA2CheckinActionPerformed(evt);
             }
         });
-        CheckinA2.add(TotalAmountA1Checkin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
+        CheckinA2.add(TotalAmountA2Checkin, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
 
         CheckInGuestAddressA10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CheckInGuestAddressA10.setForeground(new java.awt.Color(227, 221, 203));
@@ -2839,22 +2821,6 @@ public class MainWindow1 extends javax.swing.JFrame {
             }
         });
         CheckinA2.add(MaxDaysCheckinA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
-
-        TotalAmountA1Checkin3.setEditable(false);
-        TotalAmountA1Checkin3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TotalAmountA1Checkin3.setText("1");
-        TotalAmountA1Checkin3.setToolTipText("");
-        TotalAmountA1Checkin3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        TotalAmountA1Checkin3.setFocusTraversalPolicyProvider(true);
-        TotalAmountA1Checkin3.setPreferredSize(new java.awt.Dimension(250, 35));
-        TotalAmountA1Checkin3.setRequestFocusEnabled(false);
-        TotalAmountA1Checkin3.setVerifyInputWhenFocusTarget(false);
-        TotalAmountA1Checkin3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TotalAmountA1Checkin3ActionPerformed(evt);
-            }
-        });
-        CheckinA2.add(TotalAmountA1Checkin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
 
         CheckInPayment.add(CheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -3707,10 +3673,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MaxDaysCheckinA2ActionPerformed
 
-    private void TotalAmountA1Checkin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountA1Checkin1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TotalAmountA1Checkin1ActionPerformed
-
     private void OnlinePaymentButton1GA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA1ActionPerformed
         //GCASH PAYMENT CONFIRMED ROOMA1
         
@@ -3752,73 +3714,69 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_EmailAddressSignUpInputActionPerformed
 
-    private void GcashOptionA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GcashOptionA2ActionPerformed
+    private void MaxDaysCheckinA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_GcashOptionA2ActionPerformed
-
-    private void PaymayaOptionA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymayaOptionA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PaymayaOptionA2ActionPerformed
-
-    private void UpdatePriceA2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdatePriceA2ButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_UpdatePriceA2ButtonActionPerformed
-
-    private void ConfirmButtonA2CheckinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmButtonA2CheckinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ConfirmButtonA2CheckinActionPerformed
-
-    private void RoomSchedNightCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedNightCheckinA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RoomSchedNightCheckinA2ActionPerformed
-
-    private void RoomSchedDayCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RoomSchedDayCheckinA2ActionPerformed
-
-    private void PaymentMethodCheckin1A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin1A2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PaymentMethodCheckin1A2ActionPerformed
-
-    private void PaymentMethodCheckin2A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin2A2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PaymentMethodCheckin2A2ActionPerformed
-
-    private void PaymentMethodCheckin3A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin3A2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PaymentMethodCheckin3A2ActionPerformed
-
-    private void CheckInGuestNameA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestNameA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CheckInGuestNameA2ActionPerformed
-
-    private void CheckInGuestAddressA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestAddressA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CheckInGuestAddressA2ActionPerformed
-
-    private void TotalAmountA1Checkin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountA1Checkin2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TotalAmountA1Checkin2ActionPerformed
-
-    private void MaxDaysCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MaxDaysCheckinA3ActionPerformed
-
-    private void OnlinePaymentButton1GA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OnlinePaymentButton1GA3ActionPerformed
+    }//GEN-LAST:event_MaxDaysCheckinA4ActionPerformed
 
     private void OnlinePaymentButton1GA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_OnlinePaymentButton1GA4ActionPerformed
 
-    private void MaxDaysCheckinA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA4ActionPerformed
+    private void OnlinePaymentButton1GA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_MaxDaysCheckinA4ActionPerformed
+    }//GEN-LAST:event_OnlinePaymentButton1GA3ActionPerformed
 
-    private void TotalAmountA1Checkin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountA1Checkin3ActionPerformed
+    private void MaxDaysCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TotalAmountA1Checkin3ActionPerformed
+    }//GEN-LAST:event_MaxDaysCheckinA3ActionPerformed
+
+    private void TotalAmountA2CheckinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountA2CheckinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TotalAmountA2CheckinActionPerformed
+
+    private void CheckInGuestAddressA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestAddressA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CheckInGuestAddressA2ActionPerformed
+
+    private void CheckInGuestNameA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestNameA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CheckInGuestNameA2ActionPerformed
+
+    private void PaymentMethodCheckin3A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin3A2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaymentMethodCheckin3A2ActionPerformed
+
+    private void PaymentMethodCheckin2A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin2A2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaymentMethodCheckin2A2ActionPerformed
+
+    private void PaymentMethodCheckin1A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin1A2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaymentMethodCheckin1A2ActionPerformed
+
+    private void RoomSchedDayCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RoomSchedDayCheckinA2ActionPerformed
+
+    private void RoomSchedNightCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedNightCheckinA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RoomSchedNightCheckinA2ActionPerformed
+
+    private void ConfirmButtonA2CheckinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmButtonA2CheckinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ConfirmButtonA2CheckinActionPerformed
+
+    private void UpdatePriceA2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdatePriceA2ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UpdatePriceA2ButtonActionPerformed
+
+    private void PaymayaOptionA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymayaOptionA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaymayaOptionA2ActionPerformed
+
+    private void GcashOptionA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GcashOptionA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GcashOptionA2ActionPerformed
 
     
     
@@ -3973,9 +3931,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JTextField TotalAmountA1Checkin;
-    private javax.swing.JTextField TotalAmountA1Checkin1;
-    private javax.swing.JTextField TotalAmountA1Checkin2;
-    private javax.swing.JTextField TotalAmountA1Checkin3;
+    private javax.swing.JTextField TotalAmountA2Checkin;
     private javax.swing.JButton UpdatePriceA1Button;
     private javax.swing.JButton UpdatePriceA2Button;
     private javax.swing.JLabel UserNameGreetings;
