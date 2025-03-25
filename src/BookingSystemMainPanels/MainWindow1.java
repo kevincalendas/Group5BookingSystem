@@ -518,6 +518,13 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         MenuOpenButton = new javax.swing.JButton();
         HotelFeaturesPanel = new javax.swing.JPanel();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
         MenuButtonsPanels = new javax.swing.JPanel();
         UserNameGreetings = new javax.swing.JLabel();
         ViewHotelFeatureButton = new javax.swing.JButton();
@@ -790,8 +797,47 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         getContentPane().add(MenuOpenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        HotelFeaturesPanel.setBackground(new java.awt.Color(183, 163, 102));
         HotelFeaturesPanel.setPreferredSize(new java.awt.Dimension(1000, 500));
         HotelFeaturesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/dining.jpg"))); // NOI18N
+        jLabel100.setText("jLabel100");
+        jLabel100.setPreferredSize(new java.awt.Dimension(280, 340));
+        HotelFeaturesPanel.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 280, 340));
+
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/gym.jpg"))); // NOI18N
+        jLabel101.setText("jLabel101");
+        jLabel101.setPreferredSize(new java.awt.Dimension(280, 340));
+        HotelFeaturesPanel.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
+
+        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/pool.jpg"))); // NOI18N
+        jLabel102.setText("jLabel102");
+        jLabel102.setPreferredSize(new java.awt.Dimension(280, 340));
+        HotelFeaturesPanel.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, -1, -1));
+
+        jLabel103.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel103.setText("   Dining Area");
+        HotelFeaturesPanel.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 140, 40));
+
+        jLabel104.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel104.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel104.setText("   Gym Area");
+        jLabel104.setPreferredSize(new java.awt.Dimension(140, 40));
+        HotelFeaturesPanel.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, -1, -1));
+
+        jLabel105.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel105.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel105.setText("     Pool Area");
+        jLabel105.setPreferredSize(new java.awt.Dimension(140, 40));
+        HotelFeaturesPanel.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 110, -1, -1));
+
+        jLabel106.setFont(new java.awt.Font("Algerian", 1, 24)); // NOI18N
+        jLabel106.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel106.setText("                Why to choose us?");
+        HotelFeaturesPanel.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 440, 60));
+
         getContentPane().add(HotelFeaturesPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
@@ -3696,6 +3742,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
