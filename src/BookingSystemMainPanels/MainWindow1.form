@@ -2903,7 +2903,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="OnlinePayment2ndWindow1A2">
+                    <Container class="javax.swing.JPanel" name="OnlinePayment2ndWindow2A1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2911,7 +2911,7 @@
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                             <LineBorder thickness="3">
-                              <Color PropertyName="color" blue="ff" green="0" red="0" type="rgb"/>
+                              <Color PropertyName="color" blue="0" green="cc" red="0" type="rgb"/>
                             </LineBorder>
                           </Border>
                         </Property>
@@ -2933,7 +2933,7 @@
                           <Properties>
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/BookingHotelSystemIcons/GcashIconn.png"/>
+                              <Image iconType="3" name="/BookingHotelSystemIcons/PayMayaIcon-removebg-preview.png"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[225, 35]"/>
@@ -2941,14 +2941,14 @@
                           </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                              <AbsoluteConstraints x="0" y="20" width="180" height="-1"/>
+                              <AbsoluteConstraints x="10" y="20" width="180" height="-1"/>
                             </Constraint>
                           </Constraints>
                         </Component>
                         <Container class="javax.swing.JPanel" name="jPanel24">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="33" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[450, 2]"/>
@@ -2967,7 +2967,7 @@
                         <Container class="javax.swing.JPanel" name="jPanel25">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="33" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[450, 65]"/>
@@ -3012,7 +3012,7 @@
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="Successfully Payed!"/>
+                                <Property name="text" type="java.lang.String" value="Successfully Paid!"/>
                                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                                   <Dimension value="[200, 25]"/>
                                 </Property>
@@ -3041,7 +3041,7 @@
                           </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                              <AbsoluteConstraints x="170" y="30" width="80" height="-1"/>
+                              <AbsoluteConstraints x="200" y="30" width="80" height="-1"/>
                             </Constraint>
                           </Constraints>
                         </Component>
@@ -3088,7 +3088,7 @@
                         <Component class="javax.swing.JButton" name="OnlinePaymentButton1GA3">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="66" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="24" style="1"/>
@@ -3137,7 +3137,7 @@
                               <Color blue="99" green="99" red="99" type="rgb"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="using your GCash"/>
+                            <Property name="text" type="java.lang.String" value="using your PayMaya"/>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[200, 25]"/>
                             </Property>
@@ -3190,7 +3190,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="OnlinePaymentMainWindow1A2">
+                    <Container class="javax.swing.JPanel" name="OnlinePaymentMainWindow2A1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -3198,7 +3198,7 @@
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                             <LineBorder thickness="3">
-                              <Color PropertyName="color" blue="ff" green="0" red="0" type="rgb"/>
+                              <Color PropertyName="color" blue="0" green="cc" red="0" type="rgb"/>
                             </LineBorder>
                           </Border>
                         </Property>
@@ -3220,7 +3220,7 @@
                           <Properties>
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/BookingHotelSystemIcons/GcashIconn.png"/>
+                              <Image iconType="3" name="/BookingHotelSystemIcons/PayMayaIcon-removebg-preview.png"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[225, 35]"/>
@@ -3235,7 +3235,7 @@
                         <Container class="javax.swing.JPanel" name="jPanel26">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="33" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[450, 2]"/>
@@ -3254,7 +3254,7 @@
                         <Container class="javax.swing.JPanel" name="jPanel27">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="33" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[450, 65]"/>
@@ -3328,7 +3328,7 @@
                           </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                              <AbsoluteConstraints x="170" y="30" width="80" height="-1"/>
+                              <AbsoluteConstraints x="190" y="30" width="80" height="-1"/>
                             </Constraint>
                           </Constraints>
                         </Component>
@@ -3375,7 +3375,7 @@
                         <Component class="javax.swing.JButton" name="OnlinePaymentButton1GA4">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="66" red="33" type="rgb"/>
+                              <Color blue="0" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Arial" size="24" style="1"/>
