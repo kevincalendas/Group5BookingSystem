@@ -43,6 +43,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     public MainWindow1() {
         initComponents();
         
+        //hiding things
+            OnlinePaymentWindow1A1.setVisible(false);
+            OnlinePaymentMainWindow1A1.setVisible(false);
+            OnlinePaymentWindow2A1.setVisible(false);
+            OnlinePaymentMainWindow2A1.setVisible(false);
         
         //Payment Total Details Updated!!
         //scrolling smooth
@@ -63,7 +68,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         
         //total amount update Checkins
         TotalAmountA1Checkin.addActionListener(e -> PaymentDetailsA1());
-        TotalAmountA1Checkin1.addActionListener(e -> PaymentDetailsA2());
+        TotalAmountCheckinA2.addActionListener(e -> PaymentDetailsA2());
+        TotalAmountCheckinA3.addActionListener(e -> PaymentDetailsA3());
         try {
             connection();
         } catch (SQLException ex) {
@@ -145,88 +151,110 @@ public class MainWindow1 extends javax.swing.JFrame {
             case 1:
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 2:
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 3:
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 4:
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 5 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 6 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 7 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 8 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 9 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;
             case 10 :
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
                 break;    
             default:
                 if (RoomSchedDayCheckinA1.isSelected()) {
                     result = PriceDayA1 * 1;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA1.isSelected()) {
                     result = PriceNightA1 * 1;
+                    RoomPriceA1.setText("Room price selected: " + PriceDayA1);
                 }
                 TotalAmountA1Checkin.setText("PHP " + result);
         }
@@ -290,14 +318,13 @@ public class MainWindow1 extends javax.swing.JFrame {
             OnlinePaymentChooseA1.setVisible(true);
         }
     }
-
-    //make sure na i add yung mga radiobtton day/night check
+    //Info A2 PaymentDetails Function
     public void PaymentDetailsA2() {
         //int values
         String inputDays = MaxDaysCheckinA2.getText();
         
         int PriceDayA1 = 8499;
-        int PriceNightA1 = 7499;
+        int PriceNightA1 = 10499;
         int Days = Integer.parseInt(inputDays);
         int result = 0;
         ButtonGroup group = new ButtonGroup();
@@ -312,90 +339,124 @@ public class MainWindow1 extends javax.swing.JFrame {
             case 1:
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 2:
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 3:
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 4:
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 5 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 6 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 7 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 8 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 9 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
                 break;
             case 10 :
                 if (RoomSchedDayCheckinA2.isSelected()) {
                     result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
                     result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
-                break;    
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
+                break;  
             default:
                 if (RoomSchedDayCheckinA2.isSelected()) {
-                    result = PriceDayA1 * 1;
+                    result = PriceDayA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceDayA1);
                 } else if (RoomSchedNightCheckinA2.isSelected()) {
-                    result = PriceNightA1 * 1;
+                    result = PriceNightA1 * Days;
+                    RoomPriceA2.setText("Room price selected: " + PriceNightA1);
                 }
-                TotalAmountA1Checkin1.setText("PHP " + result);
+                TotalAmountCheckinA2.setText("PHP " + result);
+                
+                break;
         }
         
  
@@ -406,28 +467,27 @@ public class MainWindow1 extends javax.swing.JFrame {
             OnlinePaymentWindow1A2.setVisible(true);
             OnlinePaymentMainWindow1A2.setVisible(true);
             OnlinePayment2ndWindow1A2.setVisible(false);
-            PriceTextGcash1A2.setText(TotalAmountA1Checkin.getText());
-            PriceTextGcash2A2.setText(TotalAmountA1Checkin.getText());
+            PriceTextGcashA2.setText(TotalAmountCheckinA2.getText());
+            PriceTextGcash1A3.setText(TotalAmountCheckinA2.getText());
         }
         if (PaymayaOptionA2.isSelected()) {
             OnlinePaymentWindow2A2.setVisible(true);
             OnlinePaymentMainWindow2A2.setVisible(true);
             OnlinePayment2ndWindow2A2.setVisible(false);
-            PriceTextPaymaya2A2.setText(TotalAmountA1Checkin.getText());
-            PriceTextPaymaya1A2.setText(TotalAmountA1Checkin.getText());
+            PriceTextPaymaya1A2.setText(TotalAmountCheckinA2.getText());
+            PriceTextPaymaya2A2.setText(TotalAmountCheckinA2.getText());
         }
     }
-    // make sure na i add yung mga radiobutton sa payment method
     public void PaymentCheckInA2() {
         String Usernameee, guestnameA1, addressA1, roomtypeA1, bookingschedA1, totalamountA1, paymentmethodA1;
         
         ButtonGroup PaymentGroup = new ButtonGroup();
         PaymentGroup.add(PaymentMethodCheckin1A2);
-        PaymentMethodCheckin1A2.addActionListener(e -> PaymentCheckInA2());
+        PaymentMethodCheckin1A2.addActionListener(e -> PaymentCheckInA1());
         PaymentGroup.add(PaymentMethodCheckin2A2);
-        PaymentMethodCheckin2A2.addActionListener(e -> PaymentCheckInA2());
+        PaymentMethodCheckin2A2.addActionListener(e -> PaymentCheckInA1());
         PaymentGroup.add(PaymentMethodCheckin3A2);
-        PaymentMethodCheckin3A2.addActionListener(e -> PaymentCheckInA2());
+        PaymentMethodCheckin3A2.addActionListener(e -> PaymentCheckInA1());
         
         ButtonGroup OnlinePaymentSelected = new ButtonGroup();
         OnlinePaymentSelected.add(GcashOptionA2);
@@ -440,7 +500,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         //getting the details in paymentInfo in standard room
         guestnameA1 = CheckInGuestNameA2.getText();
         addressA1 = CheckInGuestAddressA2.getText();
-        roomtypeA1 = "Double Class A";
+        roomtypeA1 = "Single Class A";
         if (RoomSchedDayCheckinA2.isSelected()) {
             roompriceA1 = 8499;
         } else if (RoomSchedNightCheckinA2.isSelected()) {
@@ -458,7 +518,206 @@ public class MainWindow1 extends javax.swing.JFrame {
             OnlinePaymentChooseA2.setVisible(true);
         }
     }
+    //Info A3 PaymentDetails Function
+    public void PaymentDetailsA3() {
+        //int values
+        String inputDays = MaxDaysCheckinA3.getText();
+        
+        int PriceDayA1 = 15499;
+        int PriceNightA1 = 16499;
+        int Days = Integer.parseInt(inputDays);
+        int result = 0;
+        ButtonGroup group = new ButtonGroup();
+        group.add(RoomSchedDayCheckinA3);
+        group.add(RoomSchedNightCheckinA3); 
 
+        RoomSchedDayCheckinA3.addActionListener(e -> PaymentDetailsA3());
+        RoomSchedNightCheckinA3.addActionListener(e -> PaymentDetailsA3());
+        
+        
+        switch(Days) {
+            case 1:
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 2:
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 3:
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 4:
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 5 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 6 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 7 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 8 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 9 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break;
+            case 10 :
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+                break; 
+            default:
+                if (RoomSchedDayCheckinA3.isSelected()) {
+                    result = PriceDayA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceDayA1);
+                } else if (RoomSchedNightCheckinA3.isSelected()) {
+                    result = PriceNightA1 * Days;
+                    RoomPriceA3.setText("Room price selected: " + PriceNightA1);
+                }
+                TotalAmountCheckinA3.setText("PHP " + result);
+                
+        }
+        
+ 
+       
+    }
+    public void PaymentMethodA3() {
+        if (GcashOptionA3.isSelected()) {
+            OnlinePaymentWindow1A3.setVisible(true);
+            OnlinePaymentMainWindow1A3.setVisible(true);
+            OnlinePayment2ndWindow1A3.setVisible(false);
+            PriceTextGcashA3.setText(TotalAmountCheckinA3.getText());
+            PriceTextGcash1A4.setText(TotalAmountCheckinA3.getText());
+        }
+        if (PaymayaOptionA3.isSelected()) {
+            OnlinePaymentWindow2A3.setVisible(true);
+            OnlinePaymentMainWindow2A3.setVisible(true);
+            OnlinePayment2ndWindow2A3.setVisible(false);
+            PriceTextPaymaya1A3.setText(TotalAmountCheckinA3.getText());
+            PriceTextPaymaya2A3.setText(TotalAmountCheckinA3.getText());
+        }
+    }
+    public void PaymentCheckInA3() {
+        String Usernameee, guestnameA1, addressA1, roomtypeA1, bookingschedA1, totalamountA1, paymentmethodA1;
+        
+        ButtonGroup PaymentGroup = new ButtonGroup();
+        PaymentGroup.add(PaymentMethodCheckin1A3);
+        PaymentMethodCheckin1A3.addActionListener(e -> PaymentCheckInA3());
+        PaymentGroup.add(PaymentMethodCheckin2A3);
+        PaymentMethodCheckin2A3.addActionListener(e -> PaymentCheckInA3());
+        PaymentGroup.add(PaymentMethodCheckin3A3);
+        PaymentMethodCheckin3A3.addActionListener(e -> PaymentCheckInA3());
+        
+        ButtonGroup OnlinePaymentSelected = new ButtonGroup();
+        OnlinePaymentSelected.add(GcashOptionA3);
+        GcashOptionA3.addActionListener(e -> PaymentCheckInA3());
+        OnlinePaymentSelected.add(PaymayaOptionA3);
+        PaymayaOptionA3.addActionListener(e -> PaymentCheckInA3());
+        
+        Usernameee = Usernamee;
+        int roompriceA1 = 0;
+        //getting the details in paymentInfo in standard room
+        guestnameA1 = CheckInGuestNameA3.getText();
+        addressA1 = CheckInGuestAddressA3.getText();
+        roomtypeA1 = "Single Class A";
+        if (RoomSchedDayCheckinA3.isSelected()) {
+            roompriceA1 = 15499;
+        } else if (RoomSchedNightCheckinA3.isSelected()) {
+            roompriceA1 = 16499;
+        }
+        
+        
+        if ("".equals(CheckInGuestNameA3.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Guest Name");
+        } else if ("".equals(CheckInGuestAddressA3.getText())) {
+            JOptionPane.showMessageDialog(new JFrame(), "Required Address");
+        } else if (PaymentGroup.getSelection() == null) {
+            JOptionPane.showMessageDialog(new JFrame(), "Please select a payment method.");
+        } else if (PaymentMethodCheckin1A3.isSelected()) {
+            OnlinePaymentChooseA3.setVisible(true);
+        }
+    }
+    
     private void CreateAccountButton () {
          //Sign up button 
         String PhoneNumber, Username, Emailaddress, Password;
@@ -467,35 +726,35 @@ public class MainWindow1 extends javax.swing.JFrame {
         
         if ("".equals(NumberSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
-        }  if ("".equals(UsernameSignUpInput.getText())) {
+        }  else if ("".equals(UsernameSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Username");
-        }  if ("".equals(PasswordSignUpInput.getText())) {
+        }  else if ("".equals(PasswordSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Password");
-        }  if (NumberSignUpInput.getText().length() > 11) {
+        }  else if (NumberSignUpInput.getText().length() > 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
             NumberSignUpInput.setText("");
-        }  if (NumberSignUpInput.getText().length() < 11) {
+        }  else if (NumberSignUpInput.getText().length() < 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
             NumberSignUpInput.setText("");
-        }  if (UsernameSignUpInput.getText().length() > 45) {
+        }  else if (UsernameSignUpInput.getText().length() > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             UsernameSignUpInput.setText("");
-        }  if (UsernameSignUpInput.getText().length() < 5) {
+        }  else if (UsernameSignUpInput.getText().length() < 5) {
             JOptionPane.showMessageDialog(new JFrame(), "Username should be minimum of 5 letters.");
             UsernameSignUpInput.setText("");
-        }  if (PasswordSignUpInput.getText().length() > 45) {
+        }  else if (PasswordSignUpInput.getText().length() > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             PasswordSignUpInput.setText("");
-        }  if (PasswordSignUpInput.getText().length() < 8) {
+        }  else if (PasswordSignUpInput.getText().length() < 8) {
             JOptionPane.showMessageDialog(new JFrame(), "minimum 8 characters allowed!");
             PasswordSignUpInput.setText("");
-        } if (!email.contains("@")) {
+        } else if (!email.contains("@")) {
             JOptionPane.showMessageDialog(new JFrame(), "it needs contain '@example.com'");
             EmailAddressSignUpInput.setText("");
-        } if ("".equals(EmailAddressSignUpInput.getText())) {
+        } else if ("".equals(EmailAddressSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Email address'");
             EmailAddressSignUpInput.setText("");
-        } if (EmailAddressSignUpInput.getText().length() < 5) {
+        } else if (EmailAddressSignUpInput.getText().length() < 5) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum 5 characters allowed");
             EmailAddressSignUpInput.setText("");
             
@@ -516,6 +775,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             NumberSignUpInput.setText("");
             UsernameSignUpInput.setText("");
             PasswordSignUpInput.setText("");
+            EmailAddressSignUpInput.setText("");
         }
     }
     
@@ -736,6 +996,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInGuestAddressA8 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         MaxDaysCheckinA1 = new javax.swing.JTextField();
+        RoomPriceA1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         AddressLabel = new javax.swing.JLabel();
         DesignCheckin1 = new javax.swing.JLabel();
@@ -748,7 +1009,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         Background5 = new javax.swing.JLabel();
         CheckInGuestAddressA9 = new javax.swing.JLabel();
-        MaxDaysCheckinA2 = new javax.swing.JTextField();
         CheckinA2 = new javax.swing.JPanel();
         OnlinePaymentWindow1A2 = new javax.swing.JPanel();
         OnlinePayment2ndWindow1A2 = new javax.swing.JPanel();
@@ -758,7 +1018,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel101 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
-        PriceTextGcashA4 = new javax.swing.JLabel();
+        PriceTextGcash1A3 = new javax.swing.JLabel();
         AccountNameA5 = new javax.swing.JLabel();
         OnlinePaymentButton1GA3 = new javax.swing.JButton();
         jLabel104 = new javax.swing.JLabel();
@@ -772,7 +1032,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel109 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
         jLabel111 = new javax.swing.JLabel();
-        PriceTextGcashA5 = new javax.swing.JLabel();
+        PriceTextGcashA2 = new javax.swing.JLabel();
         AccountNameA6 = new javax.swing.JLabel();
         OnlinePaymentButton1GA4 = new javax.swing.JButton();
         jLabel112 = new javax.swing.JLabel();
@@ -787,7 +1047,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel117 = new javax.swing.JLabel();
         jLabel118 = new javax.swing.JLabel();
         jLabel119 = new javax.swing.JLabel();
-        PriceTextGcashA6 = new javax.swing.JLabel();
+        PriceTextPaymaya2A3 = new javax.swing.JLabel();
         AccountNameA7 = new javax.swing.JLabel();
         OnlineExitButton1A2 = new javax.swing.JButton();
         jLabel120 = new javax.swing.JLabel();
@@ -801,7 +1061,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel125 = new javax.swing.JLabel();
         jLabel126 = new javax.swing.JLabel();
         jLabel127 = new javax.swing.JLabel();
-        PriceTextPayMayaA5 = new javax.swing.JLabel();
+        PriceTextPaymaya1A3 = new javax.swing.JLabel();
         AccountNameA8 = new javax.swing.JLabel();
         OnlinePaymentButton2GA2 = new javax.swing.JButton();
         jLabel128 = new javax.swing.JLabel();
@@ -822,10 +1082,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         PaymentMethodCheckin3A2 = new javax.swing.JRadioButton();
         CheckInGuestNameA2 = new javax.swing.JTextField();
         CheckInGuestAddressA2 = new javax.swing.JTextField();
-        TotalAmountA1Checkin1 = new javax.swing.JTextField();
-        CheckInGuestAddressA10 = new javax.swing.JLabel();
+        TotalAmountCheckinA2 = new javax.swing.JTextField();
+        RoomPriceA2 = new javax.swing.JLabel();
+        CheckInGuestAddressA14 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
-        MaxDaysCheckinA3 = new javax.swing.JTextField();
+        MaxDaysCheckinA2 = new javax.swing.JTextField();
         jLabel133 = new javax.swing.JLabel();
         AddressLabel1 = new javax.swing.JLabel();
         DesignCheckin2 = new javax.swing.JLabel();
@@ -838,6 +1099,96 @@ public class MainWindow1 extends javax.swing.JFrame {
         jPanel36 = new javax.swing.JPanel();
         Background6 = new javax.swing.JLabel();
         CheckInGuestAddressA13 = new javax.swing.JLabel();
+        CheckinA3 = new javax.swing.JPanel();
+        OnlinePaymentWindow1A3 = new javax.swing.JPanel();
+        OnlinePayment2ndWindow1A3 = new javax.swing.JPanel();
+        jLabel135 = new javax.swing.JLabel();
+        jPanel37 = new javax.swing.JPanel();
+        jPanel38 = new javax.swing.JPanel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        PriceTextGcash1A4 = new javax.swing.JLabel();
+        AccountNameA9 = new javax.swing.JLabel();
+        OnlinePaymentButton1GA5 = new javax.swing.JButton();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        OnlinePaymentMainWindow1A3 = new javax.swing.JPanel();
+        jLabel143 = new javax.swing.JLabel();
+        jPanel39 = new javax.swing.JPanel();
+        jPanel40 = new javax.swing.JPanel();
+        jLabel144 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
+        jLabel146 = new javax.swing.JLabel();
+        PriceTextGcashA3 = new javax.swing.JLabel();
+        AccountNameA10 = new javax.swing.JLabel();
+        OnlinePaymentButton1GA6 = new javax.swing.JButton();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        OnlinePaymentWindow2A3 = new javax.swing.JPanel();
+        OnlinePayment2ndWindow2A3 = new javax.swing.JPanel();
+        jLabel151 = new javax.swing.JLabel();
+        jPanel41 = new javax.swing.JPanel();
+        jPanel42 = new javax.swing.JPanel();
+        jLabel152 = new javax.swing.JLabel();
+        jLabel153 = new javax.swing.JLabel();
+        jLabel154 = new javax.swing.JLabel();
+        PriceTextPaymaya2A4 = new javax.swing.JLabel();
+        AccountNameA11 = new javax.swing.JLabel();
+        OnlineExitButton1A3 = new javax.swing.JButton();
+        jLabel155 = new javax.swing.JLabel();
+        jLabel156 = new javax.swing.JLabel();
+        jLabel157 = new javax.swing.JLabel();
+        jLabel158 = new javax.swing.JLabel();
+        OnlinePaymentMainWindow2A3 = new javax.swing.JPanel();
+        jLabel159 = new javax.swing.JLabel();
+        jPanel43 = new javax.swing.JPanel();
+        jPanel44 = new javax.swing.JPanel();
+        jLabel160 = new javax.swing.JLabel();
+        jLabel161 = new javax.swing.JLabel();
+        jLabel162 = new javax.swing.JLabel();
+        PriceTextPaymaya1A4 = new javax.swing.JLabel();
+        AccountNameA12 = new javax.swing.JLabel();
+        OnlinePaymentButton2GA3 = new javax.swing.JButton();
+        jLabel163 = new javax.swing.JLabel();
+        jLabel164 = new javax.swing.JLabel();
+        jLabel165 = new javax.swing.JLabel();
+        jLabel166 = new javax.swing.JLabel();
+        OnlinePaymentChooseA3 = new javax.swing.JPanel();
+        Designnn2 = new javax.swing.JPanel();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        GcashOptionA3 = new javax.swing.JRadioButton();
+        PaymayaOptionA3 = new javax.swing.JRadioButton();
+        UpdatePriceA1Button2 = new javax.swing.JButton();
+        ConfirmButtonA1Checkin2 = new javax.swing.JButton();
+        RoomSchedNightCheckinA3 = new javax.swing.JRadioButton();
+        RoomSchedDayCheckinA3 = new javax.swing.JRadioButton();
+        PaymentMethodCheckin1A3 = new javax.swing.JRadioButton();
+        PaymentMethodCheckin2A3 = new javax.swing.JRadioButton();
+        PaymentMethodCheckin3A3 = new javax.swing.JRadioButton();
+        CheckInGuestNameA3 = new javax.swing.JTextField();
+        CheckInGuestAddressA3 = new javax.swing.JTextField();
+        TotalAmountCheckinA3 = new javax.swing.JTextField();
+        RoomPriceA3 = new javax.swing.JLabel();
+        CheckInGuestAddressA15 = new javax.swing.JLabel();
+        jLabel167 = new javax.swing.JLabel();
+        MaxDaysCheckinA3 = new javax.swing.JTextField();
+        jLabel168 = new javax.swing.JLabel();
+        AddressLabel2 = new javax.swing.JLabel();
+        DesignCheckin3 = new javax.swing.JLabel();
+        CheckInGuestAddressA10 = new javax.swing.JLabel();
+        CheckInGuestAddressA16 = new javax.swing.JLabel();
+        LabelCheckinA5 = new javax.swing.JLabel();
+        LabelCheckinA6 = new javax.swing.JLabel();
+        CheckInGuestAddressA17 = new javax.swing.JLabel();
+        jLabel169 = new javax.swing.JLabel();
+        jPanel45 = new javax.swing.JPanel();
+        Background7 = new javax.swing.JLabel();
+        CheckInGuestAddressA18 = new javax.swing.JLabel();
         LoginSystemPanel = new javax.swing.JPanel();
         AccountInfoPanel = new javax.swing.JPanel();
         ExitMessageWindow = new javax.swing.JPanel();
@@ -1876,6 +2227,11 @@ public class MainWindow1 extends javax.swing.JFrame {
         BookButtonB1.setPreferredSize(new java.awt.Dimension(250, 50));
         BookButtonB1.setRolloverEnabled(false);
         BookButtonB1.setVerifyInputWhenFocusTarget(false);
+        BookButtonB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BookButtonB1ActionPerformed(evt);
+            }
+        });
         InfoWindowB1.add(BookButtonB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 380, -1, -1));
 
         InfoWindows.add(InfoWindowB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
@@ -2122,7 +2478,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton1GA2.setBackground(new java.awt.Color(51, 102, 255));
         OnlinePaymentButton1GA2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton1GA2.setText("Exit");
+        OnlinePaymentButton1GA2.setFocusPainted(false);
         OnlinePaymentButton1GA2.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA2.setRequestFocusEnabled(false);
         OnlinePaymentButton1GA2.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton1GA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2220,7 +2578,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton1GA1.setBackground(new java.awt.Color(51, 102, 255));
         OnlinePaymentButton1GA1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton1GA1.setText("Confirm");
+        OnlinePaymentButton1GA1.setFocusPainted(false);
         OnlinePaymentButton1GA1.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA1.setRequestFocusEnabled(false);
         OnlinePaymentButton1GA1.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton1GA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2324,7 +2684,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlineExitButton1A1.setBackground(new java.awt.Color(0, 204, 0));
         OnlineExitButton1A1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlineExitButton1A1.setText("Exit");
+        OnlineExitButton1A1.setFocusPainted(false);
         OnlineExitButton1A1.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlineExitButton1A1.setRequestFocusEnabled(false);
         OnlineExitButton1A1.setVerifyInputWhenFocusTarget(false);
         OnlineExitButton1A1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2422,7 +2784,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton2GA1.setBackground(new java.awt.Color(0, 204, 0));
         OnlinePaymentButton2GA1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton2GA1.setText("Confirm");
+        OnlinePaymentButton2GA1.setFocusPainted(false);
         OnlinePaymentButton2GA1.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton2GA1.setRequestFocusEnabled(false);
         OnlinePaymentButton2GA1.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton2GA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2662,6 +3026,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         CheckinA1.add(MaxDaysCheckinA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
 
+        RoomPriceA1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RoomPriceA1.setForeground(new java.awt.Color(227, 221, 203));
+        RoomPriceA1.setText("Room Price Selected: ");
+        RoomPriceA1.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA1.add(RoomPriceA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 160, -1));
+
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(227, 221, 203));
         jLabel9.setText("Full Name");
@@ -2745,20 +3115,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInGuestAddressA9.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA1.add(CheckInGuestAddressA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 110, -1));
 
-        MaxDaysCheckinA2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MaxDaysCheckinA2.setText("1");
-        MaxDaysCheckinA2.setToolTipText("");
-        MaxDaysCheckinA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        MaxDaysCheckinA2.setFocusTraversalPolicyProvider(true);
-        MaxDaysCheckinA2.setPreferredSize(new java.awt.Dimension(250, 35));
-        MaxDaysCheckinA2.setVerifyInputWhenFocusTarget(false);
-        MaxDaysCheckinA2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MaxDaysCheckinA2ActionPerformed(evt);
-            }
-        });
-        CheckinA1.add(MaxDaysCheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
-
         CheckInPayment.add(CheckinA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         CheckinA2.setBackground(new java.awt.Color(255, 255, 255));
@@ -2810,12 +3166,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel103.setPreferredSize(new java.awt.Dimension(200, 25));
         OnlinePayment2ndWindow1A2.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 80, -1));
 
-        PriceTextGcashA4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        PriceTextGcashA4.setForeground(new java.awt.Color(153, 153, 153));
-        PriceTextGcashA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PriceTextGcashA4.setText(" php 10000");
-        PriceTextGcashA4.setPreferredSize(new java.awt.Dimension(200, 25));
-        OnlinePayment2ndWindow1A2.add(PriceTextGcashA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+        PriceTextGcash1A3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextGcash1A3.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextGcash1A3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextGcash1A3.setText(" php 10000");
+        PriceTextGcash1A3.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A2.add(PriceTextGcash1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
 
         AccountNameA5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         AccountNameA5.setForeground(new java.awt.Color(153, 153, 153));
@@ -2827,7 +3183,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton1GA3.setBackground(new java.awt.Color(51, 102, 255));
         OnlinePaymentButton1GA3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton1GA3.setText("Exit");
+        OnlinePaymentButton1GA3.setFocusPainted(false);
         OnlinePaymentButton1GA3.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA3.setRequestFocusEnabled(false);
         OnlinePaymentButton1GA3.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton1GA3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2908,12 +3266,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel111.setPreferredSize(new java.awt.Dimension(200, 25));
         OnlinePaymentMainWindow1A2.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 80, -1));
 
-        PriceTextGcashA5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        PriceTextGcashA5.setForeground(new java.awt.Color(153, 153, 153));
-        PriceTextGcashA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PriceTextGcashA5.setText(" php 10000");
-        PriceTextGcashA5.setPreferredSize(new java.awt.Dimension(200, 25));
-        OnlinePaymentMainWindow1A2.add(PriceTextGcashA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+        PriceTextGcashA2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextGcashA2.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextGcashA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextGcashA2.setText(" php 10000");
+        PriceTextGcashA2.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A2.add(PriceTextGcashA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
 
         AccountNameA6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         AccountNameA6.setForeground(new java.awt.Color(153, 153, 153));
@@ -2925,7 +3283,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton1GA4.setBackground(new java.awt.Color(51, 102, 255));
         OnlinePaymentButton1GA4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton1GA4.setText("Confirm");
+        OnlinePaymentButton1GA4.setFocusPainted(false);
         OnlinePaymentButton1GA4.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA4.setRequestFocusEnabled(false);
         OnlinePaymentButton1GA4.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton1GA4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3012,12 +3372,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel119.setPreferredSize(new java.awt.Dimension(200, 25));
         OnlinePayment2ndWindow2A2.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 80, -1));
 
-        PriceTextGcashA6.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        PriceTextGcashA6.setForeground(new java.awt.Color(153, 153, 153));
-        PriceTextGcashA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PriceTextGcashA6.setText(" php 10000");
-        PriceTextGcashA6.setPreferredSize(new java.awt.Dimension(200, 25));
-        OnlinePayment2ndWindow2A2.add(PriceTextGcashA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+        PriceTextPaymaya2A3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextPaymaya2A3.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextPaymaya2A3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextPaymaya2A3.setText(" php 10000");
+        PriceTextPaymaya2A3.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A2.add(PriceTextPaymaya2A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
 
         AccountNameA7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         AccountNameA7.setForeground(new java.awt.Color(153, 153, 153));
@@ -3029,7 +3389,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlineExitButton1A2.setBackground(new java.awt.Color(0, 204, 0));
         OnlineExitButton1A2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlineExitButton1A2.setText("Exit");
+        OnlineExitButton1A2.setFocusPainted(false);
         OnlineExitButton1A2.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlineExitButton1A2.setRequestFocusEnabled(false);
         OnlineExitButton1A2.setVerifyInputWhenFocusTarget(false);
         OnlineExitButton1A2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3110,12 +3472,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel127.setPreferredSize(new java.awt.Dimension(200, 25));
         OnlinePaymentMainWindow2A2.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 80, -1));
 
-        PriceTextPayMayaA5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        PriceTextPayMayaA5.setForeground(new java.awt.Color(153, 153, 153));
-        PriceTextPayMayaA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PriceTextPayMayaA5.setText(" php 10000");
-        PriceTextPayMayaA5.setPreferredSize(new java.awt.Dimension(200, 25));
-        OnlinePaymentMainWindow2A2.add(PriceTextPayMayaA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+        PriceTextPaymaya1A3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextPaymaya1A3.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextPaymaya1A3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextPaymaya1A3.setText(" php 10000");
+        PriceTextPaymaya1A3.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A2.add(PriceTextPaymaya1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
 
         AccountNameA8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         AccountNameA8.setForeground(new java.awt.Color(153, 153, 153));
@@ -3127,7 +3489,9 @@ public class MainWindow1 extends javax.swing.JFrame {
         OnlinePaymentButton2GA2.setBackground(new java.awt.Color(0, 204, 0));
         OnlinePaymentButton2GA2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         OnlinePaymentButton2GA2.setText("Confirm");
+        OnlinePaymentButton2GA2.setFocusPainted(false);
         OnlinePaymentButton2GA2.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton2GA2.setRequestFocusEnabled(false);
         OnlinePaymentButton2GA2.setVerifyInputWhenFocusTarget(false);
         OnlinePaymentButton2GA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3211,7 +3575,6 @@ public class MainWindow1 extends javax.swing.JFrame {
         UpdatePriceA1Button1.setText("Refresh Amount");
         UpdatePriceA1Button1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(129, 128, 89), 2));
         UpdatePriceA1Button1.setContentAreaFilled(false);
-        UpdatePriceA1Button1.setFocusPainted(false);
         UpdatePriceA1Button1.setFocusable(false);
         UpdatePriceA1Button1.setPreferredSize(new java.awt.Dimension(135, 35));
         UpdatePriceA1Button1.setRequestFocusEnabled(false);
@@ -3240,7 +3603,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                 ConfirmButtonA1Checkin1ActionPerformed(evt);
             }
         });
-        CheckinA2.add(ConfirmButtonA1Checkin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 190, 40));
+        CheckinA2.add(ConfirmButtonA1Checkin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 190, -1));
 
         RoomSchedNightCheckinA2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         RoomSchedNightCheckinA2.setForeground(new java.awt.Color(255, 255, 255));
@@ -3325,27 +3688,33 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         CheckinA2.add(CheckInGuestAddressA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 250, -1));
 
-        TotalAmountA1Checkin1.setEditable(false);
-        TotalAmountA1Checkin1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TotalAmountA1Checkin1.setText("1");
-        TotalAmountA1Checkin1.setToolTipText("");
-        TotalAmountA1Checkin1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        TotalAmountA1Checkin1.setFocusTraversalPolicyProvider(true);
-        TotalAmountA1Checkin1.setFocusable(false);
-        TotalAmountA1Checkin1.setPreferredSize(new java.awt.Dimension(250, 35));
-        TotalAmountA1Checkin1.setVerifyInputWhenFocusTarget(false);
-        TotalAmountA1Checkin1.addActionListener(new java.awt.event.ActionListener() {
+        TotalAmountCheckinA2.setEditable(false);
+        TotalAmountCheckinA2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TotalAmountCheckinA2.setText("1");
+        TotalAmountCheckinA2.setToolTipText("");
+        TotalAmountCheckinA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        TotalAmountCheckinA2.setFocusTraversalPolicyProvider(true);
+        TotalAmountCheckinA2.setPreferredSize(new java.awt.Dimension(250, 35));
+        TotalAmountCheckinA2.setRequestFocusEnabled(false);
+        TotalAmountCheckinA2.setVerifyInputWhenFocusTarget(false);
+        TotalAmountCheckinA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TotalAmountA1Checkin1ActionPerformed(evt);
+                TotalAmountCheckinA2ActionPerformed(evt);
             }
         });
-        CheckinA2.add(TotalAmountA1Checkin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
+        CheckinA2.add(TotalAmountCheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
 
-        CheckInGuestAddressA10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        CheckInGuestAddressA10.setForeground(new java.awt.Color(227, 221, 203));
-        CheckInGuestAddressA10.setText("Payment Method");
-        CheckInGuestAddressA10.setPreferredSize(new java.awt.Dimension(50, 30));
-        CheckinA2.add(CheckInGuestAddressA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 160, -1));
+        RoomPriceA2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RoomPriceA2.setForeground(new java.awt.Color(227, 221, 203));
+        RoomPriceA2.setText("Room Price Selected: ");
+        RoomPriceA2.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA2.add(RoomPriceA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 160, -1));
+
+        CheckInGuestAddressA14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA14.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA14.setText("Payment Method");
+        CheckInGuestAddressA14.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA2.add(CheckInGuestAddressA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 160, -1));
 
         jLabel132.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel132.setForeground(new java.awt.Color(227, 221, 203));
@@ -3353,19 +3722,19 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel132.setText("Payment & Confirmation");
         CheckinA2.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 400, 46));
 
-        MaxDaysCheckinA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MaxDaysCheckinA3.setText("1");
-        MaxDaysCheckinA3.setToolTipText("");
-        MaxDaysCheckinA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
-        MaxDaysCheckinA3.setFocusTraversalPolicyProvider(true);
-        MaxDaysCheckinA3.setPreferredSize(new java.awt.Dimension(250, 35));
-        MaxDaysCheckinA3.setVerifyInputWhenFocusTarget(false);
-        MaxDaysCheckinA3.addActionListener(new java.awt.event.ActionListener() {
+        MaxDaysCheckinA2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        MaxDaysCheckinA2.setText("1");
+        MaxDaysCheckinA2.setToolTipText("");
+        MaxDaysCheckinA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        MaxDaysCheckinA2.setFocusTraversalPolicyProvider(true);
+        MaxDaysCheckinA2.setPreferredSize(new java.awt.Dimension(250, 35));
+        MaxDaysCheckinA2.setVerifyInputWhenFocusTarget(false);
+        MaxDaysCheckinA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MaxDaysCheckinA3ActionPerformed(evt);
+                MaxDaysCheckinA2ActionPerformed(evt);
             }
         });
-        CheckinA2.add(MaxDaysCheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
+        CheckinA2.add(MaxDaysCheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
 
         jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel133.setForeground(new java.awt.Color(227, 221, 203));
@@ -3396,7 +3765,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         CheckInGuestAddressA11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CheckInGuestAddressA11.setForeground(new java.awt.Color(227, 221, 203));
-        CheckInGuestAddressA11.setText("1 -10 MAX");
+        CheckInGuestAddressA11.setText("1 -12 MAX");
         CheckInGuestAddressA11.setPreferredSize(new java.awt.Dimension(50, 30));
         CheckinA2.add(CheckInGuestAddressA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 383, 150, -1));
 
@@ -3451,6 +3820,710 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckinA2.add(CheckInGuestAddressA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 110, -1));
 
         CheckInPayment.add(CheckinA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        CheckinA3.setBackground(new java.awt.Color(255, 255, 255));
+        CheckinA3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OnlinePaymentWindow1A3.setBackground(new java.awt.Color(25, 25, 26, 200));
+        OnlinePaymentWindow1A3.setPreferredSize(new java.awt.Dimension(1000, 500));
+        OnlinePaymentWindow1A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OnlinePayment2ndWindow1A3.setBackground(new java.awt.Color(255, 255, 255));
+        OnlinePayment2ndWindow1A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 3));
+        OnlinePayment2ndWindow1A3.setPreferredSize(new java.awt.Dimension(450, 400));
+        OnlinePayment2ndWindow1A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel135.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/GcashIconn.png"))); // NOI18N
+        jLabel135.setPreferredSize(new java.awt.Dimension(225, 35));
+        OnlinePayment2ndWindow1A3.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 180, -1));
+
+        jPanel37.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel37.setPreferredSize(new java.awt.Dimension(450, 2));
+        jPanel37.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OnlinePayment2ndWindow1A3.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+
+        jPanel38.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel38.setPreferredSize(new java.awt.Dimension(450, 65));
+        jPanel38.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel136.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel136.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel136.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel136.setText("Aqueza Suites");
+        jLabel136.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel38.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 10, -1, -1));
+
+        jLabel137.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel137.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel137.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel137.setText("Successfully Payed!");
+        jLabel137.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel38.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 35, -1, -1));
+
+        OnlinePayment2ndWindow1A3.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 65, -1, -1));
+
+        jLabel138.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel138.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel138.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel138.setText("(Preview)");
+        jLabel138.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 80, -1));
+
+        PriceTextGcash1A4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextGcash1A4.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextGcash1A4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextGcash1A4.setText(" php 10000");
+        PriceTextGcash1A4.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(PriceTextGcash1A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+
+        AccountNameA9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        AccountNameA9.setForeground(new java.awt.Color(153, 153, 153));
+        AccountNameA9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AccountNameA9.setText("09xxxxxxxx");
+        AccountNameA9.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(AccountNameA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 130, -1));
+
+        OnlinePaymentButton1GA5.setBackground(new java.awt.Color(51, 102, 255));
+        OnlinePaymentButton1GA5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        OnlinePaymentButton1GA5.setText("Exit");
+        OnlinePaymentButton1GA5.setFocusPainted(false);
+        OnlinePaymentButton1GA5.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA5.setRequestFocusEnabled(false);
+        OnlinePaymentButton1GA5.setVerifyInputWhenFocusTarget(false);
+        OnlinePaymentButton1GA5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OnlinePaymentButton1GA5ActionPerformed(evt);
+            }
+        });
+        OnlinePayment2ndWindow1A3.add(OnlinePaymentButton1GA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 340, -1, -1));
+
+        jLabel139.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel139.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel139.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel139.setText("You Paid");
+        jLabel139.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 135, -1, -1));
+
+        jLabel140.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel140.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel140.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel140.setText("using your GCash");
+        jLabel140.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 185, -1, -1));
+
+        jLabel141.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel141.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel141.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel141.setText("Note: This is just a gimmick not real. School purposes only.\n");
+        jLabel141.setPreferredSize(new java.awt.Dimension(400, 25));
+        OnlinePayment2ndWindow1A3.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel142.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel142.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel142.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel142.setText("Account Number");
+        jLabel142.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow1A3.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, -1));
+
+        OnlinePaymentWindow1A3.add(OnlinePayment2ndWindow1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+
+        OnlinePaymentMainWindow1A3.setBackground(new java.awt.Color(255, 255, 255));
+        OnlinePaymentMainWindow1A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 3));
+        OnlinePaymentMainWindow1A3.setPreferredSize(new java.awt.Dimension(450, 400));
+        OnlinePaymentMainWindow1A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel143.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel143.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/GcashIconn.png"))); // NOI18N
+        jLabel143.setPreferredSize(new java.awt.Dimension(225, 35));
+        OnlinePaymentMainWindow1A3.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 180, -1));
+
+        jPanel39.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel39.setPreferredSize(new java.awt.Dimension(450, 2));
+        jPanel39.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OnlinePaymentMainWindow1A3.add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+
+        jPanel40.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel40.setPreferredSize(new java.awt.Dimension(450, 65));
+        jPanel40.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel144.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel144.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel144.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel144.setText("Aqueza Suites");
+        jLabel144.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel40.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 10, -1, -1));
+
+        jLabel145.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel145.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel145.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel145.setText("Confirmation");
+        jLabel145.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel40.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 35, -1, -1));
+
+        OnlinePaymentMainWindow1A3.add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 65, -1, -1));
+
+        jLabel146.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel146.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel146.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel146.setText("(Preview)");
+        jLabel146.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 80, -1));
+
+        PriceTextGcashA3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextGcashA3.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextGcashA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextGcashA3.setText(" php 10000");
+        PriceTextGcashA3.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(PriceTextGcashA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+
+        AccountNameA10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        AccountNameA10.setForeground(new java.awt.Color(153, 153, 153));
+        AccountNameA10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AccountNameA10.setText("09xxxxxxxx");
+        AccountNameA10.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(AccountNameA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 130, -1));
+
+        OnlinePaymentButton1GA6.setBackground(new java.awt.Color(51, 102, 255));
+        OnlinePaymentButton1GA6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        OnlinePaymentButton1GA6.setText("Confirm");
+        OnlinePaymentButton1GA6.setFocusPainted(false);
+        OnlinePaymentButton1GA6.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton1GA6.setRequestFocusEnabled(false);
+        OnlinePaymentButton1GA6.setVerifyInputWhenFocusTarget(false);
+        OnlinePaymentButton1GA6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OnlinePaymentButton1GA6ActionPerformed(evt);
+            }
+        });
+        OnlinePaymentMainWindow1A3.add(OnlinePaymentButton1GA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 340, -1, -1));
+
+        jLabel147.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel147.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel147.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel147.setText("You are about to pay");
+        jLabel147.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 135, -1, -1));
+
+        jLabel148.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel148.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel148.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel148.setText("using your GCash");
+        jLabel148.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 185, -1, -1));
+
+        jLabel149.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel149.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel149.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel149.setText("Note: This is just a gimmick not real. School purposes only.\n");
+        jLabel149.setPreferredSize(new java.awt.Dimension(400, 25));
+        OnlinePaymentMainWindow1A3.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel150.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel150.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel150.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel150.setText("Account Number");
+        jLabel150.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow1A3.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, -1));
+
+        OnlinePaymentWindow1A3.add(OnlinePaymentMainWindow1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+
+        CheckinA3.add(OnlinePaymentWindow1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        OnlinePaymentWindow2A3.setBackground(new java.awt.Color(25, 25, 26, 200));
+        OnlinePaymentWindow2A3.setPreferredSize(new java.awt.Dimension(1000, 500));
+        OnlinePaymentWindow2A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OnlinePayment2ndWindow2A3.setBackground(new java.awt.Color(255, 255, 255));
+        OnlinePayment2ndWindow2A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 0), 3));
+        OnlinePayment2ndWindow2A3.setPreferredSize(new java.awt.Dimension(450, 400));
+        OnlinePayment2ndWindow2A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel151.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/PayMayaIcon-removebg-preview.png"))); // NOI18N
+        jLabel151.setPreferredSize(new java.awt.Dimension(225, 35));
+        OnlinePayment2ndWindow2A3.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 180, -1));
+
+        jPanel41.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel41.setPreferredSize(new java.awt.Dimension(450, 2));
+        jPanel41.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OnlinePayment2ndWindow2A3.add(jPanel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+
+        jPanel42.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel42.setPreferredSize(new java.awt.Dimension(450, 65));
+        jPanel42.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel152.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel152.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel152.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel152.setText("Aqueza Suites");
+        jLabel152.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel42.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 10, -1, -1));
+
+        jLabel153.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel153.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel153.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel153.setText("Successfully Paid!");
+        jLabel153.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel42.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 35, -1, -1));
+
+        OnlinePayment2ndWindow2A3.add(jPanel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 65, -1, -1));
+
+        jLabel154.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel154.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel154.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel154.setText("(Preview)");
+        jLabel154.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 80, -1));
+
+        PriceTextPaymaya2A4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextPaymaya2A4.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextPaymaya2A4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextPaymaya2A4.setText(" php 10000");
+        PriceTextPaymaya2A4.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(PriceTextPaymaya2A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+
+        AccountNameA11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        AccountNameA11.setForeground(new java.awt.Color(153, 153, 153));
+        AccountNameA11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AccountNameA11.setText("09xxxxxxxx");
+        AccountNameA11.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(AccountNameA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 130, -1));
+
+        OnlineExitButton1A3.setBackground(new java.awt.Color(0, 204, 0));
+        OnlineExitButton1A3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        OnlineExitButton1A3.setText("Exit");
+        OnlineExitButton1A3.setFocusPainted(false);
+        OnlineExitButton1A3.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlineExitButton1A3.setRequestFocusEnabled(false);
+        OnlineExitButton1A3.setVerifyInputWhenFocusTarget(false);
+        OnlineExitButton1A3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OnlineExitButton1A3ActionPerformed(evt);
+            }
+        });
+        OnlinePayment2ndWindow2A3.add(OnlineExitButton1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 340, -1, -1));
+
+        jLabel155.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel155.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel155.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel155.setText("You Paid");
+        jLabel155.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 135, -1, -1));
+
+        jLabel156.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel156.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel156.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel156.setText("using your PayMaya");
+        jLabel156.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 185, -1, -1));
+
+        jLabel157.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel157.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel157.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel157.setText("Note: This is just a gimmick not real. School purposes only.\n");
+        jLabel157.setPreferredSize(new java.awt.Dimension(400, 25));
+        OnlinePayment2ndWindow2A3.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel158.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel158.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel158.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel158.setText("Account Number");
+        jLabel158.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePayment2ndWindow2A3.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, -1));
+
+        OnlinePaymentWindow2A3.add(OnlinePayment2ndWindow2A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+
+        OnlinePaymentMainWindow2A3.setBackground(new java.awt.Color(255, 255, 255));
+        OnlinePaymentMainWindow2A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 0), 3));
+        OnlinePaymentMainWindow2A3.setPreferredSize(new java.awt.Dimension(450, 400));
+        OnlinePaymentMainWindow2A3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel159.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/PayMayaIcon-removebg-preview.png"))); // NOI18N
+        jLabel159.setPreferredSize(new java.awt.Dimension(225, 35));
+        OnlinePaymentMainWindow2A3.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 180, -1));
+
+        jPanel43.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel43.setPreferredSize(new java.awt.Dimension(450, 2));
+        jPanel43.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OnlinePaymentMainWindow2A3.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+
+        jPanel44.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel44.setPreferredSize(new java.awt.Dimension(450, 65));
+        jPanel44.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel160.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel160.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel160.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel160.setText("Aqueza Suites");
+        jLabel160.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel44.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 10, -1, -1));
+
+        jLabel161.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel161.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel161.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel161.setText("Confirmation");
+        jLabel161.setPreferredSize(new java.awt.Dimension(200, 25));
+        jPanel44.add(jLabel161, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 35, -1, -1));
+
+        OnlinePaymentMainWindow2A3.add(jPanel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 65, -1, -1));
+
+        jLabel162.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel162.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel162.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel162.setText("(Preview)");
+        jLabel162.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(jLabel162, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 80, -1));
+
+        PriceTextPaymaya1A4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        PriceTextPaymaya1A4.setForeground(new java.awt.Color(153, 153, 153));
+        PriceTextPaymaya1A4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PriceTextPaymaya1A4.setText(" php 10000");
+        PriceTextPaymaya1A4.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(PriceTextPaymaya1A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 160, -1, -1));
+
+        AccountNameA12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        AccountNameA12.setForeground(new java.awt.Color(153, 153, 153));
+        AccountNameA12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AccountNameA12.setText("09xxxxxxxx");
+        AccountNameA12.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(AccountNameA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 130, -1));
+
+        OnlinePaymentButton2GA3.setBackground(new java.awt.Color(0, 204, 0));
+        OnlinePaymentButton2GA3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        OnlinePaymentButton2GA3.setText("Confirm");
+        OnlinePaymentButton2GA3.setFocusPainted(false);
+        OnlinePaymentButton2GA3.setPreferredSize(new java.awt.Dimension(300, 40));
+        OnlinePaymentButton2GA3.setRequestFocusEnabled(false);
+        OnlinePaymentButton2GA3.setVerifyInputWhenFocusTarget(false);
+        OnlinePaymentButton2GA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OnlinePaymentButton2GA3ActionPerformed(evt);
+            }
+        });
+        OnlinePaymentMainWindow2A3.add(OnlinePaymentButton2GA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 340, -1, -1));
+
+        jLabel163.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel163.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel163.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel163.setText("You are about to pay");
+        jLabel163.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 135, -1, -1));
+
+        jLabel164.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel164.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel164.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel164.setText("using your PayMaya");
+        jLabel164.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(jLabel164, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 185, -1, -1));
+
+        jLabel165.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel165.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel165.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel165.setText("Note: This is just a gimmick not real. School purposes only.\n");
+        jLabel165.setPreferredSize(new java.awt.Dimension(400, 25));
+        OnlinePaymentMainWindow2A3.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel166.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel166.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel166.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel166.setText("Account Number");
+        jLabel166.setPreferredSize(new java.awt.Dimension(200, 25));
+        OnlinePaymentMainWindow2A3.add(jLabel166, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, -1));
+
+        OnlinePaymentWindow2A3.add(OnlinePaymentMainWindow2A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+
+        CheckinA3.add(OnlinePaymentWindow2A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        OnlinePaymentChooseA3.setBackground(new java.awt.Color(96, 87, 69));
+        OnlinePaymentChooseA3.setOpaque(false);
+        OnlinePaymentChooseA3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Designnn2.setBackground(new java.awt.Color(255, 255, 255));
+        Designnn2.setPreferredSize(new java.awt.Dimension(3, 50));
+        Designnn2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jRadioButton4.setText("jRadioButton1");
+        Designnn2.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 110, -1));
+
+        OnlinePaymentChooseA3.add(Designnn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 7, -1, -1));
+
+        GcashOptionA3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        GcashOptionA3.setForeground(new java.awt.Color(255, 255, 255));
+        GcashOptionA3.setText("GCash");
+        GcashOptionA3.setContentAreaFilled(false);
+        GcashOptionA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GcashOptionA3ActionPerformed(evt);
+            }
+        });
+        OnlinePaymentChooseA3.add(GcashOptionA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 110, -1));
+
+        PaymayaOptionA3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        PaymayaOptionA3.setForeground(new java.awt.Color(255, 255, 255));
+        PaymayaOptionA3.setText("Pay Maya");
+        PaymayaOptionA3.setContentAreaFilled(false);
+        PaymayaOptionA3.setRequestFocusEnabled(false);
+        PaymayaOptionA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PaymayaOptionA3ActionPerformed(evt);
+            }
+        });
+        OnlinePaymentChooseA3.add(PaymayaOptionA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 35, 110, -1));
+
+        CheckinA3.add(OnlinePaymentChooseA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 190, 180, 130));
+
+        UpdatePriceA1Button2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        UpdatePriceA1Button2.setForeground(new java.awt.Color(255, 255, 255));
+        UpdatePriceA1Button2.setText("Refresh Amount");
+        UpdatePriceA1Button2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(129, 128, 89), 2));
+        UpdatePriceA1Button2.setContentAreaFilled(false);
+        UpdatePriceA1Button2.setFocusable(false);
+        UpdatePriceA1Button2.setPreferredSize(new java.awt.Dimension(135, 35));
+        UpdatePriceA1Button2.setRequestFocusEnabled(false);
+        UpdatePriceA1Button2.setRolloverEnabled(false);
+        UpdatePriceA1Button2.setVerifyInputWhenFocusTarget(false);
+        UpdatePriceA1Button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdatePriceA1Button2ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(UpdatePriceA1Button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
+
+        ConfirmButtonA1Checkin2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ConfirmButtonA1Checkin2.setForeground(new java.awt.Color(255, 255, 255));
+        ConfirmButtonA1Checkin2.setText("Pay & Confirm");
+        ConfirmButtonA1Checkin2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(129, 128, 89), 2));
+        ConfirmButtonA1Checkin2.setContentAreaFilled(false);
+        ConfirmButtonA1Checkin2.setFocusPainted(false);
+        ConfirmButtonA1Checkin2.setFocusable(false);
+        ConfirmButtonA1Checkin2.setPreferredSize(new java.awt.Dimension(150, 40));
+        ConfirmButtonA1Checkin2.setRequestFocusEnabled(false);
+        ConfirmButtonA1Checkin2.setRolloverEnabled(false);
+        ConfirmButtonA1Checkin2.setVerifyInputWhenFocusTarget(false);
+        ConfirmButtonA1Checkin2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfirmButtonA1Checkin2ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(ConfirmButtonA1Checkin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 190, -1));
+
+        RoomSchedNightCheckinA3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        RoomSchedNightCheckinA3.setForeground(new java.awt.Color(255, 255, 255));
+        RoomSchedNightCheckinA3.setText("6:00PM - 8:00AM Overnight");
+        RoomSchedNightCheckinA3.setContentAreaFilled(false);
+        RoomSchedNightCheckinA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RoomSchedNightCheckinA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(RoomSchedNightCheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 250, -1));
+
+        RoomSchedDayCheckinA3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        RoomSchedDayCheckinA3.setForeground(new java.awt.Color(255, 255, 255));
+        RoomSchedDayCheckinA3.setSelected(true);
+        RoomSchedDayCheckinA3.setText("6:00AM - 8:00AM Day");
+        RoomSchedDayCheckinA3.setContentAreaFilled(false);
+        RoomSchedDayCheckinA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RoomSchedDayCheckinA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(RoomSchedDayCheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 250, -1));
+
+        PaymentMethodCheckin1A3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PaymentMethodCheckin1A3.setForeground(new java.awt.Color(227, 221, 203));
+        PaymentMethodCheckin1A3.setText("OnlinePayment");
+        PaymentMethodCheckin1A3.setContentAreaFilled(false);
+        PaymentMethodCheckin1A3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PaymentMethodCheckin1A3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(PaymentMethodCheckin1A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 160, -1, -1));
+
+        PaymentMethodCheckin2A3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PaymentMethodCheckin2A3.setForeground(new java.awt.Color(227, 221, 203));
+        PaymentMethodCheckin2A3.setText("Cash");
+        PaymentMethodCheckin2A3.setActionCommand("");
+        PaymentMethodCheckin2A3.setContentAreaFilled(false);
+        PaymentMethodCheckin2A3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PaymentMethodCheckin2A3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(PaymentMethodCheckin2A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 80, -1));
+
+        PaymentMethodCheckin3A3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PaymentMethodCheckin3A3.setForeground(new java.awt.Color(227, 221, 203));
+        PaymentMethodCheckin3A3.setText("Debit/Credit Card");
+        PaymentMethodCheckin3A3.setContentAreaFilled(false);
+        PaymentMethodCheckin3A3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PaymentMethodCheckin3A3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(PaymentMethodCheckin3A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 160, -1, -1));
+
+        CheckInGuestNameA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestNameA3.setToolTipText("");
+        CheckInGuestNameA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        CheckInGuestNameA3.setFocusTraversalPolicyProvider(true);
+        CheckInGuestNameA3.setPreferredSize(new java.awt.Dimension(250, 35));
+        CheckInGuestNameA3.setVerifyInputWhenFocusTarget(false);
+        CheckInGuestNameA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CheckInGuestNameA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(CheckInGuestNameA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 250, -1));
+
+        CheckInGuestAddressA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA3.setToolTipText("");
+        CheckInGuestAddressA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        CheckInGuestAddressA3.setFocusTraversalPolicyProvider(true);
+        CheckInGuestAddressA3.setPreferredSize(new java.awt.Dimension(250, 35));
+        CheckInGuestAddressA3.setVerifyInputWhenFocusTarget(false);
+        CheckInGuestAddressA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CheckInGuestAddressA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(CheckInGuestAddressA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 250, -1));
+
+        TotalAmountCheckinA3.setEditable(false);
+        TotalAmountCheckinA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TotalAmountCheckinA3.setText("1");
+        TotalAmountCheckinA3.setToolTipText("");
+        TotalAmountCheckinA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        TotalAmountCheckinA3.setFocusTraversalPolicyProvider(true);
+        TotalAmountCheckinA3.setPreferredSize(new java.awt.Dimension(250, 35));
+        TotalAmountCheckinA3.setRequestFocusEnabled(false);
+        TotalAmountCheckinA3.setVerifyInputWhenFocusTarget(false);
+        TotalAmountCheckinA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TotalAmountCheckinA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(TotalAmountCheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 250, -1));
+
+        RoomPriceA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RoomPriceA3.setForeground(new java.awt.Color(227, 221, 203));
+        RoomPriceA3.setText("Room Price Selected: ");
+        RoomPriceA3.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(RoomPriceA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 160, -1));
+
+        CheckInGuestAddressA15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA15.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA15.setText("Payment Method");
+        CheckInGuestAddressA15.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(CheckInGuestAddressA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 160, -1));
+
+        jLabel167.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel167.setForeground(new java.awt.Color(227, 221, 203));
+        jLabel167.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel167.setText("Payment & Confirmation");
+        CheckinA3.add(jLabel167, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 400, 46));
+
+        MaxDaysCheckinA3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        MaxDaysCheckinA3.setText("1");
+        MaxDaysCheckinA3.setToolTipText("");
+        MaxDaysCheckinA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        MaxDaysCheckinA3.setFocusTraversalPolicyProvider(true);
+        MaxDaysCheckinA3.setPreferredSize(new java.awt.Dimension(250, 35));
+        MaxDaysCheckinA3.setVerifyInputWhenFocusTarget(false);
+        MaxDaysCheckinA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MaxDaysCheckinA3ActionPerformed(evt);
+            }
+        });
+        CheckinA3.add(MaxDaysCheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 110, -1));
+
+        jLabel168.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel168.setForeground(new java.awt.Color(227, 221, 203));
+        jLabel168.setText("Full Name");
+        jLabel168.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 130, -1));
+
+        AddressLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        AddressLabel2.setForeground(new java.awt.Color(227, 221, 203));
+        AddressLabel2.setText("Address");
+        AddressLabel2.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(AddressLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 110, -1));
+
+        DesignCheckin3.setBackground(new java.awt.Color(255, 255, 255));
+        DesignCheckin3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        DesignCheckin3.setForeground(new java.awt.Color(255, 255, 255));
+        DesignCheckin3.setText("Double Class A");
+        DesignCheckin3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(110, 104, 70), 2));
+        DesignCheckin3.setPreferredSize(new java.awt.Dimension(250, 35));
+        DesignCheckin3.setVerifyInputWhenFocusTarget(false);
+        CheckinA3.add(DesignCheckin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 250, -1));
+
+        CheckInGuestAddressA10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA10.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA10.setText("Days");
+        CheckInGuestAddressA10.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(CheckInGuestAddressA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 160, -1));
+
+        CheckInGuestAddressA16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA16.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA16.setText("1 -12 MAX");
+        CheckInGuestAddressA16.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(CheckInGuestAddressA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 383, 150, -1));
+
+        LabelCheckinA5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LabelCheckinA5.setForeground(new java.awt.Color(227, 221, 203));
+        LabelCheckinA5.setText("RoomType");
+        LabelCheckinA5.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(LabelCheckinA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 110, -1));
+
+        LabelCheckinA6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LabelCheckinA6.setForeground(new java.awt.Color(227, 221, 203));
+        LabelCheckinA6.setText("RoomType");
+        LabelCheckinA6.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(LabelCheckinA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 110, -1));
+
+        CheckInGuestAddressA17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA17.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA17.setText("Total Amount:");
+        CheckInGuestAddressA17.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(CheckInGuestAddressA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 160, -1));
+
+        jLabel169.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel169.setForeground(new java.awt.Color(227, 221, 203));
+        jLabel169.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel169.setText("Check in info");
+        CheckinA3.add(jLabel169, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 260, 46));
+
+        jPanel45.setBackground(new java.awt.Color(185, 178, 139));
+        jPanel45.setPreferredSize(new java.awt.Dimension(3, 350));
+
+        javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
+        jPanel45.setLayout(jPanel45Layout);
+        jPanel45Layout.setHorizontalGroup(
+            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+        jPanel45Layout.setVerticalGroup(
+            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 350, Short.MAX_VALUE)
+        );
+
+        CheckinA3.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, -1, -1));
+
+        Background7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View Main Intro Blurred100.jpg"))); // NOI18N
+        Background7.setPreferredSize(new java.awt.Dimension(1000, 500));
+        CheckinA3.add(Background7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        CheckInGuestAddressA18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        CheckInGuestAddressA18.setForeground(new java.awt.Color(227, 221, 203));
+        CheckInGuestAddressA18.setText("Room Schedule");
+        CheckInGuestAddressA18.setPreferredSize(new java.awt.Dimension(50, 30));
+        CheckinA3.add(CheckInGuestAddressA18, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 110, -1));
+
+        CheckInPayment.add(CheckinA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         RoomInfoPanel.add(CheckInPayment, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
@@ -4111,24 +5184,23 @@ public class MainWindow1 extends javax.swing.JFrame {
             MenuButtonsPanels.setVisible(false);
             RoomSectionPanel.setVisible(false);
             OnlinePaymentWindow1A2.setVisible(false);
-            OnlinePaymentMainWindow2A1.setVisible(false);
+            OnlinePaymentMainWindow1A2.setVisible(false);
+            OnlinePaymentWindow2A2.setVisible(false);
+            OnlinePaymentMainWindow2A2.setVisible(false);
             //going to checkout Panel
             CheckInPayment.setVisible(true);
+            CheckinA1.setVisible(false);
             CheckinA2.setVisible(true);
+            OnlinePaymentChooseA2.setVisible(false);
             
             //making sure other window is closed/
             InfoWindows.setVisible(false);
-            InfoWindowA1.setVisible(false);
+            InfoWindowA2.setVisible(false);
             InfoWindowB1.setVisible(false);
             InfoWindowB2.setVisible(false);
-            InfoWindowB1.setVisible(false);
+            InfoWindowC1.setVisible(false);
             InfoWindowC2.setVisible(false);
-            //CHECKIN CLOSED
-            CheckinA1.setVisible(false);
-            //ONLINE PAYMENT CLOSED
-            OnlinePaymentChooseA2.setVisible(false);
-            OnlinePaymentWindow1A2.setVisible(false);
-            OnlinePaymentWindow2A2.setVisible(false);
+            OnlinePaymentChooseA1.setVisible(false);
             
             
         }
@@ -4344,21 +5416,13 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_PaymayaOptionA1ActionPerformed
 
-    private void MaxDaysCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MaxDaysCheckinA2ActionPerformed
-
     private void OnlinePaymentButton1GA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA1ActionPerformed
         //GCASH PAYMENT CONFIRMED ROOMA1
         
-        String guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus;
-        if (RoomSchedDayCheckinA1.isSelected()) {
-            roompriceA1 = "8499";
-        } else if (RoomSchedNightCheckinA1.isSelected()) {
-            roompriceA1 = "7499";
-        }
+        String guestnameA1, addressA1, roomtypeA1, roompriceA1, totalamount, paymentmethod, paymentstatus;
         
-        roompriceA1 = "";
+        totalamount = TotalAmountA1Checkin.getText();
+        roompriceA1 = RoomPriceA1.getText();
         guestnameA1 = CheckInGuestNameA1.getText();
         addressA1 = CheckInGuestAddressA1.getText();
         roomtypeA1 = "Single Class A";
@@ -4376,7 +5440,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                     stmt.setString(3, roomtypeA1);
                     stmt.setString(4, roompriceA1);
                     stmt.setTimestamp(5, currentTime);
-                    stmt.setString(6, roompriceA1);
+                    stmt.setString(6, totalamount);
                     stmt.setString(7, paymentmethod);
                     stmt.setString(8, paymentstatus);
                     stmt.setString(9, Usernamee);
@@ -4441,17 +5505,12 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_OnlineExitButton1A1ActionPerformed
 
     private void OnlinePaymentButton2GA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton2GA1ActionPerformed
-        // Paymaya window Payment
-         String guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus;
+        // Paymaya window Payment A1
+         String guestnameA1, addressA1, roomtypeA1, roompriceA1, totalamount, paymentmethod, paymentstatus;
         
          
-        if (RoomSchedDayCheckinA1.isSelected()) {
-            roompriceA1 = "8499";
-        } else if (RoomSchedNightCheckinA1.isSelected()) {
-            roompriceA1 = "7499";
-        }
-        
-        roompriceA1 = "";
+        roompriceA1 = RoomPriceA1.getText();
+        totalamount = TotalAmountA1Checkin.getText();
         guestnameA1 = CheckInGuestNameA1.getText();
         addressA1 = CheckInGuestAddressA1.getText();
         roomtypeA1 = "Single Class A";
@@ -4469,7 +5528,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                     stmt.setString(3, roomtypeA1);
                     stmt.setString(4, roompriceA1);
                     stmt.setTimestamp(5, currentTime);
-                    stmt.setString(6, roompriceA1);
+                    stmt.setString(6, totalamount);
                     stmt.setString(7, paymentmethod);
                     stmt.setString(8, paymentstatus);
                     stmt.setString(9, Usernamee);
@@ -4492,21 +5551,32 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_OnlinePaymentButton2GA1ActionPerformed
 
     private void OnlinePaymentButton1GA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA3ActionPerformed
-        // TODO add your handling code here:
+        // exit gcash A2
+        JOptionPane.showMessageDialog(new JFrame(), "Successfully booked. You will be directly to room section"
+         + (" you can view your book info on account info menu."));
+        OnlinePaymentWindow1A2.setVisible(false);
+        OnlinePayment2ndWindow1A2.setVisible(false);
+        CheckinA2.setVisible(false);
+        CheckinA1.setVisible(false);
+        //making sure the other panel is not visible--
+        RoomInfoPanel.setVisible(false);
+        MainPanel1.setVisible(false);
+        HotelFeaturesPanel.setVisible(false);
+        Timer Hotelappear1 = new Timer(1000, e -> {
+           RoomSectionPanel.setVisible(true);
+        });
+        Hotelappear1.setRepeats(false);
+        Hotelappear1.start();
+        
     }//GEN-LAST:event_OnlinePaymentButton1GA3ActionPerformed
 
     private void OnlinePaymentButton1GA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA4ActionPerformed
-        //gcash payment method A2 room
-         String guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus;
+        // GCash room A2
+         String guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus, paymentTotal;
         
          
-        if (RoomSchedDayCheckinA2.isSelected()) {
-            roompriceA1 = "8499";
-        } else if (RoomSchedNightCheckinA2.isSelected()) {
-            roompriceA1 = "7499";
-        }
-        
-        roompriceA1 = "";
+        paymentTotal = TotalAmountCheckinA2.getText();
+        roompriceA1 = RoomPriceA2.getText();
         guestnameA1 = CheckInGuestNameA2.getText();
         addressA1 = CheckInGuestAddressA2.getText();
         roomtypeA1 = "Double Class A";
@@ -4524,7 +5594,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                     stmt.setString(3, roomtypeA1);
                     stmt.setString(4, roompriceA1);
                     stmt.setTimestamp(5, currentTime);
-                    stmt.setString(6, roompriceA1);
+                    stmt.setString(6, paymentTotal);
                     stmt.setString(7, paymentmethod);
                     stmt.setString(8, paymentstatus);
                     stmt.setString(9, Usernamee);
@@ -4547,22 +5617,42 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_OnlinePaymentButton1GA4ActionPerformed
 
     private void OnlineExitButton1A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlineExitButton1A2ActionPerformed
-        // TODO add your handling code here:
+        // Paymaya exit button A2
+        JOptionPane.showMessageDialog(new JFrame(), "Successfully booked. You will be directly to room section"
+         + (" you can view your book info on account info menu."));
+        OnlinePaymentWindow2A2.setVisible(false);
+        OnlinePayment2ndWindow2A2.setVisible(false);
+        CheckinA2.setVisible(false);
+        CheckinA1.setVisible(false);
+        //making sure the other panel is not visible--
+        RoomInfoPanel.setVisible(false);
+        MainPanel1.setVisible(false);
+        HotelFeaturesPanel.setVisible(false);
+        
+        //closing payment method
+        OnlinePaymentWindow1A2.setVisible(false);
+            OnlinePaymentWindow2A2.setVisible(false);
+            OnlinePaymentChooseA2.setVisible(false);
+        Timer Hotelappear1 = new Timer(1000, e -> {
+           RoomSectionPanel.setVisible(true);
+        });
+        Hotelappear1.setRepeats(false);
+        Hotelappear1.start();
+        
     }//GEN-LAST:event_OnlineExitButton1A2ActionPerformed
 
     private void OnlinePaymentButton2GA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton2GA2ActionPerformed
-        //PayMaya Payment method A2 room 
-        
-        String guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus;
+        // Paymaya room A2
+         String roomselectedpriceA1 = null, guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus, paymentTotal;
         
          
         if (RoomSchedDayCheckinA2.isSelected()) {
-            roompriceA1 = "8499";
+            roomselectedpriceA1 = "8499";
         } else if (RoomSchedNightCheckinA2.isSelected()) {
-            roompriceA1 = "7499";
+            roomselectedpriceA1 = "7499";
         }
-        
-        roompriceA1 = "";
+        paymentTotal = TotalAmountCheckinA2.getText();
+        roompriceA1 = roomselectedpriceA1;
         guestnameA1 = CheckInGuestNameA2.getText();
         addressA1 = CheckInGuestAddressA2.getText();
         roomtypeA1 = "Double Class A";
@@ -4580,7 +5670,7 @@ public class MainWindow1 extends javax.swing.JFrame {
                     stmt.setString(3, roomtypeA1);
                     stmt.setString(4, roompriceA1);
                     stmt.setTimestamp(5, currentTime);
-                    stmt.setString(6, roompriceA1);
+                    stmt.setString(6, paymentTotal);
                     stmt.setString(7, paymentmethod);
                     stmt.setString(8, paymentstatus);
                     stmt.setString(9, Usernamee);
@@ -4600,6 +5690,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         
         paymentDelayed2.setRepeats(false);
         paymentDelayed2.start();
+        
     }//GEN-LAST:event_OnlinePaymentButton2GA2ActionPerformed
 
     private void GcashOptionA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GcashOptionA2ActionPerformed
@@ -4611,37 +5702,37 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_PaymayaOptionA2ActionPerformed
 
     private void UpdatePriceA1Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdatePriceA1Button1ActionPerformed
-        // TODO add your handling code here:
+        // total display A2
         PaymentDetailsA2();
     }//GEN-LAST:event_UpdatePriceA1Button1ActionPerformed
 
     private void ConfirmButtonA1Checkin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmButtonA1Checkin1ActionPerformed
-        // opening the possible payment method
+        //Payment Confirmation A2
         PaymentMethodA2();
     }//GEN-LAST:event_ConfirmButtonA1Checkin1ActionPerformed
 
     private void RoomSchedNightCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedNightCheckinA2ActionPerformed
-        // changing the selection of daynight A2
+        // A2 day night selection
         PaymentDetailsA2();
     }//GEN-LAST:event_RoomSchedNightCheckinA2ActionPerformed
 
     private void RoomSchedDayCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA2ActionPerformed
-        // changing the selection of daynight  A2
+        // A2 day night selection
         PaymentDetailsA2();
     }//GEN-LAST:event_RoomSchedDayCheckinA2ActionPerformed
 
     private void PaymentMethodCheckin1A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin1A2ActionPerformed
-        // if open A2
+        // A2 payment method 
         PaymentCheckInA2();
     }//GEN-LAST:event_PaymentMethodCheckin1A2ActionPerformed
 
     private void PaymentMethodCheckin2A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin2A2ActionPerformed
-       // if open A2
+        // A2 payment method
         PaymentCheckInA2();
     }//GEN-LAST:event_PaymentMethodCheckin2A2ActionPerformed
 
     private void PaymentMethodCheckin3A2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin3A2ActionPerformed
-        // if open A2
+        // A2 payment method
         PaymentCheckInA2();
     }//GEN-LAST:event_PaymentMethodCheckin3A2ActionPerformed
 
@@ -4653,17 +5744,17 @@ public class MainWindow1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CheckInGuestAddressA2ActionPerformed
 
-    private void TotalAmountA1Checkin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountA1Checkin1ActionPerformed
+    private void TotalAmountCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountCheckinA2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TotalAmountA1Checkin1ActionPerformed
+    }//GEN-LAST:event_TotalAmountCheckinA2ActionPerformed
 
-    private void MaxDaysCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA3ActionPerformed
-        // getting tbe number thing A2 room
-        if ("".equals(MaxDaysCheckinA3.getText())) {
+    private void MaxDaysCheckinA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA2ActionPerformed
+        // checking days A2
+        if ("".equals(MaxDaysCheckinA2.getText())) {
             JOptionPane.showMessageDialog( new JFrame(), "please input a number.");
         } else {
            try {
-               int number = Integer.parseInt(MaxDaysCheckinA3.getText());
+               int number = Integer.parseInt(MaxDaysCheckinA2.getText());
                if (number >= 1 && number <= 10) {
                    PaymentDetailsA2();
                } else {
@@ -4674,7 +5765,270 @@ public class MainWindow1 extends javax.swing.JFrame {
                
            }
         }
+    }//GEN-LAST:event_MaxDaysCheckinA2ActionPerformed
+
+    private void OnlinePaymentButton1GA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA5ActionPerformed
+        // exit GCash A3
+        JOptionPane.showMessageDialog(new JFrame(), "Successfully booked. You will be directly to room section"
+         + (" you can view your book info on account info menu."));
+        OnlinePaymentWindow1A3.setVisible(false);
+        OnlinePayment2ndWindow1A3.setVisible(false);
+        CheckinA3.setVisible(false);
+        CheckinA2.setVisible(false);
+        CheckinA1.setVisible(false);
+        //making sure the other panel is not visible--
+        RoomInfoPanel.setVisible(false);
+        MainPanel1.setVisible(false);
+        HotelFeaturesPanel.setVisible(false);
+        Timer Hotelappear1 = new Timer(1000, e -> {
+           RoomSectionPanel.setVisible(true);
+        });
+        Hotelappear1.setRepeats(false);
+        Hotelappear1.start();
+        
+    }//GEN-LAST:event_OnlinePaymentButton1GA5ActionPerformed
+
+    private void OnlinePaymentButton1GA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton1GA6ActionPerformed
+        // GCASH room A3
+         String roomselectedpriceA1 = null, guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus, paymentTotal;
+        
+         
+        if (RoomSchedDayCheckinA3.isSelected()) {
+            roomselectedpriceA1 = "15499";
+        } else if (RoomSchedNightCheckinA3.isSelected()) {
+            roomselectedpriceA1 = "16499";
+        }
+        paymentTotal = TotalAmountCheckinA3.getText();
+        roompriceA1 = roomselectedpriceA1;
+        guestnameA1 = CheckInGuestNameA3.getText();
+        addressA1 = CheckInGuestAddressA3.getText();
+        roomtypeA1 = "Family Room A";
+        paymentmethod = "Online payment GCash";
+        paymentstatus = "Confirmed";
+        Timestamp currentTime = Timestamp.valueOf(LocalDateTime.now());
+        
+        String AddUserbookfromdatabase = "UPDATE hotelusersdatabase "
+                + "SET GuestName=?, Address=?, RoomType=?, RoomPrice=?, BookingSched=?, "
+                + "TotalAmount=?, PaymentMethod=?, PaymentStatus=? WHERE Username=?";
+        try (Connection con = DriverManager.getConnection(DbURL, DbPhoneNumber, DbPassword);
+                    PreparedStatement stmt = con.prepareStatement(AddUserbookfromdatabase)) {
+                    stmt.setString(1, guestnameA1);
+                    stmt.setString(2, addressA1);
+                    stmt.setString(3, roomtypeA1);
+                    stmt.setString(4, roompriceA1);
+                    stmt.setTimestamp(5, currentTime);
+                    stmt.setString(6, paymentTotal);
+                    stmt.setString(7, paymentmethod);
+                    stmt.setString(8, paymentstatus);
+                    stmt.setString(9, Usernamee);
+                    stmt.executeUpdate();
+            } catch (SQLException ex) {
+                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        Timer paymentDelayed1 = new Timer(500, e -> {
+            OnlinePaymentMainWindow1A3.setVisible(false);
+        });
+        
+        paymentDelayed1.setRepeats(false);
+        paymentDelayed1.start();
+        Timer paymentDelayed2 = new Timer(500, e -> {
+           OnlinePayment2ndWindow1A3.setVisible(true); 
+        });
+        
+        paymentDelayed2.setRepeats(false);
+        paymentDelayed2.start();
+    }//GEN-LAST:event_OnlinePaymentButton1GA6ActionPerformed
+
+    private void OnlineExitButton1A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlineExitButton1A3ActionPerformed
+        // exit paymaya A3
+        JOptionPane.showMessageDialog(new JFrame(), "Successfully booked. You will be directly to room section"
+         + (" you can view your book info on account info menu."));
+        OnlinePaymentWindow2A3.setVisible(false);
+        OnlinePayment2ndWindow2A3.setVisible(false);
+        CheckinA3.setVisible(false);
+        CheckinA2.setVisible(false);
+        CheckinA1.setVisible(false);
+        //making sure the other panel is not visible--
+        RoomInfoPanel.setVisible(false);
+        MainPanel1.setVisible(false);
+        HotelFeaturesPanel.setVisible(false);
+        Timer Hotelappear1 = new Timer(1000, e -> {
+           RoomSectionPanel.setVisible(true);
+        });
+        Hotelappear1.setRepeats(false);
+        Hotelappear1.start();
+    }//GEN-LAST:event_OnlineExitButton1A3ActionPerformed
+
+    private void OnlinePaymentButton2GA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnlinePaymentButton2GA3ActionPerformed
+        // Paymaya room A3
+         String roomselectedpriceA1 = null, guestnameA1, addressA1, roomtypeA1, roompriceA1, paymentmethod, paymentstatus, paymentTotal;
+        
+         
+        if (RoomSchedDayCheckinA3.isSelected()) {
+            roomselectedpriceA1 = "15499";
+        } else if (RoomSchedNightCheckinA3.isSelected()) {
+            roomselectedpriceA1 = "16499";
+        }
+        paymentTotal = TotalAmountCheckinA3.getText();
+        roompriceA1 = roomselectedpriceA1;
+        guestnameA1 = CheckInGuestNameA3.getText();
+        addressA1 = CheckInGuestAddressA3.getText();
+        roomtypeA1 = "Family Room A";
+        paymentmethod = "Online payment PayMaya";
+        paymentstatus = "Confirmed";
+        Timestamp currentTime = Timestamp.valueOf(LocalDateTime.now());
+        
+        String AddUserbookfromdatabase = "UPDATE hotelusersdatabase "
+                + "SET GuestName=?, Address=?, RoomType=?, RoomPrice=?, BookingSched=?, "
+                + "TotalAmount=?, PaymentMethod=?, PaymentStatus=? WHERE Username=?";
+        try (Connection con = DriverManager.getConnection(DbURL, DbPhoneNumber, DbPassword);
+                    PreparedStatement stmt = con.prepareStatement(AddUserbookfromdatabase)) {
+                    stmt.setString(1, guestnameA1);
+                    stmt.setString(2, addressA1);
+                    stmt.setString(3, roomtypeA1);
+                    stmt.setString(4, roompriceA1);
+                    stmt.setTimestamp(5, currentTime);
+                    stmt.setString(6, paymentTotal);
+                    stmt.setString(7, paymentmethod);
+                    stmt.setString(8, paymentstatus);
+                    stmt.setString(9, Usernamee);
+                    stmt.executeUpdate();
+            } catch (SQLException ex) {
+                Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        Timer paymentDelayed1 = new Timer(500, e -> {
+            OnlinePaymentMainWindow2A3.setVisible(false);
+        });
+        
+        paymentDelayed1.setRepeats(false);
+        paymentDelayed1.start();
+        Timer paymentDelayed2 = new Timer(500, e -> {
+           OnlinePayment2ndWindow2A3.setVisible(true); 
+        });
+        
+        paymentDelayed2.setRepeats(false);
+        paymentDelayed2.start();
+    }//GEN-LAST:event_OnlinePaymentButton2GA3ActionPerformed
+
+    private void GcashOptionA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GcashOptionA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GcashOptionA3ActionPerformed
+
+    private void PaymayaOptionA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymayaOptionA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaymayaOptionA3ActionPerformed
+
+    private void UpdatePriceA1Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdatePriceA1Button2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UpdatePriceA1Button2ActionPerformed
+
+    private void ConfirmButtonA1Checkin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmButtonA1Checkin2ActionPerformed
+        // opening the payment method A3
+        PaymentMethodA3();
+    }//GEN-LAST:event_ConfirmButtonA1Checkin2ActionPerformed
+
+    private void RoomSchedNightCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedNightCheckinA3ActionPerformed
+        // RoomSched night A3
+        PaymentDetailsA3();
+    }//GEN-LAST:event_RoomSchedNightCheckinA3ActionPerformed
+
+    private void RoomSchedDayCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoomSchedDayCheckinA3ActionPerformed
+        // RoomSched day A3
+        PaymentDetailsA3();
+    }//GEN-LAST:event_RoomSchedDayCheckinA3ActionPerformed
+
+    private void PaymentMethodCheckin1A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin1A3ActionPerformed
+        // PaymentMethod online payment A3
+        PaymentCheckInA3();
+    }//GEN-LAST:event_PaymentMethodCheckin1A3ActionPerformed
+
+    private void PaymentMethodCheckin2A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin2A3ActionPerformed
+        // PaymentMethod cash payment A3
+        PaymentCheckInA3();
+    }//GEN-LAST:event_PaymentMethodCheckin2A3ActionPerformed
+
+    private void PaymentMethodCheckin3A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentMethodCheckin3A3ActionPerformed
+        // Payment Method Checkin credit card A3
+        PaymentCheckInA3();
+    }//GEN-LAST:event_PaymentMethodCheckin3A3ActionPerformed
+
+    private void CheckInGuestNameA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestNameA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CheckInGuestNameA3ActionPerformed
+
+    private void CheckInGuestAddressA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckInGuestAddressA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CheckInGuestAddressA3ActionPerformed
+
+    private void TotalAmountCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalAmountCheckinA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TotalAmountCheckinA3ActionPerformed
+
+    private void MaxDaysCheckinA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxDaysCheckinA3ActionPerformed
+        // days max thing A3
+        if ("".equals(MaxDaysCheckinA3.getText())) {
+            JOptionPane.showMessageDialog( new JFrame(), "please input a number.");
+        } else {
+           try {
+               int number = Integer.parseInt(MaxDaysCheckinA3.getText());
+               if (number >= 1 && number <= 10) {
+                   PaymentDetailsA3();
+               } else {
+                   JOptionPane.showMessageDialog(new JFrame(), "Please input a number between 1-10.");
+               }
+           } catch (NumberFormatException e) {
+               JOptionPane.showMessageDialog(new JFrame(), "Please enter a valid number.");
+               
+           }
+        }
     }//GEN-LAST:event_MaxDaysCheckinA3ActionPerformed
+
+    private void BookButtonB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookButtonB1ActionPerformed
+        // Booking button on A3
+        if (RoomBooked > 2) {
+            JOptionPane.showMessageDialog(new JFrame(), "You can only booked once" + "You can cancel your current booked in Account Info");
+        }
+        if (LoginEnabled < 2) {
+            JOptionPane.showMessageDialog(null, "Before you continue you need to sign in");
+            //turning off Panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            RoomInfoPanel.setVisible(false);
+            //Opening main Login Window
+            LoginSystemPanel.setVisible(true);
+            RegisterFormWindow.setVisible(false);
+            LoginFormWindow.setVisible(true);
+            LoginSystemPanel.setOpaque(false);
+            
+        } else {
+            //turning off panels
+            MainPanel1.setVisible(false);
+            MenuButtonsPanels.setVisible(false);
+            RoomSectionPanel.setVisible(false);
+            OnlinePaymentWindow1A3.setVisible(false);
+            OnlinePaymentMainWindow1A3.setVisible(false);
+            OnlinePaymentWindow2A3.setVisible(false);
+            OnlinePaymentMainWindow2A3.setVisible(false);
+            //going to checkout Panel
+            CheckInPayment.setVisible(true);
+            CheckinA1.setVisible(false);
+            CheckinA2.setVisible(false);
+            CheckinA3.setVisible(true);
+            OnlinePaymentChooseA2.setVisible(false);
+            
+            //making sure other window is closed/
+            InfoWindows.setVisible(false);
+            InfoWindowA1.setVisible(false);
+            InfoWindowA2.setVisible(false);
+            InfoWindowB2.setVisible(false);
+            InfoWindowC1.setVisible(false);
+            InfoWindowC2.setVisible(false);
+            OnlinePaymentChooseA3.setVisible(false);
+            
+            
+        }
+    }//GEN-LAST:event_BookButtonB1ActionPerformed
 
     
     
@@ -4696,6 +6050,9 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel AccountInfoPanel;
     private javax.swing.JPanel AccountInfoWindow;
     private javax.swing.JLabel AccountNameA1;
+    private javax.swing.JLabel AccountNameA10;
+    private javax.swing.JLabel AccountNameA11;
+    private javax.swing.JLabel AccountNameA12;
     private javax.swing.JLabel AccountNameA2;
     private javax.swing.JLabel AccountNameA3;
     private javax.swing.JLabel AccountNameA4;
@@ -4703,8 +6060,10 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel AccountNameA6;
     private javax.swing.JLabel AccountNameA7;
     private javax.swing.JLabel AccountNameA8;
+    private javax.swing.JLabel AccountNameA9;
     private javax.swing.JLabel AddressLabel;
     private javax.swing.JLabel AddressLabel1;
+    private javax.swing.JLabel AddressLabel2;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
     private javax.swing.JLabel Background2;
@@ -4712,6 +6071,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel Background4;
     private javax.swing.JLabel Background5;
     private javax.swing.JLabel Background6;
+    private javax.swing.JLabel Background7;
     private javax.swing.JButton BookButtonA1;
     private javax.swing.JButton BookButtonA2;
     private javax.swing.JButton BookButtonB1;
@@ -4723,7 +6083,13 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel CheckInGuestAddressA11;
     private javax.swing.JLabel CheckInGuestAddressA12;
     private javax.swing.JLabel CheckInGuestAddressA13;
+    private javax.swing.JLabel CheckInGuestAddressA14;
+    private javax.swing.JLabel CheckInGuestAddressA15;
+    private javax.swing.JLabel CheckInGuestAddressA16;
+    private javax.swing.JLabel CheckInGuestAddressA17;
+    private javax.swing.JLabel CheckInGuestAddressA18;
     private javax.swing.JTextField CheckInGuestAddressA2;
+    private javax.swing.JTextField CheckInGuestAddressA3;
     private javax.swing.JLabel CheckInGuestAddressA4;
     private javax.swing.JLabel CheckInGuestAddressA5;
     private javax.swing.JLabel CheckInGuestAddressA6;
@@ -4732,20 +6098,25 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel CheckInGuestAddressA9;
     private javax.swing.JTextField CheckInGuestNameA1;
     private javax.swing.JTextField CheckInGuestNameA2;
+    private javax.swing.JTextField CheckInGuestNameA3;
     private javax.swing.JPanel CheckInPayment;
     private javax.swing.JPanel CheckinA1;
     private javax.swing.JPanel CheckinA2;
+    private javax.swing.JPanel CheckinA3;
     private javax.swing.JLabel CompanyNameLabel;
     private javax.swing.JLabel CompanyTitle;
     private javax.swing.JLabel CompanyTitle1;
     private javax.swing.JButton ConfirmButtonA1Checkin;
     private javax.swing.JButton ConfirmButtonA1Checkin1;
+    private javax.swing.JButton ConfirmButtonA1Checkin2;
     private javax.swing.JButton ContinueButtonLogin;
     private javax.swing.JPanel Decoration1;
     private javax.swing.JLabel DesignCheckin1;
     private javax.swing.JLabel DesignCheckin2;
+    private javax.swing.JLabel DesignCheckin3;
     private javax.swing.JPanel Designnn;
     private javax.swing.JPanel Designnn1;
+    private javax.swing.JPanel Designnn2;
     private javax.swing.JTextField EmailAddressSignUpInput;
     private javax.swing.JButton ExitButtonLogin;
     private javax.swing.JButton ExitInfoButton;
@@ -4756,6 +6127,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton GOSigninWindowButton;
     private javax.swing.JRadioButton GcashOptionA1;
     private javax.swing.JRadioButton GcashOptionA2;
+    private javax.swing.JRadioButton GcashOptionA3;
     private javax.swing.JPanel HotelFeaturesPanel;
     private javax.swing.JPanel InfoWindowA1;
     private javax.swing.JPanel InfoWindowA2;
@@ -4768,6 +6140,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel LabelCheckinA2;
     private javax.swing.JLabel LabelCheckinA3;
     private javax.swing.JLabel LabelCheckinA4;
+    private javax.swing.JLabel LabelCheckinA5;
+    private javax.swing.JLabel LabelCheckinA6;
     private javax.swing.JPanel LoginFormWindow;
     private javax.swing.JPanel LoginSystemPanel;
     private javax.swing.JLabel Logo;
@@ -4780,44 +6154,63 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JTextField NumberSignUpInput;
     private javax.swing.JButton OnlineExitButton1A1;
     private javax.swing.JButton OnlineExitButton1A2;
+    private javax.swing.JButton OnlineExitButton1A3;
     private javax.swing.JPanel OnlinePayment2ndWindow1A1;
     private javax.swing.JPanel OnlinePayment2ndWindow1A2;
+    private javax.swing.JPanel OnlinePayment2ndWindow1A3;
     private javax.swing.JPanel OnlinePayment2ndWindow2A1;
     private javax.swing.JPanel OnlinePayment2ndWindow2A2;
+    private javax.swing.JPanel OnlinePayment2ndWindow2A3;
     private javax.swing.JButton OnlinePaymentButton1GA1;
     private javax.swing.JButton OnlinePaymentButton1GA2;
     private javax.swing.JButton OnlinePaymentButton1GA3;
     private javax.swing.JButton OnlinePaymentButton1GA4;
+    private javax.swing.JButton OnlinePaymentButton1GA5;
+    private javax.swing.JButton OnlinePaymentButton1GA6;
     private javax.swing.JButton OnlinePaymentButton2GA1;
     private javax.swing.JButton OnlinePaymentButton2GA2;
+    private javax.swing.JButton OnlinePaymentButton2GA3;
     private javax.swing.JPanel OnlinePaymentChooseA1;
     private javax.swing.JPanel OnlinePaymentChooseA2;
+    private javax.swing.JPanel OnlinePaymentChooseA3;
     private javax.swing.JPanel OnlinePaymentMainWindow1A1;
     private javax.swing.JPanel OnlinePaymentMainWindow1A2;
+    private javax.swing.JPanel OnlinePaymentMainWindow1A3;
     private javax.swing.JPanel OnlinePaymentMainWindow2A1;
     private javax.swing.JPanel OnlinePaymentMainWindow2A2;
+    private javax.swing.JPanel OnlinePaymentMainWindow2A3;
     private javax.swing.JPanel OnlinePaymentWindow1A1;
     private javax.swing.JPanel OnlinePaymentWindow1A2;
+    private javax.swing.JPanel OnlinePaymentWindow1A3;
     private javax.swing.JPanel OnlinePaymentWindow2A1;
     private javax.swing.JPanel OnlinePaymentWindow2A2;
+    private javax.swing.JPanel OnlinePaymentWindow2A3;
     private javax.swing.JPasswordField PasswordSignUpInput;
     private javax.swing.JPasswordField PasswordSigninInput1;
     private javax.swing.JRadioButton PaymayaOptionA1;
     private javax.swing.JRadioButton PaymayaOptionA2;
+    private javax.swing.JRadioButton PaymayaOptionA3;
     private javax.swing.JRadioButton PaymentMethodCheckin1A1;
     private javax.swing.JRadioButton PaymentMethodCheckin1A2;
+    private javax.swing.JRadioButton PaymentMethodCheckin1A3;
     private javax.swing.JRadioButton PaymentMethodCheckin2A1;
     private javax.swing.JRadioButton PaymentMethodCheckin2A2;
+    private javax.swing.JRadioButton PaymentMethodCheckin2A3;
     private javax.swing.JRadioButton PaymentMethodCheckin3A1;
     private javax.swing.JRadioButton PaymentMethodCheckin3A2;
+    private javax.swing.JRadioButton PaymentMethodCheckin3A3;
     private javax.swing.JLabel PriceTextGcash1A2;
+    private javax.swing.JLabel PriceTextGcash1A3;
+    private javax.swing.JLabel PriceTextGcash1A4;
     private javax.swing.JLabel PriceTextGcash2A2;
-    private javax.swing.JLabel PriceTextGcashA4;
-    private javax.swing.JLabel PriceTextGcashA5;
-    private javax.swing.JLabel PriceTextGcashA6;
-    private javax.swing.JLabel PriceTextPayMayaA5;
+    private javax.swing.JLabel PriceTextGcashA2;
+    private javax.swing.JLabel PriceTextGcashA3;
     private javax.swing.JLabel PriceTextPaymaya1A2;
+    private javax.swing.JLabel PriceTextPaymaya1A3;
+    private javax.swing.JLabel PriceTextPaymaya1A4;
     private javax.swing.JLabel PriceTextPaymaya2A2;
+    private javax.swing.JLabel PriceTextPaymaya2A3;
+    private javax.swing.JLabel PriceTextPaymaya2A4;
     private javax.swing.JPanel RegisterFormWindow;
     private javax.swing.JButton RoomA1Button;
     private javax.swing.JButton RoomA1Button1;
@@ -4835,10 +6228,15 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel RoomBSelectionPanel1;
     private javax.swing.JPanel RoomBSelectionPanel2;
     private javax.swing.JPanel RoomInfoPanel;
+    private javax.swing.JLabel RoomPriceA1;
+    private javax.swing.JLabel RoomPriceA2;
+    private javax.swing.JLabel RoomPriceA3;
     private javax.swing.JRadioButton RoomSchedDayCheckinA1;
     private javax.swing.JRadioButton RoomSchedDayCheckinA2;
+    private javax.swing.JRadioButton RoomSchedDayCheckinA3;
     private javax.swing.JRadioButton RoomSchedNightCheckinA1;
     private javax.swing.JRadioButton RoomSchedNightCheckinA2;
+    private javax.swing.JRadioButton RoomSchedNightCheckinA3;
     private javax.swing.JButton RoomSectionButtion;
     private javax.swing.JPanel RoomSectionPanel;
     private javax.swing.JButton SignInButton1;
@@ -4847,9 +6245,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JTextField TotalAmountA1Checkin;
-    private javax.swing.JTextField TotalAmountA1Checkin1;
+    private javax.swing.JTextField TotalAmountCheckinA2;
+    private javax.swing.JTextField TotalAmountCheckinA3;
     private javax.swing.JButton UpdatePriceA1Button;
     private javax.swing.JButton UpdatePriceA1Button1;
+    private javax.swing.JButton UpdatePriceA1Button2;
     private javax.swing.JLabel UserNameGreetings;
     private javax.swing.JTextField UsernameSignUpInput;
     private javax.swing.JTextField UsernameSigninInput1;
@@ -4896,9 +6296,44 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel132;
     private javax.swing.JLabel jLabel133;
     private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
+    private javax.swing.JLabel jLabel152;
+    private javax.swing.JLabel jLabel153;
+    private javax.swing.JLabel jLabel154;
+    private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
+    private javax.swing.JLabel jLabel158;
+    private javax.swing.JLabel jLabel159;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel160;
+    private javax.swing.JLabel jLabel161;
+    private javax.swing.JLabel jLabel162;
+    private javax.swing.JLabel jLabel163;
+    private javax.swing.JLabel jLabel164;
+    private javax.swing.JLabel jLabel165;
+    private javax.swing.JLabel jLabel166;
+    private javax.swing.JLabel jLabel167;
+    private javax.swing.JLabel jLabel168;
+    private javax.swing.JLabel jLabel169;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -5020,7 +6455,16 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
     private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
+    private javax.swing.JPanel jPanel41;
+    private javax.swing.JPanel jPanel42;
+    private javax.swing.JPanel jPanel43;
+    private javax.swing.JPanel jPanel44;
+    private javax.swing.JPanel jPanel45;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -5028,6 +6472,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
