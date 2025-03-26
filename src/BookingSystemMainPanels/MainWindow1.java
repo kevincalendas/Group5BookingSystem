@@ -923,7 +923,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         String email = EmailAddressSignUpInput.getText().trim();
         
         
-        if ("".equals(NumberSignUpInput.getText())) {
+        if ("".equals(UsernameSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
         }  else if ("".equals(UsernameSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Username");
@@ -935,7 +935,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         }  else if (NumberSignUpInput.getText().length() < 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
             NumberSignUpInput.setText("");
-        }  else if (UsernameSignUpInput.getText().length() > 45) {
+        }  else if (UsernameSignUpInput.getText().length() > 45 ) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             UsernameSignUpInput.setText("");
         }  else if (UsernameSignUpInput.getText().length() < 5) {
@@ -6109,6 +6109,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_ExitLoginButton2ActionPerformed
 
     private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
+
+       
         CreateAccountButton();       
     }//GEN-LAST:event_SignUpButton1ActionPerformed
 
