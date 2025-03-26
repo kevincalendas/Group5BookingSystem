@@ -169,6 +169,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         if (PriceDayA1 == 0) {
             JOptionPane.showMessageDialog(new JFrame(), "An error occured, please try again.");
             
+     
             OnlinePaymentWindow1A1.setVisible(false);
             OnlinePayment2ndWindow1A1.setVisible(false);
             CheckinA1.setVisible(false);
@@ -556,6 +557,16 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jPanel19 = new javax.swing.JPanel();
+        jPanel28 = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
         Background = new javax.swing.JLabel();
         RoomInfoPanel = new javax.swing.JPanel();
         InfoWindows = new javax.swing.JPanel();
@@ -1079,7 +1090,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setDoubleBuffered(false);
         jPanel1.setOpaque(false);
-        jPanel1.setPreferredSize(new java.awt.Dimension(998, 1130));
+        jPanel1.setPreferredSize(new java.awt.Dimension(998, 1600));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         RoomBSelectionPanel2.setBackground(new java.awt.Color(0, 0, 0));
@@ -1525,19 +1536,96 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setOpaque(false);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1140, Short.MAX_VALUE)
-        );
+        jLabel106.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel106.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel106.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel106.setText("Dining Area");
+        jPanel2.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 1190, 180, 30));
+
+        jLabel107.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel107.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel107.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel107.setText("Gym Area");
+        jPanel2.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 1190, 180, 30));
+
+        jLabel103.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel103.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel103.setText("Dining Area");
+        jPanel2.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 1190, 180, 30));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/dining.jpg"))); // NOI18N
+        jLabel33.setText("jLabel33");
+        jLabel33.setPreferredSize(new java.awt.Dimension(280, 340));
+        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 1230, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/gym.jpg"))); // NOI18N
+        jLabel34.setText("jLabel34");
+        jLabel34.setPreferredSize(new java.awt.Dimension(280, 340));
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 1230, -1, -1));
+
+        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/pool.jpg"))); // NOI18N
+        jLabel102.setText("jLabel102");
+        jLabel102.setPreferredSize(new java.awt.Dimension(280, 340));
+        jPanel1.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 1230, -1, -1));
+
+        jLabel105.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
+        jLabel105.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel105.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel105.setText("Hotel Features");
+        jPanel1.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 1120, 390, 60));
+
+        jPanel19.setBackground(new java.awt.Color(197, 179, 124));
+        jPanel19.setPreferredSize(new java.awt.Dimension(75, 3));
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 75, Short.MAX_VALUE)
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 1220, -1, -1));
+
+        jPanel28.setBackground(new java.awt.Color(197, 179, 124));
+        jPanel28.setPreferredSize(new java.awt.Dimension(75, 3));
+
+        javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
+        jPanel28.setLayout(jPanel28Layout);
+        jPanel28Layout.setHorizontalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 75, Short.MAX_VALUE)
+        );
+        jPanel28Layout.setVerticalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 1220, -1, -1));
+
+        jPanel29.setBackground(new java.awt.Color(197, 179, 124));
+        jPanel29.setPreferredSize(new java.awt.Dimension(75, 3));
+
+        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
+        jPanel29.setLayout(jPanel29Layout);
+        jPanel29Layout.setHorizontalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 75, Short.MAX_VALUE)
+        );
+        jPanel29Layout.setVerticalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 1220, -1, -1));
 
         jScrollPane2.setViewportView(jPanel1);
 
@@ -1985,7 +2073,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel77.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel77.setForeground(new java.awt.Color(255, 255, 255));
         jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel77.setText("Successfully Payed!");
+        jLabel77.setText("Successfully Paid!");
         jLabel77.setPreferredSize(new java.awt.Dimension(200, 25));
         jPanel23.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 35, -1, -1));
 
@@ -4012,6 +4100,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -4036,6 +4129,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
@@ -4117,6 +4212,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
@@ -4126,6 +4222,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
