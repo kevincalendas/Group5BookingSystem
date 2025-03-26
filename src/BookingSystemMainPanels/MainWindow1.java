@@ -852,7 +852,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         EmailaddressInfo1.setPreferredSize(new java.awt.Dimension(500, 40));
         AccountInfoPanel.add(EmailaddressInfo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 460, -1));
 
-        AddressInfo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        AddressInfo.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         AddressInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         AddressInfo.setText("Address: ");
         AddressInfo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153), 3));
