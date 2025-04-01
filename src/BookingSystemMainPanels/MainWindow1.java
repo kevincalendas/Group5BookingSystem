@@ -847,7 +847,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel36.setText("Account Info");
         jLabel36.setPreferredSize(new java.awt.Dimension(500, 50));
-        AccountInfoPanel.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+        AccountInfoPanel.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
 
         UsernameInfo.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         UsernameInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
