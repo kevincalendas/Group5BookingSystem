@@ -152,7 +152,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         BookButtonC1.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );
         ExitInfoButton.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );
         //MenuButtonsETC
-        MenuButtonsPanels.setBackground(new Color( 203, 193, 155, 100));
+        MenuButtonsPanels.setBackground(new Color( 203, 193, 155));
         MenuButtonsPanels.putClientProperty( FlatClientProperties.STYLE, "arc: 30" );
     }
     public void RoundingCheckIn() {
@@ -899,7 +899,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         getContentPane().add(MenuOpenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        MenuButtonsPanels.setBackground(new java.awt.Color(213, 208, 153, 200));
+        MenuButtonsPanels.setBackground(new java.awt.Color(203, 193, 157));
+        MenuButtonsPanels.setOpaque(false);
         MenuButtonsPanels.setPreferredSize(new java.awt.Dimension(500, 300));
         MenuButtonsPanels.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -915,12 +916,12 @@ public class MainWindow1 extends javax.swing.JFrame {
         ViewHotelFeatureButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/PirsonIcon.png"))); // NOI18N
         ViewHotelFeatureButton.setBorder(null);
         ViewHotelFeatureButton.setBorderPainted(false);
-        ViewHotelFeatureButton.setContentAreaFilled(false);
         ViewHotelFeatureButton.setDefaultCapable(false);
-        ViewHotelFeatureButton.setFocusTraversalPolicyProvider(true);
+        ViewHotelFeatureButton.setFocusPainted(false);
         ViewHotelFeatureButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ViewHotelFeatureButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ViewHotelFeatureButton.setOpaque(true);
+        ViewHotelFeatureButton.setRolloverEnabled(false);
         ViewHotelFeatureButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ViewHotelFeatureButtonActionPerformed(evt);
@@ -941,18 +942,18 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         MenuButtonsPanels.add(ExitMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        RoomSectionButtion.setBackground(new java.awt.Color(209, 199, 155));
+        RoomSectionButtion.setBackground(new java.awt.Color(203, 193, 155));
         RoomSectionButtion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         RoomSectionButtion.setForeground(new java.awt.Color(255, 255, 255));
         RoomSectionButtion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/RoomIcon.png"))); // NOI18N
         RoomSectionButtion.setBorder(null);
         RoomSectionButtion.setBorderPainted(false);
-        RoomSectionButtion.setContentAreaFilled(false);
         RoomSectionButtion.setDefaultCapable(false);
-        RoomSectionButtion.setFocusTraversalPolicyProvider(true);
+        RoomSectionButtion.setFocusPainted(false);
         RoomSectionButtion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         RoomSectionButtion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         RoomSectionButtion.setOpaque(true);
+        RoomSectionButtion.setRolloverEnabled(false);
         RoomSectionButtion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RoomSectionButtionActionPerformed(evt);
