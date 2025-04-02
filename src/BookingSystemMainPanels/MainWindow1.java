@@ -35,6 +35,7 @@ import javax.swing.event.DocumentListener;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import com.formdev.flatlaf.FlatLightLaf;
+import java.sql.Types;
 /**
  *
  * @author Kevin
@@ -461,26 +462,26 @@ public class MainWindow1 extends javax.swing.JFrame {
          String guestnameA1, addressA1, roomtypeA1, roompriceA1, totalamount, paymentmethod, paymentstatus;
         System.out.println("AccountRefund Triggered!");
          
-        roompriceA1 = "none";
-        totalamount = "none";
-        guestnameA1 = "none";
-        addressA1 = "none";
-        roomtypeA1 = "none";
-        paymentmethod = "none";
-        paymentstatus = "none";
+        roompriceA1 = ".";
+        totalamount = ".";
+        guestnameA1 = ".";
+        addressA1 = ".";
+        roomtypeA1 = ".";
+        paymentmethod = ".";
+        paymentstatus = ".";
         int bookingtime = 0;
         Timestamp currentTime = Timestamp.valueOf(LocalDateTime.now());
         
-        String Refund = "UPDATE hotelusersdatabase "
-                + "SET GuestName=?, Address=?, RoomType=?, RoomPrice=?, BookingSched=NULL, "
+        String REFUNDS = "UPDATE hotelusersdatabase "
+                + "SET GuestName=?, Address=?, RoomType=?, RoomPrice=?, BookingSched=?, "
                 + "TotalAmount=?, PaymentMethod=?, PaymentStatus=? WHERE Username=?";
         try (Connection con = DriverManager.getConnection(DbURL, DbPhoneNumber, DbPassword);
-                    PreparedStatement stmt = con.prepareStatement(Refund)) {
+                    PreparedStatement stmt = con.prepareStatement(REFUNDS)) {
                     stmt.setString(1, guestnameA1);
                     stmt.setString(2, addressA1);
                     stmt.setString(3, roomtypeA1);
                     stmt.setString(4, roompriceA1);
-                    stmt.setTimestamp(5, null);
+                    stmt.setNull(5, Types.TIMESTAMP);
                     stmt.setString(6, totalamount);
                     stmt.setString(7, paymentmethod);
                     stmt.setString(8, paymentstatus);
@@ -489,11 +490,6 @@ public class MainWindow1 extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
             }
-        try {
-            Stmt.executeUpdate(Refund);
-        } catch (SQLException ex) {
-            Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
     
     
@@ -3889,6 +3885,7 @@ public class MainWindow1 extends javax.swing.JFrame {
 
     private void ConfirmButtonA1CheckinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmButtonA1CheckinActionPerformed
         // CheckOut Room A1
+                PaymentDetailsA1();
                 ButtonGroup group = new ButtonGroup();
                 group.add(PaymentMethodCheckin2A3);
                 group.add(PaymentMethodCheckin1A1);
@@ -3984,6 +3981,9 @@ public class MainWindow1 extends javax.swing.JFrame {
             Hotelappear2.start();
             } else if (PaymentMethodCheckin2A2.isSelected()) {
                 //credit card
+                
+                PriceTextPaymaya1A3.setText("PHP " + TotalAmountA1Checkin.getText());
+                PriceTextPaymaya2A3.setText("PHP " + TotalAmountA1Checkin.getText());
                 OnlinePaymentWindow3A1.setVisible(true);
                 OnlinePaymentWindow3A1.setOpaque(false);
                 OnlinePaymentWindow3A1.putClientProperty( FlatClientProperties.STYLE, "arc: 20" );
@@ -4463,6 +4463,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             LoginFormWindow.setVisible(false);
             MenuOpenButton.setVisible(true);
             CompanyNameLabel.setVisible(true);
+            AccountRefund();
             
             Timer timer = new Timer(500, e -> {
                 RoomSectionPanel.setVisible(true);
