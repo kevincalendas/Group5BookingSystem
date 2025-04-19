@@ -10,9 +10,13 @@ package BookingSystemMainPanels;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+//for animations
 
 import org.jdesktop.animation.timing.*;
+import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.interpolation.*;
+import java.awt.Graphics;
+
 
 import com.formdev.flatlaf.FlatClientProperties;
 import java.awt.event.ActionEvent;
@@ -44,8 +48,6 @@ import java.awt.event.*;
  * @author Kevin
  */
 public class MainWindow1 extends javax.swing.JFrame {
-
-    
 
     
     public MainWindow1() {
@@ -90,9 +92,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         }
         
         
-        MenuButtonsPanels.setVisible(false);
     }
-    
     
     
     
@@ -136,64 +136,75 @@ public class MainWindow1 extends javax.swing.JFrame {
     private static final String DbPhoneNumber= "root";
     private static final String DbPassword = "";
     
+    
     public void IntroVid1() {
         if (HotelFeaturesPanels.isVisible()) {
+            
+            TextIntro1.setForeground(new Color(255, 255, 255, 0));
+            TextIntroA1.setForeground(new Color(255, 255, 255, 0));
+            DesignA1.setBackground(new Color(255, 255, 255, 0));
+            DescIntro1.setForeground(new Color(255, 255, 255, 0));
+            ShowButtonA1.setBackground(new Color(124, 119, 92, 0));
+            ShowButtonA1.setForeground(new Color(255, 255, 255, 0));
+            
             PropertySetter A1Intro = new PropertySetter(TextIntro1, "location", new Point(190, 100), new Point(190, 75));
             PropertySetter B1Intro = new PropertySetter(TextIntroA1, "location", new Point(180, 125), new Point(180, 100));
             PropertySetter C1Intro = new PropertySetter(DesignA1, "location", new Point(475, 200), new Point(475, 175));
-            PropertySetter C2Intro = new PropertySetter(TextIntroA1, "alpha", 1f, 0f );
             PropertySetter D1Intro = new PropertySetter(DescIntro1, "location", new Point(260, 215), new Point(260, 190));
-            PropertySetter E1Intro = new PropertySetter(ShowButtonA1, "location", new Point(380, 295), new Point(380, 270));
-            Animator IntroA1 = new Animator(600, A1Intro);
-            Animator IntroB1 = new Animator(600, B1Intro);
-            Animator IntroC1 = new Animator(600, C1Intro);
-            Animator IntroD1 = new Animator(600, D1Intro);
-            Animator IntroE1 = new Animator(600, E1Intro);
-            Animator FadeA1  = new Animator(600, C2Intro);
-            IntroA1.setDeceleration(0.5f);
-            IntroB1.setDeceleration(0.5f);
-            IntroC1.setDeceleration(0.5f);
-            IntroD1.setDeceleration(0.5f);
-            IntroE1.setDeceleration(0.5f);
-            IntroA1.start();
-            Timer timerA1 = new Timer(300, e -> {
-                IntroA1.start();
-                TextIntro1.setVisible(true);
-            });
-            Timer timerB1 = new Timer(400, e -> {
-                IntroB1.start();
-                FadeA1.start();
-                TextIntroA1.setVisible(true);
-            });
-            Timer timerC1 = new Timer(500, e -> {
-                IntroC1.start();
-                
-                DesignA1.setVisible(true);
-            });
-            Timer timerD1 = new Timer(600, e -> {
-                IntroD1.start();
-                DescIntro1.setVisible(true);
-            });
-            Timer timerE1 = new Timer(700, e -> {
-                IntroE1.start();
-                ShowButtonA1.setVisible(true);
-            });
-            timerA1.setRepeats(false);
-            timerB1.setRepeats(false);
-            timerC1.setRepeats(false);
-            timerD1.setRepeats(false);
-            timerE1.setRepeats(false);
+            PropertySetter E1Intro = new PropertySetter(ShowButtonA1, "location", new Point(380, 550), new Point(380, 270));
+            //fading animation
+            PropertySetter A1Fade = new PropertySetter(TextIntro1, "foreground", new Color(255, 255, 255, 0), new Color(255, 255, 255, 255));
+            PropertySetter B1Fade = new PropertySetter(TextIntroA1, "foreground", new Color(255, 255, 255, 0), new Color(255, 255, 255, 255));
+            PropertySetter C1Fade = new PropertySetter(DesignA1, "background", new Color(255, 255, 255, 0), new Color(255, 255, 255, 255));
+            PropertySetter D1Fade = new PropertySetter(DescIntro1, "foreground", new Color(255, 255, 255, 0), new Color(255, 255, 255, 255));
+            PropertySetter E1Fade = new PropertySetter(ShowButtonA1, "background", new Color(124, 119, 92, 0), new Color(124, 119, 92, 255));
+            PropertySetter EA1Fade = new PropertySetter(ShowButtonA1, "foreground", new Color(255, 255, 255, 0), new Color(255, 255, 255, 255));
             
-            TextIntro1.setVisible(false);
-            TextIntroA1.setVisible(false);
-            DesignA1.setVisible(false);
-            DescIntro1.setVisible(false);
-            ShowButtonA1.setVisible(false);
-            timerA1.start();
-            timerB1.start();
-            timerC1.start();
-            timerD1.start();
-            timerE1.start();
+            Animator FadeA1 = new Animator(400, A1Fade);
+            Animator FadeB1 = new Animator(400, B1Fade);
+            Animator FadeC1 = new Animator(400, C1Fade);
+            Animator FadeD1 = new Animator(400, D1Fade);
+            Animator FadeE1 = new Animator(600, E1Fade);
+            Animator FadeEA1 = new Animator(600, EA1Fade);
+            
+            FadeB1.setStartDelay(200);
+            FadeC1.setStartDelay(250);
+            FadeD1.setStartDelay(300);
+            FadeE1.setStartDelay(350);
+            FadeEA1.setStartDelay(350);
+            
+            FadeE1.setAcceleration(0.6f);
+            FadeEA1.setAcceleration(0.6f);
+            
+            FadeA1.start();
+            FadeB1.start();
+            FadeC1.start();
+            FadeD1.start();
+            FadeE1.start();
+            FadeEA1.start();
+            
+            //
+            Animator IntroA1 = new Animator(400, A1Intro);
+            Animator IntroB1 = new Animator(400, B1Intro);
+            Animator IntroC1 = new Animator(400, C1Intro);
+            Animator IntroD1 = new Animator(400, D1Intro);
+            Animator IntroE1 = new Animator(600, E1Intro);
+            IntroB1.setStartDelay(200);
+            IntroC1.setStartDelay(250);
+            IntroD1.setStartDelay(300);
+            IntroE1.setStartDelay(350);
+            IntroA1.setDeceleration(0.3f);
+            IntroB1.setDeceleration(0.3f);
+            IntroC1.setDeceleration(0.3f);
+            IntroD1.setDeceleration(0.3f);
+            IntroE1.setDeceleration(0.3f);
+            IntroA1.start();
+            IntroB1.start();
+            IntroC1.start();
+            IntroD1.start();
+            IntroE1.start();
+             
+            //start Fading
             
         }
     }
@@ -1095,13 +1106,15 @@ public class MainWindow1 extends javax.swing.JFrame {
         Slide1.setOpaque(false);
         Slide1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        TextIntro1.setBackground(new java.awt.Color(255, 255, 255));
         TextIntro1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        TextIntro1.setForeground(new java.awt.Color(255, 255, 255, 0));
+        TextIntro1.setForeground(new java.awt.Color(255, 255, 255));
         TextIntro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TextIntro1.setText("Explore");
         TextIntro1.setPreferredSize(new java.awt.Dimension(400, 75));
         Slide1.add(TextIntro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 75, 600, 30));
 
+        TextIntroA1.setBackground(new java.awt.Color(255, 255, 255));
         TextIntroA1.setFont(new java.awt.Font("Times New Roman", 0, 54)); // NOI18N
         TextIntroA1.setForeground(new java.awt.Color(255, 255, 255));
         TextIntroA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1138,7 +1151,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         DescIntro1.setPreferredSize(new java.awt.Dimension(300, 100));
         Slide1.add(DescIntro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 440, 80));
 
-        ShowButtonA1.setBackground(new java.awt.Color(139, 128, 80));
+        ShowButtonA1.setBackground(new java.awt.Color(124, 119, 92));
         ShowButtonA1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ShowButtonA1.setForeground(new java.awt.Color(255, 255, 255));
         ShowButtonA1.setText("Show Features");
