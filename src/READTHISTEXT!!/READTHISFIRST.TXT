@@ -1,0 +1,40 @@
+========================
+BUILD OUTPUT DESCRIPTION
+========================
+
+When you build an Java application project that has a main class, the IDE
+automatically copies all of the JAR
+files on the projects classpath to your projects dist/lib folder. The IDE
+also adds each of the JAR files to the Class-Path element in the application
+JAR files manifest file (MANIFEST.MF).
+
+To run the project from the command line, go to the dist folder and
+type the following:
+
+java -jar "BookingHotelSystem.jar" 
+
+IMPORTANT!!!
+* Make sure your port of the MYSQL on XAMPP is 3307 if any changes please change the port in MainWindow1.java line at 142
+* PUT THIS ON YOUR PHPMYADMIN THIS MYSQL CODE:
+-------------------------------------------------------------------------------------------------------------------------
+CREATE DATABASE IF NOT EXISTS hotelusers;
+USE hotelusers;
+
+CREATE TABLE IF NOT EXISTS hotelusersdatabase (
+    PhoneNumber VARCHAR(15) NOT NULL,
+    Username VARCHAR(50) NOT NULL,
+    Password VARCHAR(255) NOT NULL, -- Increased for hashing
+    EmailAddress VARCHAR(200) NOT NULL,
+    GuestName VARCHAR(100),
+    Address VARCHAR(200),
+    RoomType VARCHAR(50),
+    RoomPrice VARCHAR(50),
+    BookingSched DATE,
+    TotalAmount VARCHAR(100),
+    PaymentMethod VARCHAR(50),
+    PaymentStatus VARCHAR(75) NULL,
+    PRIMARY KEY (PhoneNumber, Username, EmailAddress) -- Composite primary key
+);
+--------------------------------------------------------------------------------------------------------------------------
+* If bugs or errors occurred report it.
+* Enjoy Booking! 
