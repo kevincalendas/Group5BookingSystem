@@ -966,7 +966,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
         }  else if ("".equals(UsernameSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Username");
-        }  else if ("".equals(PasswordSignUpInput.getText())) {
+        }  else if ("".equals(PasswordSignUpInput.getPassword())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Password");
         }  else if (NumberSignUpInput.getText().length() > 11) {
             JOptionPane.showMessageDialog(new JFrame(), "Minimum and maximum 11 digits allowed!");
@@ -980,10 +980,10 @@ public class MainWindow1 extends javax.swing.JFrame {
         }  else if (UsernameSignUpInput.getText().length() < 5) {
             JOptionPane.showMessageDialog(new JFrame(), "Username should be minimum of 5 letters.");
             UsernameSignUpInput.setText("");
-        }  else if (PasswordSignUpInput.getText().length() > 45) {
+        }  else if (PasswordSignUpInput.getPassword().length > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             PasswordSignUpInput.setText("");
-        }  else if (PasswordSignUpInput.getText().length() < 8) {
+        }  else if (PasswordSignUpInput.getPassword().length < 8) {
             JOptionPane.showMessageDialog(new JFrame(), "minimum 8 characters allowed!");
             PasswordSignUpInput.setText("");
         } else if (!email.contains("@")) {
@@ -999,7 +999,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         } else {
             PhoneNumber = NumberSignUpInput.getText();
             Username = UsernameSignUpInput.getText();
-            Password = PasswordSignUpInput.getText();
+            Password = new String(PasswordSignUpInput.getPassword());
             Emailaddress = EmailAddressSignUpInput.getText();
             String queryRegister = "INSERT into hotelusersdatabase(PhoneNumber, Username, EmailAddress, Password)"
                     + "VALUES ('" + PhoneNumber + "','" + Username + "','"+ Emailaddress + "','"+ Password +"')";
@@ -4318,7 +4318,7 @@ public class MainWindow1 extends javax.swing.JFrame {
          //Signing In your Account code :>
          String Username, password;
          Username = UsernameSigninInput1.getText();
-         password = PasswordSigninInput1.getText();
+         password = new String(PasswordSignUpInput.getPassword());
          String queryLogin = "SELECT * FROM hotelusersdatabase WHERE Username = "
                  + "'" + Username + "' AND Password = '" + password + "'";
          
