@@ -1451,7 +1451,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         ViewHotelFeatureButton1.setBackground(new java.awt.Color(203, 193, 155));
         ViewHotelFeatureButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ViewHotelFeatureButton1.setForeground(new java.awt.Color(255, 255, 255));
-        ViewHotelFeatureButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BookingHotelSystemIcons/PirsonIcon.png"))); // NOI18N
+        ViewHotelFeatureButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/ShiningShimmeringFeaturesn-removebg-preview.png"))); // NOI18N
         ViewHotelFeatureButton1.setBorder(null);
         ViewHotelFeatureButton1.setBorderPainted(false);
         ViewHotelFeatureButton1.setDefaultCapable(false);
@@ -4736,6 +4736,7 @@ public class MainWindow1 extends javax.swing.JFrame {
             RoomInfoPanel.setVisible(false);
             MainPanel1.setVisible(false);
             Timer Hotelappear2 = new Timer(1000, e -> {
+                MenuButtonsPanels.setVisible(true);
                 RoomSectionPanel.setVisible(true);
             });
             Hotelappear2.setRepeats(false);
