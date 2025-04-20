@@ -55,11 +55,15 @@ public class MainWindow1 extends javax.swing.JFrame {
         
         initComponents();
 
+        
+        //for Features Animations
+        FeaturePanelsDesign();
         IntroVid1();
         RoundingCorners1();
         RoundingCheckIn();
         RoundInfoPanels();
         RoundingTheRoomSelectionPanels();
+        Slide2.setLayout(null);
         
         //hiding things
             OnlinePaymentWindow1A1.setVisible(false);
@@ -73,6 +77,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jScrollPane2.getViewport().setScrollMode(JViewport.BLIT_SCROLL_MODE);
         MainTitleChanges();
         //LoginSystem FIx BUG
+        
         AccountInfoPanel.setVisible(false);
         jScrollPane2.getViewport().setOpaque(false);
         jScrollPane2.setOpaque(false);
@@ -82,6 +87,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         CheckInPayment.setVisible(false);
         ExitMessageWindowz.setVisible(false);
         HotelFeaturesPanels.setVisible(false);
+        MenuButtonsPanels.setVisible(false);
+        
         
         //total amount update Checkins
         TotalAmountA1Checkin.addActionListener(e -> PaymentDetailsA1());
@@ -140,6 +147,16 @@ public class MainWindow1 extends javax.swing.JFrame {
     public void IntroVid1() {
         if (HotelFeaturesPanels.isVisible()) {
             
+            Picture.setVisible(false);
+            TextIntroA2.setVisible(false);
+            TextIntroA3.setVisible(false);
+            Slide2.setVisible(false);
+            Slide1.setVisible(true);
+            TextIntro1.setVisible(true);
+            TextIntroA1.setVisible(true);
+            DesignA1.setVisible(true);
+            DescIntro1.setVisible(true);
+            ShowButtonA1.setVisible(true);
             TextIntro1.setForeground(new Color(255, 255, 255, 0));
             TextIntroA1.setForeground(new Color(255, 255, 255, 0));
             DesignA1.setBackground(new Color(255, 255, 255, 0));
@@ -208,8 +225,312 @@ public class MainWindow1 extends javax.swing.JFrame {
             
         }
     }
+    public void OutroVid1() {
+        //off selected features
+        MenuButtonsPanels.setVisible(true);
+        
+        Feature1.setLocation(-375, 40);
+        Feature2.setLocation(-375, 130);
+        Feature3.setLocation(-375, 220);
+        Feature4.setLocation(-375, 310);
+        
+        FeatureDeselectedAll();
+        PropertySetter A1Fade = new PropertySetter(TextIntro1, "foreground", new Color(255, 255, 255, 255), new Color(255, 255, 255, 0));
+            PropertySetter B1Fade = new PropertySetter(TextIntroA1, "foreground", new Color(255, 255, 255, 255), new Color(255, 255, 255, 0));
+            PropertySetter C1Fade = new PropertySetter(DesignA1, "background", new Color(255, 255, 255, 255), new Color(255, 255, 255, 0));
+            PropertySetter D1Fade = new PropertySetter(DescIntro1, "foreground", new Color(255, 255, 255, 255), new Color(255, 255, 255, 0));
+            PropertySetter E1Fade = new PropertySetter(ShowButtonA1, "background", new Color(124, 119, 92, 255), new Color(124, 119, 92, 0));
+            PropertySetter EA1Fade = new PropertySetter(ShowButtonA1, "foreground", new Color(255, 255, 255, 255), new Color(255, 255, 255, 0));
+            
+            Animator FadeA1 = new Animator(400, A1Fade);
+            Animator FadeB1 = new Animator(400, B1Fade);
+            Animator FadeC1 = new Animator(400, C1Fade);
+            Animator FadeD1 = new Animator(400, D1Fade);
+            Animator FadeE1 = new Animator(600, E1Fade);
+            Animator FadeEA1 = new Animator(600, EA1Fade);
+            FadeB1.setStartDelay(200);
+            FadeC1.setStartDelay(250);
+            FadeD1.setStartDelay(300);
+            FadeE1.setStartDelay(350);
+            FadeEA1.setStartDelay(350);
+            
+            FadeE1.setAcceleration(0.6f);
+            FadeEA1.setAcceleration(0.6f);
+            
+            FadeA1.start();
+            FadeB1.start();
+            FadeC1.start();
+            FadeD1.start();
+            FadeE1.start();
+            FadeEA1.start();
+            Timer Timer1 = new Timer(700, e -> {
+                TextIntro1.setVisible(false);
+                TextIntroA1.setVisible(false);
+                DesignA1.setVisible(false);
+                DescIntro1.setVisible(false);
+                ShowButtonA1.setVisible(false);
+                Slide1.setVisible(false);
+                Slide2.setVisible(true);
+                //opening animation
+                PropertySetter A2Intro = new PropertySetter(Feature1, "location", new Point(-375, 40), new Point(85, 40));
+                PropertySetter B2Intro = new PropertySetter(Feature2, "location", new Point(-375, 130), new Point(85, 130));
+                PropertySetter C2Intro = new PropertySetter(Feature3, "location", new Point(-375, 220), new Point(85, 220));
+                PropertySetter D2Intro = new PropertySetter(Feature4, "location", new Point(-375, 310), new Point(85, 310));
+                
+                Animator IntroA2 = new Animator(500, A2Intro);
+                Animator IntroB2 = new Animator(500, B2Intro);
+                Animator IntroC2 = new Animator(500, C2Intro);
+                Animator IntroD2 = new Animator(500, D2Intro);
+                
+                IntroA2.setDeceleration(0.4f);
+                IntroB2.setDeceleration(0.4f);
+                IntroC2.setDeceleration(0.4f);
+                IntroD2.setDeceleration(0.4f);
+                
+                IntroB2.setStartDelay(30);
+                IntroC2.setStartDelay(60);
+                IntroD2.setStartDelay(90);
+                
+                IntroA2.start();
+                IntroB2.start();
+                IntroC2.start();
+                IntroD2.start();
+            });
+            Timer1.setRepeats(false);
+            Timer1.start();
+    }
     
+    public void FeatureDeselectedAll() {
+        Feature1.setSize(365, 75);
+        Feature2.setSize(365, 75);
+        Feature3.setSize(365, 75);
+        Feature4.setSize(365, 75);
+        Picture.setVisible(true);
+        TextIntroA2.setVisible(true);
+        TextIntroA3.setVisible(true);
+        Feature1.setVisible(true);
+        FeatureA1.setVisible(true);
+        FeatureB1.setVisible(false);
+        Feature2.setVisible(true);
+        FeatureA2.setVisible(true);
+        FeatureB2.setVisible(false);
+        Feature3.setVisible(true);
+        FeatureA3.setVisible(true);
+        FeatureB3.setVisible(false);
+        Feature4.setVisible(true);
+        FeatureA4.setVisible(true);
+        FeatureB4.setVisible(false);
+    }
     
+    public void Feature1Selected() {
+        PropertySetter A2Intro = new PropertySetter(Feature1, "size", Feature1.getSize(), new Dimension(850, 350));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.start();
+        FeatureA1.setVisible(false);
+        FeatureB1.setVisible(true);
+        Picture.setVisible(false);
+        TextIntroA2.setVisible(false);
+        TextIntroA3.setVisible(false);
+        Feature1.revalidate();
+        Feature1.repaint();
+        
+        //turning off others
+        Feature2.setVisible(false);
+        Feature3.setVisible(false);
+        Feature4.setVisible(false);
+    }
+    
+    public void Feature2Selected() {
+        PropertySetter A2Intro = new PropertySetter(Feature2, "size", Feature2.getSize(), new Dimension(850, 350));
+        PropertySetter A2FixPos = new PropertySetter(Feature2, "location", Feature2.getLocation(), new Point(85, 40));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA2.setVisible(false);
+        FeatureB2.setVisible(true);
+        Picture.setVisible(false);
+        TextIntroA2.setVisible(false);
+        TextIntroA3.setVisible(false);
+                
+        
+        Feature2.revalidate();
+        Feature2.repaint();
+        
+        //turning off others
+        Feature1.setVisible(false);
+        Feature3.setVisible(false);
+        Feature4.setVisible(false);
+    }
+    
+    public void Feature3Selected() {
+        PropertySetter A2Intro = new PropertySetter(Feature3, "size", Feature4.getSize(), new Dimension(850, 350));
+        PropertySetter A2FixPos = new PropertySetter(Feature3, "location", Feature4.getLocation(), new Point(85, 40));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA3.setVisible(false);
+        FeatureB3.setVisible(true);
+        Picture.setVisible(false);
+        TextIntroA2.setVisible(false);
+        TextIntroA3.setVisible(false);
+        Feature3.revalidate();
+        Feature3.repaint();
+        
+        //turning off others
+        Feature1.setVisible(false);
+        Feature2.setVisible(false);
+        Feature4.setVisible(false);
+    }
+    
+    public void Feature4Selected() {
+        PropertySetter A2Intro = new PropertySetter(Feature4, "size", Feature4.getSize(), new Dimension(850, 350));
+        PropertySetter A2FixPos = new PropertySetter(Feature4, "location", Feature4.getLocation(), new Point(85, 40));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA4.setVisible(false);
+        FeatureB4.setVisible(true);
+        Picture.setVisible(false);
+        TextIntroA2.setVisible(false);
+        TextIntroA3.setVisible(false);
+        Feature4.revalidate();
+        Feature4.repaint();
+        
+        //turning off others
+        Feature1.setVisible(false);
+        Feature2.setVisible(false);
+        Feature3.setVisible(false);
+    }
+    
+    public void Feature1Exit() {
+        PropertySetter A2Intro = new PropertySetter(Feature1, "size", Feature1.getSize(), new Dimension(365, 75));
+        Animator Intro2 = new Animator(400, A2Intro);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.start();
+        FeatureA1.setVisible(true);
+        FeatureB1.setVisible(false);
+        Picture.setVisible(true);
+        TextIntroA2.setVisible(true);
+        TextIntroA3.setVisible(true);
+        Feature1.revalidate();
+        Feature1.repaint();
+        
+        //turning off others
+        Feature2.setVisible(true);
+        Feature3.setVisible(true);
+        Feature4.setVisible(true);
+    }
+    
+    public void Feature2Exit() {
+        PropertySetter A2Intro = new PropertySetter(Feature2, "size", Feature2.getSize(), new Dimension(365, 75));
+        PropertySetter A2FixPos = new PropertySetter(Feature2, "location", Feature2.getLocation(), new Point(85, 130));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA2.setVisible(true);
+        FeatureB2.setVisible(false);
+        Picture.setVisible(true);
+        TextIntroA2.setVisible(true);
+        TextIntroA3.setVisible(true);
+        Feature2.revalidate();
+        Feature2.repaint();
+        
+        //turning off others
+        Feature1.setVisible(true);
+        Feature3.setVisible(true);
+        Feature4.setVisible(true);
+    }
+    
+    public void Feature3Exit() {
+        PropertySetter A2Intro = new PropertySetter(Feature3, "size", Feature3.getSize(), new Dimension(365, 75));
+        PropertySetter A2FixPos = new PropertySetter(Feature3, "location", Feature3.getLocation(), new Point(85, 220));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA3.setVisible(true);
+        FeatureB3.setVisible(false);
+        Picture.setVisible(true);
+        TextIntroA2.setVisible(true);
+        TextIntroA3.setVisible(true);
+        Feature3.revalidate();
+        Feature3.repaint();
+        
+        //turning off others
+        Feature1.setVisible(true);
+        Feature2.setVisible(true);
+        Feature4.setVisible(true);
+    }
+    
+    public void Feature4Exit() {
+        PropertySetter A2Intro = new PropertySetter(Feature4, "size", Feature4.getSize(), new Dimension(365, 75));
+        PropertySetter A2FixPos = new PropertySetter(Feature4, "location", Feature4.getLocation(), new Point(85, 310));
+        Animator Intro2 = new Animator(500, A2Intro);
+        Animator FixPosA2 = new Animator(500, A2FixPos);
+        FixPosA2.setAcceleration(0.2f);
+        FixPosA2.setDeceleration(0.3f);
+        Intro2.setAcceleration(0.2f);
+        Intro2.setDeceleration(0.3f);
+        Intro2.setStartDelay(30);
+        Intro2.start();
+        FixPosA2.start();
+        FeatureA4.setVisible(true);
+        FeatureB4.setVisible(false);
+        Picture.setVisible(true);
+        TextIntroA2.setVisible(true);
+        TextIntroA3.setVisible(true);
+        Feature4.revalidate();
+        Feature4.repaint();
+        
+        //turning off others
+        Feature1.setVisible(true);
+        Feature2.setVisible(true);
+        Feature3.setVisible(true);
+    }
+    
+    public void FeaturePanelsDesign() {
+        Feature1.setOpaque(false);
+        Feature2.setOpaque(false);
+        Feature3.setOpaque(false);
+        Feature4.setOpaque(false);
+        
+        Feature1.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );
+        Feature2.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );
+        Feature3.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );
+        Feature4.putClientProperty( FlatClientProperties.STYLE, "arc: 15" );        
+    }
     public void RoundingCorners1() {
         //Rounding corners in JPanels, and JLabels.
         Background6.setOpaque(false);
@@ -355,9 +676,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         if (PriceDayA1 == 0) {
             JOptionPane.showMessageDialog(new JFrame(), "An error occured, please try again.");
             
-     
-            OnlinePaymentWindow1A1.setVisible(false);
-            OnlinePayment2ndWindow1A1.setVisible(false);
+            MenuButtonsPanels.setVisible(true);
+            
             CheckinA1.setVisible(false);
             //making sure the other panel is not visible--
             RoomInfoPanel.setVisible(false);
@@ -371,8 +691,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         }
         if (PriceNightA1 == 0) {
             JOptionPane.showMessageDialog(new JFrame(), "An error occured, please try again.");
-            OnlinePaymentWindow1A1.setVisible(false);
-            OnlinePayment2ndWindow1A1.setVisible(false);
+            
             
             CheckinA1.setVisible(false);
             //making sure the other panel is not visible--
@@ -722,6 +1041,54 @@ public class MainWindow1 extends javax.swing.JFrame {
         DesignA1 = new javax.swing.JPanel();
         DescIntro1 = new javax.swing.JTextArea();
         ShowButtonA1 = new javax.swing.JButton();
+        Slide2 = new javax.swing.JPanel();
+        Feature1 = new javax.swing.JPanel();
+        FeatureA1 = new javax.swing.JPanel();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        FeatureButton5 = new javax.swing.JButton();
+        FeatureB1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jTextArea1 = new javax.swing.JTextArea();
+        FeatureButtonA1 = new javax.swing.JButton();
+        jLabel127 = new javax.swing.JLabel();
+        Feature2 = new javax.swing.JPanel();
+        FeatureA2 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        FeatureButton2 = new javax.swing.JButton();
+        FeatureB2 = new javax.swing.JPanel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        jTextArea3 = new javax.swing.JTextArea();
+        FeatureButtonA2 = new javax.swing.JButton();
+        jLabel134 = new javax.swing.JLabel();
+        Feature3 = new javax.swing.JPanel();
+        FeatureA3 = new javax.swing.JPanel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        FeatureButton3 = new javax.swing.JButton();
+        FeatureB3 = new javax.swing.JPanel();
+        jLabel130 = new javax.swing.JLabel();
+        jLabel131 = new javax.swing.JLabel();
+        jTextArea6 = new javax.swing.JTextArea();
+        FeatureButtonA4 = new javax.swing.JButton();
+        jLabel138 = new javax.swing.JLabel();
+        Feature4 = new javax.swing.JPanel();
+        FeatureA4 = new javax.swing.JPanel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        FeatureButton4 = new javax.swing.JButton();
+        FeatureB4 = new javax.swing.JPanel();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        jTextArea13 = new javax.swing.JTextArea();
+        FeatureButtonA5 = new javax.swing.JButton();
+        jLabel139 = new javax.swing.JLabel();
+        TextIntroA2 = new javax.swing.JLabel();
+        TextIntroA3 = new javax.swing.JLabel();
+        Picture = new javax.swing.JLabel();
         Background9 = new javax.swing.JLabel();
         AccountInfoPanel = new javax.swing.JPanel();
         PhonenumberInfo = new javax.swing.JLabel();
@@ -1165,10 +1532,346 @@ public class MainWindow1 extends javax.swing.JFrame {
 
         HotelFeaturesPanels.add(Slide1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1000, 440));
 
+        Slide2.setBackground(new java.awt.Color(255, 255, 255));
+        Slide2.setForeground(new java.awt.Color(225, 225, 225));
+        Slide2.setOpaque(false);
+        Slide2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Feature1.setBackground(new java.awt.Color(255, 255, 255));
+        Feature1.setPreferredSize(new java.awt.Dimension(365, 75));
+        Feature1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FeatureA1.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureA1.setPreferredSize(new java.awt.Dimension(365, 75));
+        FeatureA1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel109.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel109.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel109.setText("A Elegant Dining Area");
+        FeatureA1.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 210, 30));
+
+        jLabel126.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        jLabel126.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel126.setText("Dining Area");
+        FeatureA1.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 30));
+
+        FeatureButton5.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButton5.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButton5.setText("See details");
+        FeatureButton5.setBorder(null);
+        FeatureButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButton5ActionPerformed(evt);
+            }
+        });
+        FeatureA1.add(FeatureButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 17, 120, 30));
+
+        Feature1.add(FeatureA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 4, 358, 68));
+
+        FeatureB1.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureB1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(147, 141, 71));
+        jLabel1.setText("An Elegant Dining Area");
+        FeatureB1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 210, 30));
+
+        jLabel33.setFont(new java.awt.Font("Book Antiqua", 0, 36)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel33.setText("Luxury Dining Area");
+        FeatureB1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 370, 60));
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Indulge in elegance at our luxurious dining area, where exquisite décor meets world-class cuisine. With ambient lighting, plush seating, and personalized service, every meal becomes a refined culinary experience in a sophisticated setting.");
+        jTextArea1.setWrapStyleWord(true);
+        FeatureB1.add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 350, 100));
+
+        FeatureButtonA1.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButtonA1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButtonA1.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButtonA1.setText("Exit");
+        FeatureButtonA1.setBorder(null);
+        FeatureButtonA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButtonA1ActionPerformed(evt);
+            }
+        });
+        FeatureB1.add(FeatureButtonA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 260, 30));
+
+        jLabel127.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/DiningAreaB.png"))); // NOI18N
+        jLabel127.setText("jLabel127");
+        jLabel127.setPreferredSize(new java.awt.Dimension(340, 340));
+        FeatureB1.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, -1, -1));
+
+        Feature1.add(FeatureB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 838, 338));
+
+        Slide2.add(Feature1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 40, -1, -1));
+
+        Feature2.setBackground(new java.awt.Color(255, 255, 255));
+        Feature2.setPreferredSize(new java.awt.Dimension(365, 75));
+        Feature2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FeatureA2.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureA2.setPreferredSize(new java.awt.Dimension(365, 75));
+        FeatureA2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel34.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel34.setText("Best Gym in Aqueza Suites");
+        FeatureA2.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 210, 30));
+
+        jLabel102.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        jLabel102.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel102.setText("Gym Area");
+        jLabel102.setName(""); // NOI18N
+        FeatureA2.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 30));
+
+        FeatureButton2.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButton2.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButton2.setText("See details");
+        FeatureButton2.setBorder(null);
+        FeatureButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButton2ActionPerformed(evt);
+            }
+        });
+        FeatureA2.add(FeatureButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 17, 120, 30));
+
+        Feature2.add(FeatureA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 5, 358, 68));
+
+        FeatureB2.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureB2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel128.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel128.setForeground(new java.awt.Color(147, 141, 71));
+        jLabel128.setText("Best Gym in Aqueza Suites");
+        FeatureB2.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 210, 30));
+
+        jLabel129.setFont(new java.awt.Font("Book Antiqua", 0, 36)); // NOI18N
+        jLabel129.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel129.setText("Luxury Gym Area");
+        FeatureB2.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 370, 60));
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        jTextArea3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea3.setLineWrap(true);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("The hotel gym offers a clean, modern space for guests to continue their workout routines while traveling. Designed to accommodate both beginners and fitness enthusiasts, the gym is equipped with a range of equipment for cardio, strength, and flexibility training.\n\n");
+        jTextArea3.setWrapStyleWord(true);
+        FeatureB2.add(jTextArea3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 350, 110));
+
+        FeatureButtonA2.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButtonA2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButtonA2.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButtonA2.setText("Exit");
+        FeatureButtonA2.setBorder(null);
+        FeatureButtonA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButtonA2ActionPerformed(evt);
+            }
+        });
+        FeatureB2.add(FeatureButtonA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 260, 30));
+
+        jLabel134.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/GymAreaB.png"))); // NOI18N
+        jLabel134.setText("jLabel127");
+        jLabel134.setPreferredSize(new java.awt.Dimension(340, 340));
+        FeatureB2.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, -1, -1));
+
+        Feature2.add(FeatureB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 838, 338));
+
+        Slide2.add(Feature2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
+
+        Feature3.setBackground(new java.awt.Color(255, 255, 255));
+        Feature3.setPreferredSize(new java.awt.Dimension(365, 75));
+        Feature3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FeatureA3.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureA3.setPreferredSize(new java.awt.Dimension(365, 75));
+        FeatureA3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel103.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel103.setText("Big Pool in Aqueza Suites");
+        FeatureA3.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 210, 30));
+
+        jLabel105.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        jLabel105.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel105.setText("Pool Area");
+        FeatureA3.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 30));
+
+        FeatureButton3.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButton3.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButton3.setText("See details");
+        FeatureButton3.setBorder(null);
+        FeatureButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButton3ActionPerformed(evt);
+            }
+        });
+        FeatureA3.add(FeatureButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 17, 120, 30));
+
+        Feature3.add(FeatureA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 6, 358, 68));
+
+        FeatureB3.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureB3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel130.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel130.setForeground(new java.awt.Color(147, 141, 71));
+        jLabel130.setText("Biggest Pool in Aqueza Suites");
+        FeatureB3.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 210, 30));
+
+        jLabel131.setFont(new java.awt.Font("Book Antiqua", 0, 36)); // NOI18N
+        jLabel131.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel131.setText("Luxury Pool Area");
+        FeatureB3.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 370, 60));
+
+        jTextArea6.setEditable(false);
+        jTextArea6.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        jTextArea6.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea6.setLineWrap(true);
+        jTextArea6.setRows(5);
+        jTextArea6.setText("The Aqueza's swimming pool offers a refreshing retreat for guests of all ages. Designed for both relaxation and recreation, the pool area features crystal-clear water, comfortable lounge seating, and a serene atmosphere. Whether you want to take a morning dip, sunbathe by the poolside, or simply unwind, it’s the perfect spot to relax during your stay.");
+        jTextArea6.setWrapStyleWord(true);
+        FeatureB3.add(jTextArea6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 400, 150));
+
+        FeatureButtonA4.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButtonA4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButtonA4.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButtonA4.setText("Exit");
+        FeatureButtonA4.setBorder(null);
+        FeatureButtonA4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButtonA4ActionPerformed(evt);
+            }
+        });
+        FeatureB3.add(FeatureButtonA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 260, 30));
+
+        jLabel138.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/PoolAreaB.png"))); // NOI18N
+        jLabel138.setText("jLabel127");
+        jLabel138.setPreferredSize(new java.awt.Dimension(340, 340));
+        FeatureB3.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, -1, -1));
+
+        Feature3.add(FeatureB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 838, 338));
+
+        Slide2.add(Feature3, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 220, -1, -1));
+
+        Feature4.setBackground(new java.awt.Color(255, 255, 255));
+        Feature4.setPreferredSize(new java.awt.Dimension(365, 75));
+        Feature4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FeatureA4.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureA4.setPreferredSize(new java.awt.Dimension(365, 75));
+        FeatureA4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel106.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel106.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel106.setText("Confortable Spa Area");
+        FeatureA4.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 210, 30));
+
+        jLabel107.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        jLabel107.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel107.setText("Spa Area");
+        FeatureA4.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 30));
+
+        FeatureButton4.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButton4.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButton4.setText("See details");
+        FeatureButton4.setBorder(null);
+        FeatureButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButton4ActionPerformed(evt);
+            }
+        });
+        FeatureA4.add(FeatureButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 17, 120, 30));
+
+        Feature4.add(FeatureA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 5, 356, 68));
+
+        FeatureB4.setBackground(new java.awt.Color(255, 255, 255));
+        FeatureB4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel132.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel132.setForeground(new java.awt.Color(147, 141, 71));
+        jLabel132.setText("Comfortable Spa Area");
+        FeatureB4.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 210, 30));
+
+        jLabel133.setFont(new java.awt.Font("Book Antiqua", 0, 36)); // NOI18N
+        jLabel133.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel133.setText("Luxury Spa Area");
+        FeatureB4.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 370, 60));
+
+        jTextArea13.setEditable(false);
+        jTextArea13.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea13.setColumns(20);
+        jTextArea13.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        jTextArea13.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea13.setLineWrap(true);
+        jTextArea13.setRows(5);
+        jTextArea13.setText("The Aqueza's Hotel spa provides a tranquil escape where guests can rejuvenate their body and mind. With a range of services including massages, facials, and body treatments, the spa blends luxury and relaxation in a serene environment. Soothing aromas, calming music, and skilled therapists ensure a peaceful experience designed for ultimate wellness.");
+        jTextArea13.setWrapStyleWord(true);
+        FeatureB4.add(jTextArea13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 400, 150));
+
+        FeatureButtonA5.setBackground(new java.awt.Color(169, 158, 105));
+        FeatureButtonA5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FeatureButtonA5.setForeground(new java.awt.Color(255, 255, 255));
+        FeatureButtonA5.setText("Exit");
+        FeatureButtonA5.setBorder(null);
+        FeatureButtonA5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeatureButtonA5ActionPerformed(evt);
+            }
+        });
+        FeatureB4.add(FeatureButtonA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 260, 30));
+
+        jLabel139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/PoolAreaB.png"))); // NOI18N
+        jLabel139.setText("jLabel127");
+        jLabel139.setPreferredSize(new java.awt.Dimension(340, 340));
+        FeatureB4.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, -1, -1));
+
+        Feature4.add(FeatureB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 838, 338));
+
+        Slide2.add(Feature4, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 310, -1, -1));
+
+        TextIntroA2.setBackground(new java.awt.Color(255, 255, 255));
+        TextIntroA2.setFont(new java.awt.Font("Times New Roman", 0, 54)); // NOI18N
+        TextIntroA2.setForeground(new java.awt.Color(255, 255, 255));
+        TextIntroA2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        TextIntroA2.setText("Aqueza Features");
+        TextIntroA2.setPreferredSize(new java.awt.Dimension(400, 75));
+        Slide2.add(TextIntroA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, 430, -1));
+
+        TextIntroA3.setBackground(new java.awt.Color(255, 255, 255));
+        TextIntroA3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        TextIntroA3.setForeground(new java.awt.Color(255, 255, 255));
+        TextIntroA3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        TextIntroA3.setText("Explore Aqueza Physical Features!");
+        TextIntroA3.setPreferredSize(new java.awt.Dimension(400, 75));
+        Slide2.add(TextIntroA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 430, 30));
+
+        Picture.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Picture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/Assist.jpg"))); // NOI18N
+        Slide2.add(Picture, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 490, 500));
+
+        HotelFeaturesPanels.add(Slide2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1000, 440));
+
         Background9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         Background9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookinghotelsystem/PicturesforIcons/MainSystemPictures/Room View None.jpg"))); // NOI18N
         Background9.setPreferredSize(new java.awt.Dimension(1000, 500));
-        HotelFeaturesPanels.add(Background9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -60, -1, 560));
+        HotelFeaturesPanels.add(Background9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
 
         getContentPane().add(HotelFeaturesPanels, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
@@ -3207,7 +3910,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jTextArea4.setVerifyInputWhenFocusTarget(false);
         ExitMessageMainWindow.add(jTextArea4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 310, 86));
 
-        ExitMessageWindowz.add(ExitMessageMainWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, 330, 150));
+        ExitMessageWindowz.add(ExitMessageMainWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(325, 160, 330, 150));
 
         ExitMessageWindow.setBackground(new java.awt.Color(0, 0, 0));
         ExitMessageWindow.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -3781,6 +4484,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         jButton1.setVisible(false);
         MenuButtonsPanels.setVisible(true);
         
+        
         Timer timer1 = new Timer(500, e -> {
             jScrollPane2.setVisible(true);
             jScrollPane2.setOpaque(false);
@@ -3974,23 +4678,20 @@ public class MainWindow1 extends javax.swing.JFrame {
                 if (CheckInGuestAddressA1.getText().length() > 150) {
                     JOptionPane.showMessageDialog(new JFrame(), "Guest name should be 150 characters maximum");
                     return;
-                } 
-                else if(GcashOptionA1.isSelected()) {
+                }  else if(GcashOptionA1.isSelected()) {
                     System.out.println("Making the GCash Payment Show");
                     OnlinePaymentMainWindow1A1.setVisible(true);
                     OnlinePaymentWindow1A1.setVisible(true);
                     OnlinePayment2ndWindow1A1.setVisible(false);
                     PriceTextGcash1A2.setText(TotalAmountA1Checkin.getText());
                     PriceTextGcash2A2.setText(TotalAmountA1Checkin.getText());
-                    PaymentDetailsA1();
                 } else if (PaymayaOptionA1.isSelected()) {
-                    System.out.println("Making the GCash Payment Show");
+                    System.out.println("Making the Paymaya Payment Show");
                     OnlinePaymentMainWindow2A1.setVisible(true);
                     OnlinePaymentWindow2A1.setVisible(true);
                     OnlinePayment2ndWindow2A1.setVisible(false);
                     PriceTextPaymaya2A2.setText(TotalAmountA1Checkin.getText());
                     PriceTextPaymaya1A2.setText(TotalAmountA1Checkin.getText());
-                    PaymentDetailsA1();
                 } else if (PaymentMethodCheckin2A3.isSelected()) {
                       // Paymaya window Payment A1
                 String guestnameA1, addressA1, roomtypeA1, roompriceA1, totalamount, paymentmethod, paymentstatus;
@@ -4188,6 +4889,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomInfoPanel.setVisible(false);
         MainPanel1.setVisible(false);
         Timer Hotelappear1 = new Timer(1000, e -> {
+            MenuButtonsPanels.setVisible(true);
            RoomSectionPanel.setVisible(true);
         });
         Hotelappear1.setRepeats(false);
@@ -4209,6 +4911,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomInfoPanel.setVisible(false);
         MainPanel1.setVisible(false);
         Timer Hotelappear1 = new Timer(1000, e -> {
+            MenuButtonsPanels.setVisible(true);
            RoomSectionPanel.setVisible(true);
         });
         Hotelappear1.setRepeats(false);
@@ -4448,6 +5151,7 @@ public class MainWindow1 extends javax.swing.JFrame {
         RoomInfoPanel.setVisible(false);
         MainPanel1.setVisible(false);
         Timer Hotelappear1 = new Timer(1000, e -> {
+            MenuButtonsPanels.setVisible(true);
            RoomSectionPanel.setVisible(true);
         });
         Hotelappear1.setRepeats(false);
@@ -4542,12 +5246,54 @@ public class MainWindow1 extends javax.swing.JFrame {
         HotelFeaturesPanels.setVisible(true);
         AccountInfoPanel.setVisible(false);
         RoomSectionPanel.setVisible(false);
+        MenuButtonsPanels.setVisible(true);
         IntroVid1();
     }//GEN-LAST:event_ViewHotelFeatureButton1ActionPerformed
 
     private void ShowButtonA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowButtonA1ActionPerformed
-        // TODO add your handling code here:
+        // OutroVid1 Closing Animaiton fadeout
+        OutroVid1();
     }//GEN-LAST:event_ShowButtonA1ActionPerformed
+
+    private void FeatureButtonA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButtonA1ActionPerformed
+        //Opening Feature1
+        Feature1Exit();
+    }//GEN-LAST:event_FeatureButtonA1ActionPerformed
+
+    private void FeatureButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButton5ActionPerformed
+        //Feature1 Open
+        Feature1Selected();
+    }//GEN-LAST:event_FeatureButton5ActionPerformed
+
+    private void FeatureButtonA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButtonA2ActionPerformed
+        // Feature 2 Exit
+        Feature2Exit();
+    }//GEN-LAST:event_FeatureButtonA2ActionPerformed
+
+    private void FeatureButtonA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButtonA4ActionPerformed
+        // Feature 3 Exit
+        Feature3Exit();
+    }//GEN-LAST:event_FeatureButtonA4ActionPerformed
+
+    private void FeatureButtonA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButtonA5ActionPerformed
+        // Feature 4 Exit
+        Feature4Exit();
+    }//GEN-LAST:event_FeatureButtonA5ActionPerformed
+
+    private void FeatureButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButton2ActionPerformed
+        // Feature 2 Open
+        Feature2Selected();
+    }//GEN-LAST:event_FeatureButton2ActionPerformed
+
+    private void FeatureButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButton4ActionPerformed
+        // Feature 4 Selected
+        Feature4Selected();
+    }//GEN-LAST:event_FeatureButton4ActionPerformed
+
+    private void FeatureButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeatureButton3ActionPerformed
+        // TODO Feature 3 Selected
+        Feature3Selected();
+    }//GEN-LAST:event_FeatureButton3ActionPerformed
 
     
     
@@ -4623,6 +5369,26 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel ExitMessageMainWindow;
     private javax.swing.JLabel ExitMessageWindow;
     private javax.swing.JPanel ExitMessageWindowz;
+    private javax.swing.JPanel Feature1;
+    private javax.swing.JPanel Feature2;
+    private javax.swing.JPanel Feature3;
+    private javax.swing.JPanel Feature4;
+    private javax.swing.JPanel FeatureA1;
+    private javax.swing.JPanel FeatureA2;
+    private javax.swing.JPanel FeatureA3;
+    private javax.swing.JPanel FeatureA4;
+    private javax.swing.JPanel FeatureB1;
+    private javax.swing.JPanel FeatureB2;
+    private javax.swing.JPanel FeatureB3;
+    private javax.swing.JPanel FeatureB4;
+    private javax.swing.JButton FeatureButton2;
+    private javax.swing.JButton FeatureButton3;
+    private javax.swing.JButton FeatureButton4;
+    private javax.swing.JButton FeatureButton5;
+    private javax.swing.JButton FeatureButtonA1;
+    private javax.swing.JButton FeatureButtonA2;
+    private javax.swing.JButton FeatureButtonA4;
+    private javax.swing.JButton FeatureButtonA5;
     private javax.swing.JLabel FeaturesText1;
     private javax.swing.JButton GOSigninWindowButton;
     private javax.swing.JRadioButton GcashOptionA1;
@@ -4673,6 +5439,7 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel PaymentmethodInfo;
     private javax.swing.JLabel PaymentstatusInfo;
     private javax.swing.JLabel PhonenumberInfo;
+    private javax.swing.JLabel Picture;
     private javax.swing.JLabel PriceTextGcash1A2;
     private javax.swing.JLabel PriceTextGcash2A2;
     private javax.swing.JLabel PriceTextPaymaya1A2;
@@ -4713,8 +5480,11 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton SignInButton2;
     private javax.swing.JButton SignUpButton1;
     private javax.swing.JPanel Slide1;
+    private javax.swing.JPanel Slide2;
     private javax.swing.JLabel TextIntro1;
     private javax.swing.JLabel TextIntroA1;
+    private javax.swing.JLabel TextIntroA2;
+    private javax.swing.JLabel TextIntroA3;
     private javax.swing.JLabel Title1;
     private javax.swing.JLabel Title2;
     private javax.swing.JTextField TotalAmountA1Checkin;
@@ -4727,11 +5497,18 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JButton ViewHotelFeatureButton;
     private javax.swing.JButton ViewHotelFeatureButton1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel111;
@@ -4750,7 +5527,18 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel123;
     private javax.swing.JLabel jLabel124;
     private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -4772,6 +5560,8 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
@@ -4864,11 +5654,15 @@ public class MainWindow1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
+    private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextArea jTextArea9;
