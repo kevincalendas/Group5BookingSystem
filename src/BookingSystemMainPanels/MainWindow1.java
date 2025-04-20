@@ -960,7 +960,8 @@ public class MainWindow1 extends javax.swing.JFrame {
          //Sign up button 
         String PhoneNumber, Username, Emailaddress, Password;
         String email = EmailAddressSignUpInput.getText().trim();
-        
+        char[] enteredPassword = PasswordSignUpInput.getPassword();
+        String enteredPasswordString = new String(enteredPassword);
         
         if ("".equals(UsernameSignUpInput.getText())) {
             JOptionPane.showMessageDialog(new JFrame(), "Required Phone Number");
@@ -977,13 +978,13 @@ public class MainWindow1 extends javax.swing.JFrame {
         }  else if (UsernameSignUpInput.getText().length() > 45 ) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             UsernameSignUpInput.setText("");
-        }  else if (UsernameSignUpInput.getText().length() < 5) {
+        }  else if (enteredPasswordString.length() < 5) {
             JOptionPane.showMessageDialog(new JFrame(), "Username should be minimum of 5 letters.");
             UsernameSignUpInput.setText("");
-        }  else if (PasswordSignUpInput.getPassword().length > 45) {
+        }  else if (enteredPasswordString.length() > 45) {
             JOptionPane.showMessageDialog(new JFrame(), "Maximum 45 characters allowed!");
             PasswordSignUpInput.setText("");
-        }  else if (PasswordSignUpInput.getPassword().length < 8) {
+        }  else if (enteredPasswordString.length() < 8) {
             JOptionPane.showMessageDialog(new JFrame(), "minimum 8 characters allowed!");
             PasswordSignUpInput.setText("");
         } else if (!email.contains("@")) {
@@ -1837,7 +1838,8 @@ public class MainWindow1 extends javax.swing.JFrame {
         });
         FeatureB4.add(FeatureButtonA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 260, 30));
 
-        jLabel139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/PoolAreaB.png"))); // NOI18N
+        jLabel139.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HotelFeaturesImages/SpaFeaturesPics1.jpg"))); // NOI18N
         jLabel139.setText("jLabel127");
         jLabel139.setPreferredSize(new java.awt.Dimension(340, 340));
         FeatureB4.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, -1, -1));
@@ -4315,47 +4317,48 @@ public class MainWindow1 extends javax.swing.JFrame {
     }//GEN-LAST:event_SignInButton1ActionPerformed
 
     private void SignInButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInButton2ActionPerformed
-         //Signing In your Account code :>
-         String Username, password;
-         Username = UsernameSigninInput1.getText();
-         password = new String(PasswordSignUpInput.getPassword());
-         String queryLogin = "SELECT * FROM hotelusersdatabase WHERE Username = "
-                 + "'" + Username + "' AND Password = '" + password + "'";
-         
-         
-         try {
-            pst = con.prepareStatement(queryLogin);
-            ResultSet rs = pst.executeQuery();
-            
-            if(!rs.next()) {
-                JOptionPane.showMessageDialog(null, "Invalid Credentials or already existed.");
-            
-            } else {
-                JOptionPane.showMessageDialog(null, "Successfull Login!");
-                LoginEnabled = 3;
-                UsernameSigninInput1.setText("");
-                PasswordSigninInput1.setText("");
-                Usernamee = rs.getString("Username");
-                UserNameGreetings.setText(Usernamee + "!");
-                //loginscreen false4
-                LoginFormWindow.setVisible(false);
-                PasswordSigninInput1.setVisible(false);
-                UsernameSigninInput1.setVisible(false);
-                RegisterFormWindow.setVisible(false);
-                NumberSignUpInput.setVisible(false);
-                UsernameSignUpInput.setVisible(false);
-                PasswordSignUpInput.setVisible(false);
-                RoomSectionPanel.setVisible(true);
-                MenuButtonsPanels.setVisible(true);
-                
+         // Signing In your Account code :>
 
-                
-                
-                
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+    char[] enteredPassword = PasswordSigninInput1.getPassword(); 
+    String enteredPasswordString = new String(enteredPassword);
+
+    String Username = UsernameSigninInput1.getText();
+
+    String queryLogin = "SELECT * FROM hotelusersdatabase WHERE Username = ? AND Password = ?";
+
+    try {
+        pst = con.prepareStatement(queryLogin);
+        pst.setString(1, Username);
+        pst.setString(2, enteredPasswordString);
+
+        ResultSet rs = pst.executeQuery();
+
+        if (!rs.next()) {
+            JOptionPane.showMessageDialog(null, "Invalid credentials or account does not exist.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Successful Login!");
+            LoginEnabled = 3;
+            UsernameSigninInput1.setText("");
+            PasswordSigninInput1.setText("");
+            Usernamee = rs.getString("Username");
+            UserNameGreetings.setText(Usernamee + "!");
+
+            // Hide login and registration panels
+            LoginFormWindow.setVisible(false);
+            PasswordSigninInput1.setVisible(false);
+            UsernameSigninInput1.setVisible(false);
+            RegisterFormWindow.setVisible(false);
+            NumberSignUpInput.setVisible(false);
+            UsernameSignUpInput.setVisible(false);
+            PasswordSignUpInput.setVisible(false);
+
+            // Show main content
+            RoomSectionPanel.setVisible(true);
+            MenuButtonsPanels.setVisible(true);
         }
+    } catch (SQLException ex) {
+        Logger.getLogger(MainWindow1.class.getName()).log(Level.SEVERE, null, ex);
+    }
         
          
         
